@@ -1,34 +1,25 @@
-// WARNING! Settings 'paths' is very tricky. VSCode reads only 'tsconfig.json', where angular compilator, typescript, webpack
-// etc read also 'tsconfig.app.json'. To avoid error underline in VSCode, you should specify your paths in 'tsconfig.app'
-// then copy them here and add '../' at the beggining of paths. This will fix error underline and you will avoid differences
-// between VSCode and webpack, compilator, typescript. If you don't do that, you will suffer error underline in VSCode or
-// errors in compilator. Do it wisely.
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "downlevelIteration": true,
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "importHelpers": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "src/*": ["src/*"],
-      "app/*": ["src/app/*"],
-      "@common": ["../common"],
-      "@common/*": ["../common/*"],
-      "@state/*": ["src/app/state/*"]
-    },
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+      "@config/*": ["src/app/config/*"],
+      "app/*": ["src/app/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
   }
 }

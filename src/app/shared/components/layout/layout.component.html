@@ -1,0 +1,11 @@
+<app-header [isExample]="isExample" [isHeaderContentExpanded]="isExpandedOnStart" [isBrandChoosen]="isBrandChoosen">
+</app-header>
+<div class="background">
+  <div class="layout">
+    <ng-content></ng-content>
+  </div>
+  <video playsinline autoplay loop muted="true" class="wave" #waveAnimation>
+    <source src="assets/wave_layout.webm" type='video/webm;codecs="vp8, vorbis"' />
+  </video>
+</div>
+<footer class="footer"></footer>

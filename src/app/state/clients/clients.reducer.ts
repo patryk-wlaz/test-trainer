@@ -1,33 +1,88 @@
 import * as _ from 'lodash';
 
-import * as ClientsActions from './clients.actions';
+import { IAction } from '..';
 
-import { initialState, ClientsState } from './clients.model';
-import { GetClientsResDtoInterface } from '@common';
-import { HttpErrorResponse } from '@angular/common/http';
+import * as ClientsActions from './clients.actions';
+import { initialState, ClientsState, Brand } from './clients.model';
 
 export type Action = ClientsActions.All;
 
 const reducerMap = {
-  [ClientsActions.CLIENTS_GET_ALL]: (state: ClientsState) => ({
+  [ClientsActions.GET_CLIENTS]: (state): ClientsState => ({
     ...state,
-    isLoading: true,
-    errorMessage: null,
-    list: [],
+    loading: true,
   }),
-  [ClientsActions.CLIENTS_GET_ALL_SUCCESS]: (state: ClientsState, payload: GetClientsResDtoInterface) => ({
+  [ClientsActions.GET_CLIENTS_SUCCESS]: (
+    state,
+    payload: { clients: ClientsState['clients'] }
+  ): ClientsState => ({
     ...state,
-    list: payload.rows,
-    isLoading: false,
-    errorMessage: null,
+    clients: payload.clients,
+    loading: false,
   }),
-  [ClientsActions.CLIENTS_GET_ALL_FAIL]: (state: ClientsState, payload: HttpErrorResponse) => ({
+  [ClientsActions.GET_CLIENTS_FAIL]: (state): ClientsState => ({
     ...state,
-    isLoading: false,
-    errorMessage: payload.error,
+    loading: false,
+  }),
+  [ClientsActions.GET_CLIENT]: (state): ClientsState => ({
+    ...state,
+    loading: true,
+  }),
+  [ClientsActions.GET_CLIENT_SUCCESS]: (
+    state,
+    payload: { client: ClientsState['selectedClient'] }
+  ): ClientsState => ({
+    ...state,
+    loading: false,
+    selectedClient: payload.client,
+  }),
+  [ClientsActions.RESET_CLIENT]: (
+    state
+  ): ClientsState => ({
+    ...state,
+    loading: false,
+    selectedClient: null,
+  }),
+  [ClientsActions.GET_CLIENT_FAIL]: (state): ClientsState => ({
+    ...state,
+    loading: false,
+  }),
+  [ClientsActions.GET_BRANDS]: (state): ClientsState => ({
+    ...state,
+    loading: true,
+  }),
+  [ClientsActions.GET_BRANDS_SUCCESS]: (
+    state,
+    payload: { brands: Brand[] }
+  ): ClientsState => ({
+    ...state,
+    loading: false,
+    brands: payload.brands,
+  }),
+  [ClientsActions.GET_CLIENT_FAIL]: (state): ClientsState => ({
+    ...state,
+    loading: false,
+  }),
+  [ClientsActions.GET_BRAND]: (state): ClientsState => ({
+    ...state,
+    loading: true,
+  }),
+  [ClientsActions.GET_BRAND_SUCCESS]: (
+    state,
+    payload: { brand: Brand }
+  ): ClientsState => ({
+    ...state,
+    loading: false,
+    selectedBrand: payload.brand,
+  }),
+  [ClientsActions.GET_BRAND_FAIL]: (state): ClientsState => ({
+    ...state,
+    loading: false,
   }),
 };
 
-export function clientsReducer(state: ClientsState = initialState, action: any): ClientsState {
-  return _.isFunction(reducerMap[action.type]) ? reducerMap[action.type](state, action.payload) : state;
+export function clientsReducer(state: ClientsState = initialState, action: IAction) {
+  return _.isFunction(reducerMap[action.type])
+    ? reducerMap[action.type](state, action.payload)
+    : state;
 }

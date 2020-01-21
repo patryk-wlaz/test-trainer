@@ -1,99 +1,41 @@
-import { storeFreeze } from 'ngrx-store-freeze';
+import { RouterEffects, RouterFacade } from './router';
 
-import { localStorageSyncReducer } from './local-storage/local-storage-sync.meta-reducer';
-import { RouterEffects } from './router';
-import { environment } from 'src/environments/environment';
-import {
-  SettingsEffects,
-  SettingsState,
-  settingsReducer,
-} from './settings';
-import {
-  CampaignsEffects,
-  campaignsReducer,
-  CampaignsState,
-} from './campaigns';
-import {
-  ClientsEffects,
-  clientsReducer,
-  ClientsState,
-} from './clients';
-import {
-  CampaignEffects,
-  campaignReducer,
-  CampaignState,
-} from './campaign';
-import {
-  MarketsEffects,
-  marketsReducer,
-  MarketsState,
-} from './markets';
-import {
-  CurrenciesEffects,
-  currenciesReducer,
-  CurrenciesState,
-} from './currencies';
-import {
-  ProductsEffects,
-  productsReducer,
-  ProductsState,
-} from './products';
+import { clientsReducer, ClientsEffects, ClientsState, ClientsFacade } from './clients';
+import { usersReducer, UsersEffects, UsersState, UsersFacade } from './users';
+import { personalReducer, PersonalEffects, PersonalState, PersonalFacade } from './personal';
+import { newsSidebarReducer, NewsSidebarEffects, NewsSidebarState, NewsSidebarFacade } from './news-sidebar';
 
-import {
-  KeywordsEffects,
-  keywordsReducer,
-  KeywordsState,
-} from './keywords';
-import {
-  AuthState,
-  authReducer,
-  AuthEffects,
-} from './auth';
-
-import {
-  StrategiesState,
-  strategiesReducer,
-  StrategiesEffects,
-} from './strategies';
+export interface IAction {
+  type: string;
+  payload?: any;
+}
 
 export const reducers = {
-  settings: settingsReducer,
-  campaigns: campaignsReducer,
-  campaign: campaignReducer,
   clients: clientsReducer,
-  markets: marketsReducer,
-  currencies: currenciesReducer,
-  products: productsReducer,
-  keywords: keywordsReducer,
-  auth: authReducer,
-  strategies: strategiesReducer,
+  users: usersReducer,
+  newsSidebar: newsSidebarReducer,
+  personal: personalReducer,
 };
 
 export const effects = [
-  SettingsEffects,
-  RouterEffects,
-  CampaignsEffects,
-  CampaignEffects,
   ClientsEffects,
-  MarketsEffects,
-  CurrenciesEffects,
-  ProductsEffects,
-  KeywordsEffects,
-  AuthEffects,
-  StrategiesEffects,
+  RouterEffects,
+  UsersEffects,
+  NewsSidebarEffects,
+  PersonalEffects,
 ];
 
-export const metaReducers = [...(!environment.production ? [storeFreeze] : []), localStorageSyncReducer];
+export const facades = [
+  ClientsFacade,
+  RouterFacade,
+  UsersFacade,
+  NewsSidebarFacade,
+  PersonalFacade,
+];
 
 export interface AppState {
-  settings: SettingsState;
-  campaigns: CampaignsState;
-  campaign: CampaignState;
   clients: ClientsState;
-  markets: MarketsState;
-  currencies: CurrenciesState;
-  products: ProductsState;
-  keywords: KeywordsState;
-  auth: AuthState;
-  strategies: StrategiesState;
+  users: UsersState;
+  personal: PersonalState;
+  newsSidebar: NewsSidebarState;
 }

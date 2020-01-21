@@ -1,0 +1,34 @@
+<mat-drawer-container>
+  <div class="blur-background" *ngIf="newsSidebarOpened$ | async" (click)="closeDrawer()"></div>
+  <mat-drawer [opened]="newsSidebarOpened$ | async" position="end">
+    <div class="header">
+      <button (click)="closeDrawer()" class="close-btn">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <div class="container">
+      <ng-container *ngIf="latestNews$ | async">
+        <h4 translate="WM_HOME.NEWS_SIDEBAR.LATEST_NEWS"></h4>
+        <img
+          [src]="(latestNews$ | async).thumbnailUrl"
+          alt="Video playback"
+          class="big-thumbnail"
+        />
+        <h3>{{ (latestNews$ | async).title }}</h3>
+        <button>&bull; Live now</button>
+        <div class="news-list">
+          <div
+            *ngFor="let article of articles$ | async | slice: 1; let idx = index"
+            class="list-element"
+          >
+            <img [src]="article.thumbnailUrl" alt="Article thumbnail" class="thumbnail" />
+            <div class="element-text">
+              <h6>{{ article.title }}</h6>
+              <p>{{ article.time | date }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>

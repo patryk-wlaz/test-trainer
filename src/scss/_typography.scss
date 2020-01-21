@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700&display=swap');
+
+@mixin typography_heading_1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+@mixin typography_heading_2 {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 52px;
+}
+
+@mixin typography_heading_3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+@mixin typography_heading_4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin typography_heading_5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin typography_heading_6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin typography_subtitle_1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_subtitle_2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_body_1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_body_2 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_caption {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+}
+
+@mixin typography_caption_small {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typography_overline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@mixin typography_links {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+}
+
+@mixin typography_links_small {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+}

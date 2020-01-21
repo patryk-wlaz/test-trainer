@@ -1,0 +1,67 @@
+{
+  "WM_HOME": {
+    "MAIN_PAGE": {
+      "RECENT_WORK_TITLE": "Poprzednia praca"
+    },
+    "HEADER": {
+      "NEWS": "Aktualności",
+      "ADMINISTRATION": "Administracja",
+      "MARKET": "Rynek",
+      "APP_SETTING": "Ustawienia aplikacji",
+      "USER": "Użytkownik",
+      "PROFILE": "Profil",
+      "ACCOUNT_SETTINGS": "Ustawienia konta",
+      "LOGOUT": "Wyloguj",
+      "CHANGE_LANGUAGE": "Zmień język",
+      "ENGLISH": "English",
+      "POLISH": "Polski",
+      "YOU": "Ty",
+      "WORK": "Praca",
+      "CONTACTS": "Kontakty",
+      "ACTIVITY": "Aktywność",
+      "APPS": "Aplikacje",
+      "PROVOCATIVE_PLANNING": "PROVOCATIVE_PLANNING"
+    },
+    "NEWS_SIDEBAR": {
+      "LATEST_NEWS": "Aktualności"
+    },
+    "CONTACTS_LIST": {
+      "NAME_AND_ROLE": "NAME_AND_ROLE",
+      "EXPERIENCE": "EXPERIENCE"
+    },
+    "CONTACTS": {
+      "COLLABOLATORS_TITLE": "COLLABOLATORS_TITLE",
+      "ALL_TITLE": "ALL_TITLE",
+      "SAVED_TITLE": "SAVED_TITLE"
+    },
+    "WORKSPACE_WIDGET": {
+      "WORKSPACES_TITLE": "WORKSPACES_TITLE",
+      "YOUR_CLIENTS": "YOUR_CLIENTS",
+      "YOU_DONT_HAVE_CLIENTS": "YOU_DONT_HAVE_CLIENTS",
+      "ALL_OTHER_CLIENTS": "ALL_OTHER_CLIENTS",
+      "NO_MORE_CLIENTS": "NO_MORE_CLIENTS"
+    },
+    "NAVIGATION_MAIN": {
+      "UNLOCK": "UNLOCK",
+      "TOOLKIT": "TOOLKIT",
+      "BUDGET": "BUDGET",
+      "SITE_SPEED": "SITE_SPEED",
+      "SCORECARDS": "SCORECARDS",
+      "SITE_AND_APP_AUDIT": "SITE_AND_APP_AUDIT",
+      "PPC_AUDIT": "PPC_AUDIT",
+      "CONTENT_AUDIT": "CONTENT_AUDIT",
+      "SOCIAL_AUDIT": "SOCIAL_AUDIT",
+      "ECOMMERCE_AUDIT": "ECOMMERCE_AUDIT",
+      "AUDIENCE_AUDIT": "AUDIENCE_AUDIT",
+      "VIDEO_AUDIT": "VIDEO_AUDIT",
+      "PROGRAMMATIC_AUDIT": "PROGRAMMTIC_AUDIT",
+      "SUMMARY": "SUMMARY",
+      "OPPORTUNITIES": "OPPORTUNITIES",
+      "OPTIMISE": "OPTIMISE",
+      "AUDIENCES": "AUDIENCES",
+      "CAMPAIGNS": "CAMPAIGNS",
+      "TRANSFORM": "TRANSFORM",
+      "COMING_SOON": "COMING_SOON"
+    }
+  }
+}

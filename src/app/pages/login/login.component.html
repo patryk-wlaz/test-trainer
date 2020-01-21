@@ -1,0 +1,23 @@
+<div #loginContainer class="login">
+  <img src="assets/img/white-logo.svg" alt="WM logo" #wmLogo class="main-logo"/>
+  <video autoplay loop muted="true" #waveAnimation>
+    <source src="assets/wave_login.webm"
+            type='video/webm;codecs="vp8, vorbis"'/>
+  </video>
+  <div *ngIf="!(myself$ | async)" class="login-form" #loginForm>
+    <img src="assets/img/logo.svg" alt="WM logo" class="small-logo"/>
+    <div class="login-form__input" *ngIf="!(loading$ | async)">
+      <button
+        (click)="login()">
+        Login
+      </button>
+    </div>
+    <mat-spinner
+      *ngIf="(loading$ | async)"
+      diameter="50"
+      strokeWidth="3">
+    </mat-spinner>
+
+    <a href="https://login.microsoftonline.com" target="_blank" class="login-problems-info">Problems logging in?</a>
+  </div>
+</div>

@@ -1,37 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Router, NavigationStart } from '@angular/router';
 
-import { AppState } from './state';
-import { MatIconService } from './core/mat-icon/mat-icon.service';
-import { filter, pairwise } from 'rxjs/operators';
-import { track } from 'src/app/matomo';
-import { GetVersion } from '@state/settings';
+import { MatIconService } from './core/mat-icon.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { environment } from 'src/environments/environment';
+import { startTracking, sendPageVisit, loadMatomoScript } from './core/matomo';
+import { filter, pairwise, tap } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  // MatIconService has to be here just for being triggered
-  constructor(private store: Store<AppState>, private matIconService: MatIconService, private router: Router) {}
+  title = 'test-trainer';
 
-  ngOnInit(): void {
-    this.store.dispatch(new GetVersion());
-    this.router.events
-      .pipe(
-        filter(event => event instanceof NavigationStart),
-        pairwise(),
-      )
-      .subscribe(([oldEvent, newEvent]: [NavigationStart, NavigationStart]) => {
-        track(
-          ['setReferrerUrl', oldEvent.url],
-          ['setCustomUrl', newEvent.url],
-          ['deleteCustomVariables', 'page'],
-          ['setGenerationTimeMs', 0],
-          ['trackPageView'],
-          ['enableLinkTracking'],
-        );
-      });
+  constructor(
+    private matIconService: MatIconService,
+    private router: Router,
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('en');
+  }
+
+  ngOnInit() {
+    const matomoId = environment.matomoId;
+    if (!matomoId) { return; }
+
+    loadMatomoScript();
+    startTracking(matomoId);
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+      pairwise()
+    ).subscribe(([oldEvent, newEvent]: [NavigationEnd, NavigationEnd]) =>
+      sendPageVisit(oldEvent.url, newEvent.url)
+    );
   }
 }

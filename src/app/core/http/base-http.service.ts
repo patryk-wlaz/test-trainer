@@ -1,46 +1,31 @@
+import { HttpParams, HttpHeaders } from '@angular/common/http';
+
 import * as _ from 'lodash';
-import { saveAs } from 'file-saver';
-import { HttpParams } from '@angular/common/http';
-
-import { catchError, map } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
-import { environment } from 'src/environments/environment';
-import { Go } from 'app/state/router';
+import { environment } from 'app/../environments/environment';
+
+export interface BlobResponse {
+  headers: HttpHeaders;
+  body: Blob;
+}
 
 export class BaseHttpService {
-  static API_URL = environment.apiUrl;
+  static CLIENT_DATA_API_URL = environment.clientDataApiUrl;
   static ERROR_TYPE = 'HTTP_ERROR';
 
-  constructor(private store$) {}
+  static httpOptions = {
+    withCredentials: true,
+  };
 
-  public handleError(err) {
+  public handleError(err: Error): Observable<never> {
     _.assign(err, { type: BaseHttpService.ERROR_TYPE });
-
-    if (err.status === 401) {
-      this.store$.dispatch(new Go({ path: ['login'] }));
-    }
-
-    if (err.status === 403) {
-      this.store$.dispatch(new Go({ path: ['forbidden'] }));
-    }
-
     return throwError(err);
   }
 
-  public handleRequest(requestObservable: Observable<any>) {
-    return requestObservable.pipe(catchError(err => this.handleError(err)));
-  }
-
-  public handleFileRequest(requestObservable: Observable<any>, filename = 'file.txt') {
-    return requestObservable.pipe(
-      map(response => {
-        const blob = new Blob([response], { type: 'application/octet-stream' });
-        saveAs(blob, filename);
-        return response;
-      }),
-      catchError(err => this.handleError(err)),
-    );
+  public handleRequest(requestObservable: Observable<any>): Observable<any> {
+    return requestObservable.pipe(catchError((err) => this.handleError(err)));
   }
 
   public parseQueryParams(params): HttpParams {

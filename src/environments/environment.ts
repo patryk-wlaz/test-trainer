@@ -2,18 +2,22 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import proxy from './../../proxy.config.js';
-
 export const environment = {
+  clientDataApiUrl: 'http://localhost:9000',
+  audiencesAppUrl: 'https://home.hygienetools.com/microfrontends/audiences/main.js',
+  budgetAppUrl: 'https://home.hygienetools.com/microfrontends/budget/main.js',
+  growthOpportunitiesAppUrl:
+    'https://home.hygienetools.com/microfrontends/wm-growth-opportunities/main.js',
+  marketAdminAppUrl: 'https://home.hygienetools.com/microfrontends/market-admin/main.js',
+  authAppUrl: '', // on localhost there is no use for this url - there's no authorization
+  appName: '', // on localhost there is no use for this name - there's no authorization
+  scorecardsAppUrl: 'https://home.hygienetools.com/microfrontends/scorecards/main.js',
+  briefsAppUrl: 'https://home.hygienetools.com/microfrontends/briefs/main.js',
+  pageSpeedInsightsAppUrl:
+    'https://home.hygienetools.com/microfrontends/wm-page-speed-insights/main.js',
   production: false,
-  apiUrl: proxy[0].context,
-  baseUrl: '',
-  authAppUrl: 'https://localhost:8080/auth-proxy',
-  redirectUrl: 'https://localhost:8080',
-  passCodeThroughLocalhost: true,
-  version: '',
-  appName: 'ShelfSpendDev',
-  matomoSiteId: '',
+  matomoId: null, // correct id for flywheel dev is 21; use null on localhost
+  pageSpeedInsightsAssetsPath: 'microfrontends/wm-page-speed-insights/',
 };
 
 /*

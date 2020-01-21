@@ -1,0 +1,38 @@
+<div>
+  <app-layout>
+    <div class="contacts-container">
+      <header class="contacts-header">
+        <ul class="contacts-header__nav">
+          <li
+            *ngFor="let singleNav of contactsNav"
+            [ngClass]="{ 'current-contacts-select': singleNav.title === 'WM_HOME.CONTACTS.ALL_TITLE' }"
+          >
+            <a
+              [attr.translate]="singleNav.title"
+              [translate]="singleNav.title">
+            </a>
+          </li>
+        </ul>
+        <ul class="contacts-header__filters">
+          <li>
+            <mat-icon
+              (click)="changeContactsContainerType(false)"
+              svgIcon="wm-tiles"
+              class="contacts-icon"
+            >
+            </mat-icon>
+          </li>
+          <li>
+            <mat-icon
+              (click)="changeContactsContainerType(true)"
+              svgIcon="wm-list"
+              class="contacts-icon"
+            >
+            </mat-icon>
+          </li>
+        </ul>
+      </header>
+      <app-contacts-list [isList]="isList"></app-contacts-list>
+    </div>
+  </app-layout>
+</div>

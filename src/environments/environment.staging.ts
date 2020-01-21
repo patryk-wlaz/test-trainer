@@ -1,11 +1,17 @@
-import * as version from '@common/version';
-
 export const environment = {
+  clientDataApiUrl: '/_apps/client-management/api',
+  audiencesAppUrl: 'https://home.hygienetools.com/microfrontends/audiences/main.js',
+  budgetAppUrl: 'https://home.hygienetools.com/microfrontends/budget/main.js',
+  growthOpportunitiesAppUrl:
+    'https://home.hygienetools.com/microfrontends/wm-growth-opportunities/main.js',
+  marketAdminAppUrl: 'https://home.hygienetools.com/microfrontends/market-admin/main.js',
+  authAppUrl: 'https://auth.hygienetools.com',
+  appName: 'WMHomeStaging',
+  scorecardsAppUrl: 'https://home.hygienetools.com/microfrontends/scorecards/main.js',
+  briefsAppUrl: 'https://home.hygienetools.com/microfrontends/briefs/main.js',
+  pageSpeedInsightsAppUrl:
+    '/_apps/page-speed/main.js',
   production: true,
-  version,
-  apiUrl: 'https://shelfspend-staging-api.toolswm.com',
-  authAppUrl: 'https://auth-release.toolswm.com',
-  appName: 'ShelfSpendStaging',
-  redirectUrl: '',
-  matomoSiteId: '4',
+  matomoId: 22,
+  pageSpeedInsightsAssetsPath: '_apps/page-speed/',
 };

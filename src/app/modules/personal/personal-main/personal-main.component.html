@@ -1,0 +1,20 @@
+<div class="personal-container">
+  <h3 class="personal-container__title" translate="WM_HOME.MAIN_PAGE.RECENT_WORK_TITLE"></h3>
+  <div class="slider-container">
+    <div class="slider-container__tile slider-container__widget"></div>
+    <app-workspace-widget
+      [@resizeWidget]="isClientWidgetExpanded"
+      [isExpanded]="isClientWidgetExpanded"
+      (toggleWidget)="toggleWidget($event)"
+      [class.slider-container__widget-expanded]="isClientWidgetExpanded"
+      class="slider-container__tile slider-container__widget"
+    ></app-workspace-widget>
+    <app-single-tile
+      *ngFor="let recentWork of recentWorks$ | async"
+      [client]="recentWork"
+      class="slider-container__tile"
+    >
+    </app-single-tile>
+  </div>
+</div>
+<div *ngIf="isClientWidgetExpanded" class="blur-background" (click)="toggleWidget(false)"></div>

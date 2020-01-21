@@ -1,0 +1,15 @@
+<div class="contact-row" [ngClass]="{ 'contact-row': isList, 'contact-card': !isList }">
+  <header>
+    <img [src]="personalContact.avatar" />
+    <div>
+      <h5>{{ personalContact.name }}</h5>
+      <p>{{ personalContact.position }}, {{ personalContact.city }}</p>
+    </div>
+  </header>
+  <footer>
+    <p *ngIf="!isList">Experience:</p>
+    <span *ngFor="let experienceItem of personalContact.experience">
+      {{ experienceItem }}
+    </span>
+  </footer>
+</div>

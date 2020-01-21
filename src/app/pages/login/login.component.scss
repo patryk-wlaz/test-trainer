@@ -1,0 +1,118 @@
+@import 'src/scss/typography';
+@import 'src/scss/variables';
+
+:host {
+  background: $wmAubergine3;
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 290px;
+
+  opacity: 0;
+  transition: opacity 2000ms;
+  &.on {
+    opacity: 1;
+  }
+}
+
+.login {
+  height: 100vh;
+  position: relative;
+  background: $wmAubergine3;
+
+  opacity: 0;
+  transition: opacity 2000ms ease-in;
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+    transition: filter 2000ms ease-in, -webkit-filter 2000ms ease-in;
+    filter: opacity(0);
+    -webkit-filter: opacity(0);
+  }
+  &.on {
+    opacity: 1;
+    video {
+      filter: opacity(100%);
+      -webkit-filter: opacity(100%);
+    }
+  }
+
+  .small-logo {
+    width: 181px;
+    height: 21px;
+  }
+
+  &-form {
+    position: absolute;
+    height: 570px;
+    width: 455px;
+    margin: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    border-radius: 6px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 500ms, transform 500ms ease-in;
+    &.on {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
+      label {
+        @include typography_overline;
+        color: $wmGrey4;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &-problems-info {
+    @include typography_body_2;
+    color: $wmGrey4;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    @include typography_button;
+    background: $wmOrange4;
+    border: 0;
+    color: $wmWhite;
+    border-radius: 6px;
+    padding: 12px 0;
+    cursor: pointer;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
