@@ -1,0 +1,166 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+
+app-create-api-supported-products-dialog {
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.44px;
+    color: $primary-light;
+    margin-bottom: 20px;
+
+    &.error {
+      color: $error;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .mat-dialog-content {
+    height: 100%;
+    margin-top: 24px;
+    align-items: stretch;
+  }
+
+  .mat-dialog-actions {
+    align-items: stretch;
+  }
+
+  .button-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    > span {
+      padding: 14px 0;
+      font-size: 14px;
+      line-height: 134%;
+      color: $primary-light;
+      letter-spacing: 0.44px;
+    }
+  }
+
+  .row-requested {
+    background: $background;
+  }
+
+  .mat-cell.row-warning {
+    border-color: $yellow !important;
+  }
+
+  .mat-cell.row-error {
+    border-color: $error !important;
+    color: $error;
+  }
+
+  .cell-requested {
+    display: flex;
+    justify-content: center;
+  }
+
+  .spinner {
+    color: $secondary;
+  }
+
+  .product-input {
+    width: 100%;
+    font-size: 12px;
+
+    &__button {
+      min-width: 100px !important;
+      margin-left: 20px;
+    }
+
+    &.mat-form-field-appearance-outline {
+      .mat-form-field-outline-start {
+        box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.08);
+        border-radius: 30px 0 0 30px !important;
+        min-width: 30px !important;
+      }
+      .mat-form-field-outline-end {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+        border-radius: 0 30px 30px 0 !important;
+      }
+      .mat-form-field-flex {
+        padding: 0 16px;
+      }
+      .mat-form-field-outline-thick {
+        color: $secondary-light;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+  }
+
+  .mat-table {
+    padding-right: 0 !important;
+  }
+
+  .mat-column {
+    &-name {
+      width: 55% !important;
+    }
+    &-asin {
+      width: 15% !important;
+    }
+    &-retailHealth {
+      width: 10% !important;
+    }
+    &-errors {
+      width: 10% !important;
+    }
+    &-delete-button{
+      width: 10% !important;
+    }
+  }
+
+  .delete-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .mat-icon {
+      color: $secondary-gray;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .product-list {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    margin-bottom: 30px;
+  }
+
+  .mat-tooltip {
+    text-align: center;
+  }
+
+  .warning-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .mat-icon {
+      color: $secondary-gray;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}

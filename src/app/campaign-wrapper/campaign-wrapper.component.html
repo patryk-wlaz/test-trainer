@@ -1,0 +1,22 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.url"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [active]="rla.isActive"
+    [disabled]="isStepDisabled(link.step, campaign$ | async)">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="link.aria"
+      [svgIcon]="isStepDisabled(link.step, campaign$ | async) ? 'tab_lock' : 'tab_active'"
+      [class.gray]="(campaign$ | async)?.step === link.step && link.step !== 4"></mat-icon>
+    {{ link.label }}
+  </a>
+
+  <div *ngIf="(campaign$ | async)?.id !== '0'" class="api-icon">
+    Autodata
+    <mat-icon [svgIcon]="(isApiAvailable | async) ? 'api_connected' : 'api_disconnected'"></mat-icon>
+  </div>
+</nav>
+<router-outlet></router-outlet>

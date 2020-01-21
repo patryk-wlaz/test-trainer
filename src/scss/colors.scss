@@ -1,0 +1,41 @@
+@import 'themes/main';
+
+$primary: #212121;
+$primary-light: #616161;
+
+$secondary: #2962FF;
+$secondary-light: #94B0FF;
+$secondary-dark: #304FFE;
+$secondary-gray: #9E9E9E;
+
+$error: #EB5757;
+$unsupported-market: #D50000;
+
+$background: #F5F5F5;
+$background-secondary: #EEEEEE;
+$border: #DBDBDB;
+$border-icon: #DADADA;
+$white: #FFFFFF;
+
+$gray-3: #828282;
+
+$scrollbar-background: #E0E0E0;
+$scrollbar-scroll: #BDBDBD;
+
+$status-active: #27AE60;
+$status-draft: #9B51E0;
+$status-planned: $secondary;
+$status-finished: $secondary-gray;
+
+$checkbox-border: $secondary;
+
+$yellow: #F2C94C;
+
+$ads-share-brand-line: #94B0FF;
+$ads-share-brand-dot: #2962FF;
+$ads-share-product-line: #6FCF97;
+$ads-share-product-dot: #27AE60;
+$ads-share-product-display-line: #BB6BD9;
+$ads-share-product-display-dot: #9B51E0;
+
+$loading-spinner-color: #DBDBDB;

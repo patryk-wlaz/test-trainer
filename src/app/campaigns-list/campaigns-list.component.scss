@@ -1,0 +1,129 @@
+@import '~scss/colors';
+@import '~scss/variables';
+@import '~scss/mixins';
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.campaigns-list {
+  overflow-y: auto;
+  height: $campaigns-list-table-wrapper-height;
+  max-height: $campaigns-list-table-wrapper-height;
+  margin-right: -48px;
+}
+
+.search-field {
+  width: 30%;
+}
+
+.table-actions {
+  margin-top: $campaigns-list-table-actions-margin-top-bottom;
+  margin-bottom: $campaigns-list-table-actions-margin-top-bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  line-height: 14px;
+  font-weight: 500;
+
+  .mat-icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: $secondary;
+    margin-top: 2px;
+  }
+}
+
+.currency-cell {
+  color: $secondary-gray;
+}
+
+.mat-table {
+  .active {
+    color: $status-active;
+  }
+  .draft {
+    color: $status-draft;
+  }
+  .planned {
+    color: $status-planned;
+  }
+  .finished {
+    color: $status-finished;
+  }
+}
+
+.mat-column {
+  &-name {
+    @include table-grid-column(3);
+  }
+
+  &-client {
+    @include table-grid-column(2);
+  }
+
+  &-market {
+    @include table-grid-column(1);
+    img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      border-radius: 100%;
+      border: 1px solid $border;
+    }
+  }
+
+  &-status {
+    @include table-grid-column(1);
+    font-weight: 500;
+  }
+
+  &-startDate {
+    @include table-grid-column(1);
+  }
+
+  &-endDate {
+    @include table-grid-column(1);
+  }
+
+  &-duration {
+    @include table-grid-column(1);
+  }
+
+  &-budget {
+    @include table-grid-column(1);
+  }
+
+  &-menu {
+    @include table-grid-column(1);
+  }
+
+  &-marketApi {
+    @include table-grid-column(1);
+    .mat-icon {
+      margin-left: 20px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.create-campaign-button {
+  margin-left: auto;
+  margin-right: 0;
+  height: 100% !important;
+}
+
+.campaign-menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

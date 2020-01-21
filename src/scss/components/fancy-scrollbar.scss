@@ -1,0 +1,36 @@
+// ::-webkit-scrollbar for chrome
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: $scrollbar-background;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: $scrollbar-scroll;
+}
+
+.mat-drawer-content {
+  // firefox
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-scroll $scrollbar-background;
+}
+
+.fancy-scrollbar {
+  // firefox
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-scroll $scrollbar-background;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
+.mat-tab-body.mat-tab-body-active .mat-tab-body-content {
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-scroll $scrollbar-background;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+}

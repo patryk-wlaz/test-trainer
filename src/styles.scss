@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+// reset/normalize
+@import 'normalize.css';
+
+// themes
+@import 'scss/themes/main';
+
+// global variables/mixins etc
+@import 'scss/colors';
+@import 'scss/variables.scss';
+@import 'scss/mixins';
+
+// components
+@import 'scss/components/button';
+@import 'scss/components/input';
+@import 'scss/components/tab-nav-bar';
+@import 'scss/components/table';
+@import 'scss/components/main';
+@import 'scss/components/fancy-scrollbar';
+@import 'scss/components/calendar';
+@import 'scss/components/dialog';
+@import 'scss/components/tooltip';
+@import 'scss/components/checkbox';
+@import 'scss/components/select';
+
+// place to set global styles
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('./assets/images/shelfspend_main_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}

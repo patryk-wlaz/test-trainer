@@ -1,0 +1,46 @@
+{
+  "name": "shelfspend",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "ng-high-mem-build:dev": "rm -rf ./dist && node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build --configuration=production-dev --prod",
+    "ng-high-mem-build:staging": "rm -rf ./dist && node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build --configuration=production-staging --prod",
+    "ng-high-mem-build:prod": "rm -rf ./dist && node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build --configuration=production-master --prod",
+    "dev": "node --max_old_space_size=15000 node_modules/@angular/cli/bin/ng serve --port=8080 --ssl --aot --proxy-config proxy.config.js",
+    "build": "node --max_old_space_size=15000 node_modules/@angular/cli/bin/ng build --aot",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.2.12",
+    "@angular/cdk": "^7.3.7",
+    "@angular/common": "~7.2.12",
+    "@angular/compiler": "~7.2.12",
+    "@angular/core": "~7.2.12",
+    "@angular/http": "~7.2.12",
+    "@angular/material": "^7.3.7",
+    "@angular/platform-browser": "~7.2.12",
+    "@angular/platform-browser-dynamic": "~7.2.12",
+    "@angular/router": "~7.2.12",
+    "@ngrx/effects": "^7.4.0",
+    "@ngrx/store": "^7.4.0",
+    "@ngrx/store-devtools": "^7.4.0",
+    "@types/lodash": "^4.14.123",
+    "lodash": "^4.17.11",
+    "normalize.css": "^8.0.1",
+    "rxjs": "~6.4.0",
+    "rxjs-compat": "^6.5.2",
+    "zone.js": "~0.9.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.13.8",
+    "@angular/cli": "~7.3.8",
+    "@angular/compiler-cli": "~7.2.12",
+    "@types/node": "~11.13.0",
+    "ngrx-store-freeze": "^0.2.4",
+    "ts-node": "~8.0.3",
+    "tslint": "~5.15.0",
+    "typescript": "~3.2.0"
+  }
+}

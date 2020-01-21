@@ -1,0 +1,117 @@
+<div class="actions">
+  <button
+    mat-raised-button
+    color="accent"
+    class="actions__add-button"
+    (click)="openAddKeywordsDialog()">
+    <div class="icon-wrapper">
+      <mat-icon data-position="prefix">add</mat-icon>
+    </div>
+    Add keywords
+  </button>
+</div>
+
+<div *ngIf="keywordsError$ | async">
+  <h3>Error occurred while downloading your keywords:</h3>
+  <p>
+    {{ keywordsError$ | async }}
+  </p>
+</div>
+
+<mat-tab-group
+  class="keywords-wrapper"
+  [selectedIndex]="currentTab$ | async"
+  (selectedIndexChange)="setCurrentTab($event)">
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <span>
+        Brand<span class="counter"> ({{getKeywordsOfTypeLength(keywordTypes.BRAND) | async}})</span>
+      </span>
+    </ng-template>
+
+    <app-loading-spinner *ngIf="!(keywords$ | async).length && (loadingKeywords$ | async)"></app-loading-spinner>
+
+    <app-campaign-keywords-list
+      *ngIf="!isApiAvailable"
+      [keywords]="(brandKeywords$ | async) | sortByCreation"
+      (openAddKeywordModal)="openAddKeywordsDialog()">
+    </app-campaign-keywords-list>
+
+    <app-campaign-keywords-list
+      *ngIf="isApiAvailable"
+      [keywords]="(brandKeywords$ | async) | sortBy:'searchVolume':'desc' | search: { name: search } "
+      (onSearchKeyword)="setSearchValue($event)"
+      (openAddKeywordModal)="openAddKeywordsDialog()">
+    </app-campaign-keywords-list>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <span>
+        Generic<span class="counter"> ({{getKeywordsOfTypeLength(keywordTypes.GENERIC) | async}})</span>
+      </span>
+    </ng-template>
+    <app-loading-spinner *ngIf="!(keywords$ | async).length && (loadingKeywords$ | async)"></app-loading-spinner>
+
+    <app-campaign-keywords-list
+      [keywords]="(genericKeywords$ | async) | sortByCreation"
+      (openAddKeywordModal)="openAddKeywordsDialog()">
+    </app-campaign-keywords-list>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <span>
+        Competitors<span class="counter"> ({{getKeywordsOfTypeLength(keywordTypes.COMPETITOR) | async}})</span>
+      </span>
+    </ng-template>
+    <app-loading-spinner *ngIf="!(keywords$ | async).length && (loadingKeywords$ | async)"></app-loading-spinner>
+
+    <app-campaign-keywords-list
+      *ngIf="!isApiAvailable"
+      [keywords]="(competitorKeywords$ | async) | sortByCreation"
+      (openAddKeywordModal)="openAddKeywordsDialog()">
+    </app-campaign-keywords-list>
+
+    <app-campaign-keywords-list
+      *ngIf="isApiAvailable"
+      [keywords]="(competitorKeywords$ | async) | sortBy:'searchVolume':'desc' | search: { name: search } "
+      (onSearchKeyword)="setSearchValue($event)"
+      (openAddKeywordModal)="openAddKeywordsDialog()">
+    </app-campaign-keywords-list>
+  </mat-tab>
+</mat-tab-group>
+<div class="keywords-nav-buttons">
+  <button
+    mat-stroked-button
+    color="primary"
+    type="button"
+    (click)="redirect('campaigns')">
+    <mat-icon matPreffix data-position="prefix" svgIcon="back_arrow"></mat-icon>
+    Campaigns
+  </button>
+  <div>
+    <button
+      mat-stroked-button
+      color="primary"
+      type="button"
+      (click)="redirect('products')">
+      <mat-icon matPrefix data-position="prefix">chevron_left</mat-icon>
+      Prev
+    </button>
+    <button
+      mat-raised-button
+      color="accent"
+      [disabled]="(currentCampaign$ | async)?.step < 3"
+      type="button"
+      (click)="redirect('strategy')">
+      Next
+      <mat-icon matSuffix data-position="suffix">chevron_right</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="error-container" *ngIf="(currentCampaign$ | async)?.step < 3">
+  <p>All keywords must have all inputs filled and at least one product assigned.</p>
+</div>

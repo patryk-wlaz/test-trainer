@@ -1,0 +1,17 @@
+<div mat-dialog-title>
+  <h1>{{data?.title || 'Are you sure?'}}</h1>
+
+  <button class="mat-dialog-title__close-button" matDialogClose matTooltip="Close dialog" aria-label="...">
+    <mat-icon aria-label="Close">
+      close
+    </mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="content-container">
+  <p class="info">{{data?.text || 'This can\'t be undone. Please confirm your action.'}}</p>
+</div>
+<mat-dialog-actions>
+  <button mat-stroked-button color="primary" (click)="cancel()">{{data?.cancelText || 'cancel'}}</button>
+  <button mat-raised-button color="accent" (click)="confirm()">{{data?.confirmText || 'confirm'}}</button>
+</mat-dialog-actions>

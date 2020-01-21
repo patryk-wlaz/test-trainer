@@ -1,0 +1,29 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+
+.mat-dialog-title {
+  margin-bottom: 5px !important;
+}
+
+.mat-dialog-actions {
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.mat-dialog-content {
+  margin: 0 !important;
+  max-height: auto !important;
+  padding: 0 !important;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  white-space: pre-wrap;
+  text-align: center;
+}

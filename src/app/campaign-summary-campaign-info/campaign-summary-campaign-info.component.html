@@ -1,0 +1,46 @@
+<div *ngIf="(campaign$ | async) as campaign" class="campaign-info">
+  <div class="campaign-info__element-wrapper">
+    <img src="../../assets/images/default_campaign_avatar.svg" alt="Default campaign avatar">
+    <div class="campaign-info__element">
+      <span class="campaign-info__element__header">
+        Campaign name:
+      </span>
+      {{ campaign.name }}
+    </div>
+  </div>
+
+  <div class="campaign-info__element">
+    <span class="campaign-info__element__header">
+      Client:
+    </span>
+    {{ campaign.client.name }}
+  </div>
+
+  <div class="campaign-info__element">
+    <span class="campaign-info__element__header">
+      Market:
+    </span>
+    {{ campaign.market.name }}
+  </div>
+
+  <div class="campaign-info__element">
+    <span class="campaign-info__element__header">
+      Currency:
+    </span>
+    {{ campaign.currency.acronym }}
+  </div>
+
+  <div class="campaign-info__element">
+    <span class="campaign-info__element__header">
+      Start date:
+    </span>
+    {{ campaign.startDate | date:'dd.MM.y' }}
+  </div>
+
+  <div class="campaign-info__element">
+    <span class="campaign-info__element__header">
+      End date:
+    </span>
+    {{ campaign.endDate | date:'dd.MM.y' }}
+  </div>
+</div>

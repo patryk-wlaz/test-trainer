@@ -1,0 +1,58 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-container {
+  width: 72%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+
+  > div {
+    width: 81%;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: $primary-light;
+
+    img {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.login-container {
+  width: 28%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width: 55%;
+    height: 60px;
+    background-color: $white;
+    color: $primary-light;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+
+    @include component-shadow;
+    @include component-border;
+  }
+}

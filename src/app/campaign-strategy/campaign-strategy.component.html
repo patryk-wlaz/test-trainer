@@ -1,0 +1,81 @@
+<div class="campaign-strategy">
+  <div class="campaign-strategy__values">
+    <div *ngIf="strategiesError$ | async">
+      <h3>Error occurred while downloading your strategies:</h3>
+      <p>
+        {{ strategiesError$ | async }}
+      </p>
+    </div>
+    <app-loading-spinner
+      *ngIf="!(strategies$ | async).length && (loadingStrategies$ | async)"></app-loading-spinner>
+    <div class="campaign-strategy__values__select"
+         *ngIf="(strategies$ | async).length">
+      <div class="campaign-strategy__values__select__header">
+        <label class="campaign-strategy__values__select__header__label">Strategy</label>
+        <label class="campaign-strategy__values__select__header__description">Details</label>
+      </div>
+      <div class="campaign-strategy__choice">
+        <mat-radio-group
+          aria-label="Select an option"
+          class="campaign-strategy__choice__selectors"
+          (change)="selectStrategy($event.value)">
+          <mat-radio-button
+            [checked]="strategy.id === (selectedStrategyId$ | async)"
+            *ngFor="let strategy of strategies$ | async"
+            [disabled]="strategy.campaignId && !validateStrategyValues(strategy.values)"
+            [value]="strategy.id">{{ startCase(strategy.name) }}
+            <mat-icon
+              *ngIf="strategy.campaignId"
+              (click)="openStrategyPlanEditDialog(true, $event)">edit
+            </mat-icon>
+          </mat-radio-button>
+        </mat-radio-group>
+        <div
+          class="campaign-strategy__choice__preview"
+          (click)="openStrategyPlanEditDialog(false)">
+          <mat-icon class="material-icons-outlined">remove_red_eye</mat-icon>
+        </div>
+      </div>
+    </div>
+
+    <app-campaign-strategy-adsplit [campaignId]="campaignId"></app-campaign-strategy-adsplit>
+  </div>
+  <div class="strategy-chart">
+    <div class="strategy-chart__header">
+      <app-campaign-strategy-chart-legend></app-campaign-strategy-chart-legend>
+    </div>
+    <app-campaign-strategy-chart [strategyData]="selectedStrategyValuesByType$ | async"></app-campaign-strategy-chart>
+  </div>
+</div>
+
+<app-campaign-strategy-keywords></app-campaign-strategy-keywords>
+
+<div class="keywords-nav-buttons">
+  <button
+    mat-stroked-button
+    color="primary"
+    type="button"
+    (click)="redirect('campaigns')">
+    <mat-icon matPreffix data-position="prefix" svgIcon="back_arrow"></mat-icon>
+    Campaigns
+  </button>
+  <div>
+    <button
+      mat-stroked-button
+      color="primary"
+      type="button"
+      (click)="redirect('keywords')">
+      <mat-icon matPrefix data-position="prefix">chevron_left</mat-icon>
+      Prev
+    </button>
+    <button
+      mat-raised-button
+      color="accent"
+      [disabled]="(currentCampaign$ | async)?.step < 4"
+      type="button"
+      (click)="redirect('summary')">
+      Next
+      <mat-icon matSuffix data-position="suffix">chevron_right</mat-icon>
+    </button>
+  </div>
+</div>

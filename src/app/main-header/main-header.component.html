@@ -1,0 +1,10 @@
+<mat-toolbar class="header">
+  <div class="logo-wrapper">
+    <img class="logo pointer"
+            src="../../assets/images/WM_ShelfSpend_LOGO_vector_WHITE.png"
+            alt="WM Shelf Spend"
+            (click)="goToCampaigns()">
+    <img class="beta-icon" src="../../assets/icons/closed-beta.svg" alt="Closed beta">
+  </div>
+  <div class="avatar">{{userInitials$ | async}}</div>
+</mat-toolbar>

@@ -1,0 +1,127 @@
+<div class="keywords-list fancy-scrollbar">
+  <table mat-table
+         [trackBy]="trackByFn"
+         [dataSource]="(selectedStrategyId$ | async) ? keywords : []">
+
+    <!-- Full keyword Name Column -->
+    <ng-container matColumnDef="name">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        <div>
+          <mat-checkbox
+            (change)="$event ? masterToggle() : null"
+            [disabled]="!(selectedStrategyId$ | async)"
+            [checked]="keywords.length && areAllKeywordsSelected()"
+            [indeterminate]="keywords.length && !areAllKeywordsSelected() && isSomeKeywordSelected()">
+          </mat-checkbox>
+          <span matTooltip="Search keyword phrase">
+            Keyword
+          </span>
+        </div>
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        <div class="name-wrapper">
+          <mat-checkbox
+            (click)="$event.stopPropagation()"
+            (change)="$event ? toggleKeyword(keyword) : null"
+            [checked]="keyword.active">
+          </mat-checkbox>
+          <span>{{ keyword.name || '-'}}</span>
+        </div>
+      </td>
+    </ng-container>
+
+    <!-- Search Volume Column -->
+    <ng-container matColumnDef="searchVolume">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        <span matTooltip="Estimated average monthly search volume">
+          Search Vol.
+        </span>
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        {{ keyword.searchVolume | number:'':'fr-FR' || '-' }}
+      </td>
+    </ng-container>
+
+    <!-- ARH Column -->
+    <ng-container matColumnDef="arh">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        <span matTooltip="{{ 'Average Retail Health score of \n assigned products' }}">
+          ARH
+        </span>
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        {{ keyword.arh || '-' }}
+      </td>
+    </ng-container>
+
+    <!-- Target Imps Share -->
+    <ng-container matColumnDef="targetImpsShare">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        matTooltip="How often we want to appear in search queries">Target Imps Share
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        <span *ngIf="!keyword.targetImpsShare">
+          -
+        </span>
+        <span *ngIf="keyword.targetImpsShare">
+          {{ keyword.targetImpsShare * 100 }}%
+        </span>
+      </td>
+    </ng-container>
+
+    <!-- Impressions column -->
+    <ng-container matColumnDef="impressions">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        matTooltip="{{ 'Estimated number of times the ad \n will be shown to user' }}">Impressions
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        {{ keyword.impressions | number:'':'fr-FR' || '-' }}
+      </td>
+    </ng-container>
+
+    <!-- Clicks column -->
+    <ng-container matColumnDef="clicks">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        matTooltip="Estimated number of clicks received by an ad">Clicks
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        {{ keyword.clicks | number:'':'fr-FR' || '-' }}
+      </td>
+    </ng-container>
+
+    <!-- Budget column -->
+    <ng-container matColumnDef="budget">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        <span matTooltip="Planned monthly spend">
+          Budget
+        </span>
+      </th>
+      <td mat-cell *matCellDef="let keyword">
+        <span class="currency-cell">{{ currency }}</span>
+        {{ keyword.budget | number:'0.0-0':'fr-FR' || '-' }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row
+        [class.faded-out]="!row.active"
+        *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <app-table-message-row
+    *ngIf="!(selectedStrategyId$ | async)"
+    message="Choose a strategy plan for the campaign to load keywords list."></app-table-message-row>
+</div>

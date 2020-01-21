@@ -1,0 +1,14 @@
+@import '~scss/colors';
+@import '~scss/variables';
+
+.app-content {
+  width: 100%;
+  height: 100vh;
+  background: none;
+}
+
+.main-content {
+  margin: $main-content-margin-top $main-content-margin-left-right $main-content-margin-bottom;
+  background: $white;
+  border-radius: 2px;
+}

@@ -1,0 +1,150 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+/* 
+This layout is created as custom by using internal material functions and defining own mixin that works like original 
+one, which allow us to define specific properties manually. Original solution from angular material set these properties
+based on primary, accent and warn colors. Sometimes you need to set them manually and there's lack of docs and articles
+describing all properties well. Sometimes scss properties names don't match elements in which they are used.
+Helpful links:
+https://stackblitz.com/edit/angular-material-custom-background?file=theme.scss,
+https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1
+https://stackoverflow.com/questions/43919927/angular-material2-theming-how-to-set-app-background
+*/
+// default variables in material - customs commented
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: map_get($mat-grey, 700);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+// default variables in material - customs commented
+// ad. 1 probably you dont need to create your own mixin function to create theme, these variables overwrite material ones
+// if the names are exactly the same. Having multiple themes requires you to make custom names for each theme
+$mat-light-theme-background: (
+  status-bar: map_get($mat-grey, 300),
+  app-bar:    map_get($mat-grey, 100),
+  background: map_get($mat-grey, 100), // custom, default is map_get($mat-grey, 50);
+  hover:      rgba(black, 0.04),
+  card:       white,
+  dialog:     white, // also appears as background-color in mat-sidenav > mat-drawer-inner-container ???
+  disabled-button: rgba(black, 0.12),
+  raised-button: white,
+  focused-button: $dark-focused,
+  selected-button: map_get($mat-grey, 300),
+  selected-disabled-button: map_get($mat-grey, 400),
+  disabled-button-toggle: map_get($mat-grey, 200),
+  unselected-chip: map_get($mat-grey, 300),
+  disabled-list-option: map_get($mat-grey, 200),
+);
+
+$mat-light-theme-foreground: (
+  base:              black,
+  divider:           $dark-dividers,
+  dividers:          $dark-dividers,
+  disabled:          $dark-disabled-text,
+  disabled-button:   rgba(black, 0.26),
+  disabled-text:     $dark-disabled-text,
+  hint-text:         $dark-disabled-text,
+  secondary-text:    $dark-secondary-text,
+  icon:              rgba(black, 0.54),
+  icons:             rgba(black, 0.54),
+  text:              rgba(black, 0.87),
+  slider-min:        rgba(black, 0.87),
+  slider-off:        rgba(black, 0.26),
+  slider-off-active: rgba(black, 0.38),
+);
+
+$mat-custom-secondary-light: (
+  50: #94B0FF,
+  100: #94B0FF,
+  200: #94B0FF,
+  300: #94B0FF,
+  400: #94B0FF, 
+  500: #94B0FF,
+  600: #94B0FF,
+  700: #94B0FF,
+  800: #94B0FF,
+  900: #94B0FF,
+  A100: #94B0FF,
+  A200: #94B0FF,
+  A400: #94B0FF,
+  A700: #94B0FF,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #FFFFFF,
+  )
+);
+
+$mat-custom-error-light: (
+  50: #EB5757,
+  100: #EB5757,
+  200: #EB5757,
+  300: #EB5757,
+  400: #EB5757, 
+  500: #EB5757,
+  600: #EB5757,
+  700: #EB5757,
+  800: #EB5757,
+  900: #EB5757,
+  A100: #EB5757,
+  A200: #EB5757,
+  A400: #EB5757,
+  A700: #EB5757,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #FFFFFF,
+  )
+);
+
+$main-app-primary: mat-palette($mat-grey, 900, 700);
+$main-app-accent: mat-palette($mat-blue, A700, mat-palette($mat-custom-secondary-light, 50), mat-palette($mat-indigo, A700));
+$main-app-warn: mat-palette(mat-palette($mat-custom-error-light, 50));
+
+$main-app-theme: mat-light-theme($main-app-primary, $main-app-accent, $main-app-warn);
+
+// its not used currently, look at the comment above $mat-light-theme-background
+// // instead of creating a theme with mat-light-theme like a sane person, we will create our own theme-creating function 
+// // that lets us apply our own foreground and background palettes.
+// @function create-custom-light-theme($primary, $accent, $warn: mat-palette($mat-red)) {
+//   @return (
+//     primary: $primary,
+//     accent: $accent,
+//     warn: $warn,
+//     is-dark: false,
+//     foreground: $foreground-vars-map,
+//     background: $background-vars-map,
+//   );
+// }
+
+@include angular-material-theme($main-app-theme);

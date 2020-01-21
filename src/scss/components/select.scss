@@ -1,0 +1,12 @@
+.mat-select-panel {
+  mat-option.mat-option {
+    font-size: 11px;
+    letter-spacing: 0.25px;
+    color: #333;
+    line-height: 20px;
+
+    &.mat-selected {
+      font-weight: bold;
+    }
+  }
+}

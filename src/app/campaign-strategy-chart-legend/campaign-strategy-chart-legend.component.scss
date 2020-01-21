@@ -1,0 +1,67 @@
+.strategy-chart__legend {
+  align-self: center;
+  font-size: 9px;
+  line-height: 123%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 190px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 1152px) {
+    flex-direction: column;
+
+    div {
+      justify-content: flex-end;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      &:before {
+        margin-right: 0;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  span {
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+    &:before {
+      display: inline-block;
+      content: '';
+      width: 20px;
+      height: 4px;
+      margin-right: 4px;
+      background: black;
+      border-radius: 2px;
+    }
+    &.brand {
+      color: #2962FF;
+      &:before {
+        background-color: #2962FF;
+      }
+    }
+    &.generic {
+      color: #F2994A;
+      &:before {
+        background-color: #F2994A;
+      }
+    }
+    &.competitors {
+      color: #D50000;
+      &:before {
+        background-color: #D50000;
+      }
+    }
+  }
+}

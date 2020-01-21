@@ -1,0 +1,59 @@
+@import '~scss/colors';
+
+:host {
+  margin-top: -48px;
+  margin-right: 48px;
+  margin-left: 48px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 48px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary;
+  color: $secondary-gray;
+  height: 48px;
+  min-width: 520px;
+
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact-item:hover {
+      cursor: pointer;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}

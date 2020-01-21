@@ -1,0 +1,10 @@
+<div>
+  <div *ngIf="campaign$ | async as campaign" class="chart-container__header">
+    <label>Strategy: {{ startCase(campaign.strategy?.name) }}</label>
+  </div>
+
+  <div class="chart-container">
+    <canvas #chartCanvas>
+    </canvas>
+  </div>
+</div>

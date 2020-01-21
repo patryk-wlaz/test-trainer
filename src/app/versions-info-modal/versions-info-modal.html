@@ -1,0 +1,33 @@
+<div mat-dialog-title>
+  <h1>Versions</h1>
+
+  <button class="mat-dialog-title__close-button" matDialogClose matTooltip="Close dialog" aria-label="...">
+    <mat-icon aria-label="Close">
+      close
+    </mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="content-container">
+  <div *ngFor="let version of versionsData; let first = first" class="version-container">
+    <p class="header">
+      <span class="date">
+        {{version.date}}
+      </span>
+      <span class="version">
+        version {{version.version}}
+      </span>
+      <span class="current-version-marker" *ngIf="first">
+        - current version
+      </span>
+    </p>
+    <p class="info">
+      {{version.info}}
+    </p>
+  </div>
+</div>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="accent" [mat-dialog-close]="true">
+    Close
+  </button>
+</mat-dialog-actions>

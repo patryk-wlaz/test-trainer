@@ -1,0 +1,10 @@
+<div>
+  <span
+    [matTooltip]="errorCondition ? errorMessage : defaultTooltip"
+    matTooltipPosition="above">
+    <mat-icon *ngIf="errorCondition" [svgIcon]="errorIcon || 'tab_lock'"></mat-icon>
+    <span>
+      {{label}}<span class="counter"> ({{counter}})</span>
+    </span>
+  </span>
+</div>

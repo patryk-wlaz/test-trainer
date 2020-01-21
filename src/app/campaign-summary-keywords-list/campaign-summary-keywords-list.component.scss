@@ -1,0 +1,108 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+@import '~scss/variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.keywords-list {
+  min-height: $min-height-table-on-views-with-scroll;
+  height: $min-height-table-on-views-with-scroll;
+  overflow-y: auto;
+}
+
+.products {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-left: -20px;
+  background-color: $white;
+  border: 1px solid $border;
+
+  &.priority {
+    border: 1px solid $yellow;
+  }
+
+  &-wrapper {
+    margin-left: 16px;
+    display: flex;
+  }
+}
+
+
+.mat-header-cell.mat-column-search-volume {
+  white-space: nowrap;
+}
+
+.mat-cell.mat-column-search-volume {
+  white-space: nowrap;
+}
+
+.add-assigned-products {
+  margin-left: -20px;
+  background-color: $background !important;
+
+  .mat-icon {
+    transform: rotate(90deg);
+    color: $secondary-gray;
+  }
+
+  &:hover .mat-icon {
+    color: $secondary;
+  }
+}
+
+.currency-cell {
+  color: $secondary-gray;
+  margin-right: 10px;
+}
+
+.mat-column {
+  &-keyword-name {
+    @include table-grid-column(2);
+  }
+
+  &-products {
+    @include table-grid-column(2);
+    white-space: nowrap;
+  }
+
+  &-search-volume {
+    @include table-grid-column(1);
+  }
+
+  &-arh {
+    @include table-grid-column(1);
+  }
+
+  &-target-imps-share {
+    @include table-grid-column(1);
+
+    > div {
+      margin: -6px 0;
+    }
+  }
+
+  &-impressions {
+    @include table-grid-column(1);
+  }
+
+  &-ctr {
+    @include table-grid-column(1);
+  }
+
+  &-clicks {
+    @include table-grid-column(1);
+  }
+
+  &-cpc {
+    @include table-grid-column(1);
+  }
+
+  &-budget {
+    @include table-grid-column(1);
+  }
+}

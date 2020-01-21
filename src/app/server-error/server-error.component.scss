@@ -1,0 +1,42 @@
+@import '~scss/colors';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 120px);
+  width: 100%;
+
+  h1 {
+    color: $primary;
+    font-style: normal;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    padding: 0;
+  }
+
+  p {
+    color: $primary;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin: 15px 0;
+    letter-spacing: 0.44px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    margin-bottom: -30px;
+    margin-top: -20px;
+  }
+
+  button {
+    text-transform: uppercase;
+  }
+}

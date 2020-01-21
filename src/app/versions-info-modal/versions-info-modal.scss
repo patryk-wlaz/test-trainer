@@ -1,0 +1,52 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+
+.mat-dialog-title {
+  margin-bottom: 5px !important;
+}
+
+.mat-dialog-actions {
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.mat-dialog-content {
+  margin: 0 !important;
+  max-height: auto !important;
+  padding: 0 !important;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.version-container {
+
+  .header {
+
+    .date {
+      font-size: 12px;
+      padding: 3px 5px;
+      background-color: $background;
+    }
+
+    .version {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-left: 5px;
+    }
+
+    .current-version-marker {
+      color: $ads-share-brand-dot;
+      text-transform: capitalize;
+    }
+  }
+
+  .info {
+    line-height: 22px;
+  }
+
+}

@@ -1,0 +1,92 @@
+@import '~scss/colors';
+@import '~scss/mixins';
+
+.mat-dialog-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .title {
+    font-size: 16px;
+    line-height: 137%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: $primary;
+  }
+
+  .api-icon {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+  }
+
+  .keyword-icon {
+    width: 30px;
+    height: 40px;
+  }
+}
+
+.select-keywords-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 110px;
+  background: $background;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+
+  mat-select {
+    width: 164px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+  }
+
+  .mat-select-value {
+    font-size: 14px;
+    line-height: 114%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+  }
+
+  mat-option {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+  }
+
+  span {
+    width: 30%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 157%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.44px;
+  }
+}
+
+.select-keywords {
+  display: flex;
+}
+
+.spinner-button {
+  text-align: center;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #fff !important;
+}

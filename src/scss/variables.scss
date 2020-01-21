@@ -1,0 +1,43 @@
+// main content container
+$main-content-margin-bottom: 48px;
+$main-content-margin-left-right: 48px;
+$main-content-margin-top: -48px;
+$main-content-padding: 48px;
+$main-content-padding-bottom: 24px;
+
+// main-header
+$main-header-height: 96px;
+
+// campaigns-list
+$campaigns-list-tabs-height: 48px;
+$campaigns-list-table-actions-margin-top-bottom: 24px;
+$campaigns-list-search-box-height: 40px;
+$campaigns-list-table-wrapper-height: calc(100vh
+  - #{$main-header-height}
+  - #{$campaigns-list-search-box-height}
+  - (#{$campaigns-list-table-actions-margin-top-bottom} * 2)
+  - #{$main-content-margin-bottom}
+  - #{$main-content-padding-bottom});
+
+$campaigns-details-wrapper-height: calc(100vh
+  - #{$main-content-margin-bottom}
+  - #{$main-header-height}
+  - #{$main-content-margin-bottom});
+
+$products-wrapper-height: calc(100vh
+  - #{$main-content-margin-bottom}
+  - #{$main-header-height}
+  - #{$main-content-padding-bottom} * 2
+  - 64px - 60px); // actions buttons height - add products button height
+
+// 40px - table header height
+// 5 * 60 px = 5 times height of row
+// 4 * 10 px = 4 times height of rows gap
+$min-height-table-on-views-with-scroll: calc(40px
+  + 5 * 60px
+  + 4 * 10px
+);
+
+// table fluid grid
+$table-columns-gap: 20px;
+$table-padding: 20px;

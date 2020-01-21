@@ -1,0 +1,61 @@
+<div *ngIf="keywordsError$ | async">
+  <h3>Error occurred while downloading your keywords:</h3>
+  <p>
+    {{ keywordsError$ | async }}
+  </p>
+</div>
+
+<mat-tab-group>
+  <mat-tab [disabled]="!(brandKeywords$ | async).length">
+    <ng-template mat-tab-label>
+      <app-tab-header
+        [errorCondition]="!(brandKeywords$ | async).length"
+        errorMessage="There are no keywords specified"
+        label="Brand"
+        [counter]="getKeywordsOfTypeLength(keywordTypes.BRAND) | async">
+      </app-tab-header>
+    </ng-template>
+
+    <app-loading-spinner *ngIf="!(keywords$ | async).length && (loadingKeywords$ | async)"></app-loading-spinner>
+
+    <app-campaign-strategy-keywords-list
+      *ngIf="(keywords$ | async).length"
+      [keywords]="(brandKeywords$ | async) | sortByCreation"
+      [currency]="currentCampaignCurrencyAcronym$ | async">
+    </app-campaign-strategy-keywords-list>
+  </mat-tab>
+
+  <mat-tab label="Generic" [disabled]="!(genericKeywords$ | async).length">
+    <ng-template mat-tab-label>
+      <app-tab-header
+        [errorCondition]="!(genericKeywords$ | async).length"
+        errorMessage="There are no keywords specified"
+        label="Generic"
+        [counter]="getKeywordsOfTypeLength(keywordTypes.GENERIC) | async">
+      </app-tab-header>
+    </ng-template>
+
+    <app-campaign-strategy-keywords-list
+      *ngIf="(keywords$ | async).length"
+      [keywords]="(genericKeywords$ | async) | sortByCreation"
+      [currency]="currentCampaignCurrencyAcronym$ | async">
+    </app-campaign-strategy-keywords-list>
+  </mat-tab>
+
+  <mat-tab label="Competitors" [disabled]="!(competitorKeywords$ | async).length">
+    <ng-template mat-tab-label>
+      <app-tab-header
+        [errorCondition]="!(competitorKeywords$ | async).length"
+        errorMessage="There are no keywords specified"
+        label="Competitors"
+        [counter]="getKeywordsOfTypeLength(keywordTypes.COMPETITOR) | async">
+      </app-tab-header>
+    </ng-template>
+
+    <app-campaign-strategy-keywords-list
+      *ngIf="(keywords$ | async).length"
+      [keywords]="(competitorKeywords$ | async) | sortByCreation"
+      [currency]="currentCampaignCurrencyAcronym$ | async">
+    </app-campaign-strategy-keywords-list>
+  </mat-tab>
+</mat-tab-group>

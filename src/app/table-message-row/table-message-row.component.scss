@@ -1,0 +1,29 @@
+@import '~scss/colors';
+
+.message-row {
+  background-color: $background;
+  border-radius: 2px;
+  height: 64px;
+  width: calc(100% - 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.clickable {
+    border: 1px dashed $border;
+    cursor: pointer;
+  }
+
+  p {
+    color: $secondary-gray;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+}

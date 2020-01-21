@@ -1,0 +1,176 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link *ngFor="let filter of filters"
+    (click)="changeFilter(filter)"
+    [active]="activeFilter === filter.name">
+    {{ filter.name }}
+  </a>
+  <button
+    mat-raised-button
+    color="accent"
+    class="create-campaign-button"
+    (click)="goToNewCampaignScreen()">
+    <div class="icon-wrapper">
+      <mat-icon data-position="prefix">add</mat-icon>
+    </div>
+    Create campaign
+  </button>
+</nav>
+
+<div class="table-actions">
+  <mat-form-field
+    color="accent"
+    appearance="outline"
+    class="search-field">
+    <mat-icon matPrefix>search</mat-icon>
+    <input
+      matInput
+      #searchInput
+      placeholder="What are you looking for..."
+      (keyup)="onSearchInputKeyUp(searchInput.value)">
+    <button
+      mat-button
+      *ngIf="searchInput.value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="clearSearch(); searchInput.value = ''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+
+<div
+  class="campaigns-list fancy-scrollbar"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onScroll()"
+  [scrollWindow]="false">
+  <app-loading-spinner *ngIf="(loadingCampaigns$ | async)"></app-loading-spinner>
+  <div *ngIf="!(loadingCampaigns$ | async)">
+    <div *ngIf="campaignsError$ | async">
+      <h3>Error occurred while downloading your campaigns:</h3>
+      <p>
+        {{ campaignsError$ | async }}
+      </p>
+    </div>
+    <div *ngIf="!(campaignsError$ | async) && !(campaigns$ | async).length">
+      <h3>You don't have any campaigns.</h3>
+    </div>
+  </div>
+  <table
+    *ngIf="(campaigns$ | async).length && !(loadingCampaigns$ | async)"
+    matSort
+    (matSortChange)="sortData($event)"
+    mat-table
+    [dataSource]="campaigns$ | async"
+    matSortDisableClear
+    [matSortActive]="sortBy"
+    [matSortDirection]="sortDir">
+    <!-- Campaign Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Campaign name</th>
+      <td mat-cell *matCellDef="let element">
+        <div class="name-wrapper">
+          <div class="avatar">
+            <img src="../../assets/images/default_campaign_avatar.svg" alt="Default campaign avatar">
+          </div>
+          <span>{{ element.name }}</span>
+        </div>
+      </td>
+    </ng-container>
+
+    <!-- Client Column -->
+    <ng-container matColumnDef="client">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Client</th>
+      <td mat-cell *matCellDef="let element"> {{element.client.name}} </td>
+    </ng-container>
+
+    <!-- Market Column -->
+    <ng-container matColumnDef="market">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Market</th>
+      <td mat-cell *matCellDef="let element">
+        <img
+          matTooltip="{{ element.market.name }}"
+          *ngIf="flags[element.market.name]"
+          [src]="flags[element.market.name]"
+          alt="{{ element.market.name }}">
+        <span *ngIf="!flags[element.market.name]">{{ element.market.name }}</span>
+      </td>
+    </ng-container>
+
+    <!-- Status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td [ngClass]="getCampaignStatus(element)" mat-cell *matCellDef="let element">
+        {{getCampaignStatus(element) | uppercase}} </td>
+    </ng-container>
+
+    <!-- Start Date Column -->
+    <ng-container matColumnDef="startDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Start Date</th>
+      <td mat-cell *matCellDef="let element"> {{element.startDate | date:'dd.MM.y'}}</td>
+    </ng-container>
+
+    <!-- Duration Column -->
+    <ng-container matColumnDef="duration">
+      <th mat-header-cell *matHeaderCellDef>Duration</th>
+      <td mat-cell *matCellDef="let element">
+        {{ dateDiffWeeks(element.startDate, element.endDate) }}
+        {{ dateDiffWeeks(element.startDate, element.endDate) == 1 ? 'week' : 'weeks' }}
+      </td>
+    </ng-container>
+
+    <!-- End Date Column -->
+    <ng-container matColumnDef="endDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>End Date</th>
+      <td mat-cell *matCellDef="let element">{{element.endDate | date:'dd.MM.y'}}</td>
+    </ng-container>
+
+    <!-- Budget Column -->
+    <ng-container matColumnDef="budget">
+      <th mat-header-cell *matHeaderCellDef>Monthly budget</th>
+      <td mat-cell *matCellDef="let element">
+        <span class="currency-cell">{{element.currency.acronym}}</span>
+        {{element.budget | number:'':'fr-FR' || '-'}}
+      </td>
+    </ng-container>
+
+    <!-- Market Api Column -->
+    <ng-container matColumnDef="marketApi">
+      <th mat-header-cell *matHeaderCellDef>Autodata</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon [svgIcon]="element.market.supported ? 'api_connected' : 'api_disconnected'"
+          [matTooltip]="element.market.supported ? 'API Connected. All data are acquired automatically' : 'All data manually provided'"
+          matTooltipPosition="above"></mat-icon>
+      </td>
+    </ng-container>
+
+    <!-- Menu Column -->
+    <ng-container matColumnDef="menu" stickyEnd>
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <div class="campaign-menu-wrapper">
+          <mat-icon (click)="stopPropagation($event)" [matMenuTriggerFor]="campaignMenu">more_vert</mat-icon>
+          <mat-menu #campaignMenu="matMenu" yPosition="below" xPosition="before">
+            <button (click)="openCampaign(element.id)" mat-menu-item>
+              <mat-icon>edit</mat-icon>
+              Edit
+            </button>
+            <button (click)="duplicateCampaign(element.id)" mat-menu-item>
+              <mat-icon>filter_none</mat-icon>
+              Duplicate
+            </button>
+            <button  (click)="removeCampaign(element.id)" mat-menu-item>
+              <mat-icon>delete_outline</mat-icon>
+              Delete
+            </button>
+          </mat-menu>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr class="pointer" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openCampaign(row.id)"></tr>
+  </table>
+</div>

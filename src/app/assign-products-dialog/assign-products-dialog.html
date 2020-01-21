@@ -1,0 +1,56 @@
+<div mat-dialog-title>
+  <h1>Assign products for keyword</h1>
+
+  <button class="mat-dialog-title__close-button" matDialogClose matTooltip="Close dialog" aria-label="...">
+    <mat-icon aria-label="Close">
+      close
+    </mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <!-- Keyword info -->
+  <div class="description">
+    <div *ngIf="data.keyword.name" class="description__element">
+      <label>Keyword</label>
+      <div [matTooltip]="data.keyword.name" class="keyword">{{ data.keyword.name }}</div>
+    </div>
+    <div class="description__element">
+      <label>Selected products</label>
+      <div class="selected-products">
+        <img src="../../assets/icons/icon-product.svg" [matTooltip]="getSelectedProductName(selectedProduct)?.name"
+          class="product-avatar" *ngFor="let selectedProduct of selection.selected">
+      </div>
+    </div>
+  </div>
+
+  <!-- List header -->
+  <label class="list-header">Product list
+    <span *ngIf="searchInput.value">
+      (showing {{ (brandProducts | search: { name: searchInput.value }).length }} of {{ brandProducts.length }})
+    </span>
+  </label>
+  <mat-form-field color="accent" appearance="outline" class="search-field">
+    <mat-icon matPrefix>search</mat-icon>
+    <input matInput #searchInput placeholder="What are you looking for...">
+    <button mat-button *ngIf="searchInput.value" matSuffix mat-icon-button (click)="searchInput.value = ''"
+      aria-label="Clear">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <!-- List -->
+  <mat-chip-list>
+    <mat-chip disableRipple *ngFor="let product of brandProducts | search: { name: searchInput.value }"
+      [ngClass]="{ 'selected': selection.isSelected(product.id) }" (click)="selection.toggle(product.id)">
+      <img src="../../assets/icons/icon-product.svg" class="product-avatar">
+      <span class="product-name">{{ product.name }}</span>
+      <mat-icon *ngIf="product.priority" class="priority-product">star_rate</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-stroked-button color="primary" (click)="closeDialog()">Cancel</button>
+  <button mat-raised-button color="accent" (click)="confirmAssign()">Assign products</button>
+</div>

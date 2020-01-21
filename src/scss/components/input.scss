@@ -1,0 +1,174 @@
+.mat-form-field {
+  input::placeholder {
+    color: $primary-light !important;
+  }
+
+  &.mat-form-field-invalid {
+    .mat-form-field-flex {
+      border-color: $error !important;
+    }
+  }
+
+  &-appearance-outline {
+    font-size: 14px !important;
+
+    &:not(.textarea) {
+      height: 40px;
+
+      &.mat-focused {
+        .mat-form-field-flex {
+          border-color: $secondary;
+        }
+      }
+
+      .mat-form-field {
+        &-outline {
+          display: none !important;
+        }
+
+        &-infix {
+          padding: 0 !important;
+          border-top: none !important;
+        }
+
+        &-suffix {
+          top: 0 !important;
+        }
+
+        &-wrapper {
+          height: 40px;
+        }
+
+        &-flex {
+          height: 40px;
+          border: 1px solid $border;
+          border-radius: 2px;
+          align-items: center !important;
+          margin-top: 0 !important;
+          transition: border-color .3s cubic-bezier(.25,.8,.25,1);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  
+          &:hover {
+            border-color: $secondary;
+          }
+        }
+      }
+    }
+
+    .mat-form-field {
+      &-outline {
+        &-thick {
+          color: $secondary-light;
+        }
+      }
+
+      &-infix {
+        padding: 0.5em 0 1em 0 !important;
+      }
+
+      &-wrapper {
+        margin: 0 !important;
+        padding-bottom: 0;
+      }
+
+      &-prefix {
+        top: 0 !important;
+        .mat-icon {
+          color: $border !important;
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+}
+
+%mat-form-field-placeholder {
+  color: $secondary-gray !important;
+  letter-spacing: 0.44px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.mat-form-field-with-label {
+  display: grid;
+  grid-template-columns: 32px auto;
+  grid-row-gap: 8px;
+  grid-column-gap: 6px;
+
+  &> label {
+    font-size: 14px;
+    color: $secondary-gray;
+    display: block;
+    grid-column: 2 / 2;
+  }
+
+  .mat-form-field {
+    input::placeholder, .mat-select-placeholder, textarea::placeholder {
+      @extend %mat-form-field-placeholder;
+    }
+
+    .mat-select-arrow {
+      color: $secondary-gray;
+
+      &:hover {
+        color: $secondary;
+      }
+
+      &-wrapper {
+        padding-top: 6px !important;
+      }
+    }
+
+    &.mat-focused .mat-form-field-outline {
+      color: $secondary !important;
+    }
+
+    &:not(.textarea) {
+      .mat-form-field-subscript-wrapper {
+        top: 37px;
+      }
+    }
+
+    &-subscript-wrapper {
+      padding: 0 !important;
+      top: calc(100% - 3px);
+    }
+
+    .mat-datepicker-toggle .mat-icon {
+      margin-right: 0 !important;
+      color: $secondary-gray;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+    &-appearance-outline.mat-form-field-disabled .mat-form-field-flex {
+      color: $border !important;
+      background-color: $background !important;
+      border: 1px solid $border !important;
+    }
+
+    &-infix .mat-input-element:disabled {
+      color: $primary !important;
+    }
+  }
+
+  .mat-icon {
+    height: 32px;
+    width: 32px;
+    margin-top: 4px;
+    fill: $secondary;
+  }
+}
+
+// inputs in mat-table's
+
+.mat-table {
+  .mat-form-field {
+    &-underline {
+      background-color: $secondary-gray !important;
+    }
+  }
+}

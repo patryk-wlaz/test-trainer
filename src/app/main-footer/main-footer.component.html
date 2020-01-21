@@ -1,0 +1,9 @@
+<div class="footer">
+  <span class="bold">© 2019 WM Global ShelfSpend</span>
+  <ul>
+    <!--    <li>Help</li>-->
+    <li class="contact-item" (click)="openVersionsModal()">{{ (version$ | async) || 'Versions' }}</li>
+    <li><a href="../../assets/Shelfspend_termofuse.pdf" target="_blank">Terms and Conditions</a></li>
+    <li class="contact-item" (click)="openContactsListDialog()">Contact</li>
+  </ul>
+</div>
