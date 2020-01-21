@@ -1,9 +1,0 @@
-<ul [ngClass]="{ 'contacts-list': isList, 'contacts-tiles': !isList }">
-  <header *ngIf="isList">
-    <span translate="WM_HOME.CONTACTS_LIST.NAME_AND_ROLE"></span>
-    <span translate="WM_HOME.CONTACTS_LIST.EXPERIENCE"></span>
-  </header>
-  <li *ngFor="let personalContact of personalContacts$ | async">
-    <app-single-contact [isList]="isList" [personalContact]="personalContact"></app-single-contact>
-  </li>
-</ul>
