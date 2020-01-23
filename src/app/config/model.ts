@@ -1,12 +1,12 @@
 export interface Answer {
   answer: string;
   isCorrect: boolean;
+  checked?: boolean;
 }
 
 export interface Question {
   question: string;
   answers: Answer[];
-  answer?: Answer;
 }
 
 export interface Test {

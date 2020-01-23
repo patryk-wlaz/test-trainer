@@ -1,0 +1,48 @@
+.mode-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    whitespace: nowrap;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    user-select: none;
+    
+    &,
+    &:active,
+    &.active {
+      &:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+      }
+    }
+    
+    &:hover,
+    &:focus,
+    &.focus {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    &:active,
+    &.active {
+      outline: 0;
+      background-image: none;
+    }
+  }
+}
+
+.header {
+  text-align: center;
+}

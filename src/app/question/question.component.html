@@ -1,4 +1,8 @@
-<div class="question">
-  {{question.question}}
-  <div class="answer" *ngFor="let answer of question.answers">{{answer.answer}}</div>
+<h2>{{question.question}}</h2>
+<div
+  *ngFor="let answer of question.answers"
+  class="answer"
+  (click)="onPick(answer)">
+  <input type="checkbox" [id]="answer.answer" class="css-checkbox" [checked]="answer.checked"/>
+  <label [for]="answer.answer" name="checkbox2_lbl" class="css-label lite-red-check">{{answer.answer}}</label>
 </div>

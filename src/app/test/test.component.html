@@ -1,11 +1,11 @@
-<h1>{{test.name}}</h1>
+<h1 class="header">{{test.name}}</h1>
 
-<div>
-  <button (click)="modeChange('learn')">
+<div class="mode-buttons-wrapper">
+  <button class="btn" (click)="modeChange('learn')">
     Chcę się uczyć
   </button>
 
-  <button (click)="modeChange('test')">
+  <button class="btn" (click)="modeChange('test')">
     Chcę się sprawdzić
   </button>
 </div>

@@ -1,5 +1,14 @@
-.questions.wrapper {
+.questions-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  border : 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px;
+  padding: 20px;
 }
