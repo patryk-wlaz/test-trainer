@@ -1,9 +1,20 @@
 <h1>{{test.name}}</h1>
 
-<button (click)="modeChange('learn')">
-  Chcę się uczyć
-</button>
+<div>
+  <button (click)="modeChange('learn')">
+    Chcę się uczyć
+  </button>
 
-<button (click)="modeChange('test')">
-  Chcę się sprawdzić
-</button>
+  <button (click)="modeChange('test')">
+    Chcę się sprawdzić
+  </button>
+</div>
+
+<app-learning-mode
+  *ngIf="mode === 'learn'"
+  [questions]="test.questions">
+</app-learning-mode>
+<app-testing-mode
+  *ngIf="mode === 'test'">
+  <!-- [questions]="test.questions"> -->
+</app-testing-mode>
