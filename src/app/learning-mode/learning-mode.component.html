@@ -1,7 +1,16 @@
-<div class="questions-wrapper">
+<div class="wrapper">
+  <div class="switch-wrapper">
+    <span>Pokaż wszystkie odpowiedzi:</span>
+    <ui-switch
+      [checked]="showAnswers"
+      color="#ab1b24"
+      (change)="onSwitch($event)">
+    </ui-switch>
+  </div>
   <app-question
     *ngFor="let question of questions"
     [question]="question"
+    [mode]="showAnswers && 'showAll'"
     class="question">
     </app-question>
 </div>

@@ -6,6 +6,14 @@
   justify-content: space-between;
 }
 
+.correct {
+  background-color: #90A959;
+}
+
+.wrong {
+  background-color: #FF220C;
+}
+
 label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -27,24 +35,17 @@ label {
   }
   
   input[type=checkbox].css-checkbox + label.css-label {
-    padding-left:20px;
-    height:15px; 
-    display:inline-block;
+    padding: 20px;
     line-height:15px;
     background-repeat:no-repeat;
-    background-position: 0 0;
+    background-position: 0 18px;
     font-size:15px;
     vertical-align:middle;
     cursor:pointer;
   }
-  
-  input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -15px;
+  .red-check{
+    background-image:url(../../assets/red-check.png);
   }
-  
-  .css-label{
-    background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+  .no-check{
+    background-image:url(../../assets/no-check.png);
   }
-  
-  /*specific classes related to Checkbox skins*/
-  .lite-red-check{background-image:url(http://csscheckbox.com/checkboxes/lite-red-check.png);}

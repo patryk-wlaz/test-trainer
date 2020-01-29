@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Question, Answer } from '../config/model';
+import { Question, Answer, Modes } from '../config/model';
 import { map } from 'lodash-es';
 
 @Component({
@@ -9,6 +9,7 @@ import { map } from 'lodash-es';
 })
 export class QuestionComponent implements OnInit {
   @Input() question: Question;
+  @Input() mode: Modes;
 
   constructor() { }
 
@@ -25,8 +26,14 @@ export class QuestionComponent implements OnInit {
           : false, // single choice
       })),
     };
+  }
 
-    console.log('this.question.answers: ', this.question.answers);
+  shouldUseRevealedAnswerClass(answer: Answer, correctClass: boolean): boolean {
+    if (!answer.checked && this.mode !== 'showAll') { return false; }
+    if (this.mode === 'showAll') {
+      return correctClass && answer.isCorrect;
+    }
+    return answer.isCorrect === correctClass;
   }
 
 }

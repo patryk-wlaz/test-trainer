@@ -15,9 +15,9 @@ export class TestComponent implements OnInit {
 
   ngOnInit() {
     this.route.data
-    .subscribe((data: { test: Test }) => {
-      this.test = data.test;
-    });
+      .subscribe((data: { test: Test }) => {
+        this.test = data.test;
+      });
   }
 
   modeChange(mode: string): void {

@@ -2,7 +2,16 @@
 <div
   *ngFor="let answer of question.answers"
   class="answer"
+  [class.correct]="shouldUseRevealedAnswerClass(answer, true)"
+  [class.wrong]="shouldUseRevealedAnswerClass(answer, false)"
   (click)="onPick(answer)">
   <input type="checkbox" [id]="answer.answer" class="css-checkbox" [checked]="answer.checked"/>
-  <label [for]="answer.answer" name="checkbox2_lbl" class="css-label lite-red-check">{{answer.answer}}</label>
+  <label
+    [for]="answer.answer"
+    name="checkbox2_lbl"
+    class="css-label"
+    [class.red-check]="answer.checked"
+    [class.no-check]="!answer.checked">
+    {{answer.answer}}
+  </label>
 </div>

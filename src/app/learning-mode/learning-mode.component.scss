@@ -1,7 +1,16 @@
-.questions-wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  * {
+    margin-right: 20px;
+  }
 }
 
 .question {

@@ -9,6 +9,8 @@ export interface Question {
   answers: Answer[];
 }
 
+export type Modes = 'showAll';
+
 export interface Test {
   name: string;
   route: string;

@@ -9,9 +9,15 @@ import { Question } from '../config/model';
 export class LearningModeComponent implements OnInit {
   @Input() questions: Question[];
 
+  showAnswers = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSwitch(checked: boolean): void {
+    this.showAnswers = checked;
   }
 
 }
