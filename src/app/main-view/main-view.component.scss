@@ -1,0 +1,28 @@
+.tests-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.test {
+  padding: 20px;
+  border: 1px solid #AB1B24;
+  border-radius: 20px;
+  background-color: #D8C99B;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .name {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
