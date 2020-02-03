@@ -9,7 +9,6 @@ import { TestComponent } from './test/test.component';
 import { LearningModeComponent } from './learning-mode/learning-mode.component';
 import { TestingModeComponent } from './testing-mode/testing-mode.component';
 import { QuestionComponent } from './question/question.component';
-import { TestsListComponent } from './tests-list/tests-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { TestsListComponent } from './tests-list/tests-list.component';
     LearningModeComponent,
     TestingModeComponent,
     QuestionComponent,
-    TestsListComponent
   ],
   imports: [
     BrowserModule,

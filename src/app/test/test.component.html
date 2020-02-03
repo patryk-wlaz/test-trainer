@@ -15,6 +15,7 @@
   [questions]="test.questions">
 </app-learning-mode>
 <app-testing-mode
-  *ngIf="mode === 'test'">
+  *ngIf="mode === 'test'"
+  [test]="test">
   <!-- [questions]="test.questions"> -->
 </app-testing-mode>

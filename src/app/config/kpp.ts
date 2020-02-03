@@ -6,7 +6,7 @@ export const kpp: Test = {
   route: 'kpp',
   description: 'Test pierwszej pomocy',
   amounts: {
-    all: 30,
+    all: 3,
     required: 27,
   },
   questions: [

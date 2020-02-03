@@ -7,7 +7,7 @@
 
 .test {
   padding: 20px;
-  border: 1px solid #AB1B24;
+  border: 1px solid black;
   border-radius: 20px;
   background-color: #D8C99B;
   width: 300px;
@@ -25,4 +25,8 @@
   .description {
     font-size: 14px;
   }
+}
+
+.test:hover {
+  border: 1px solid #AB1B24;
 }
