@@ -103,7 +103,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wstrząsu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. żadne z wymienionych',
@@ -132,7 +132,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -153,7 +153,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. chronić głowę przed obrażeniami, następnie utrzymać drożność górnych dróg oddechowych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. nie dotykać pacjenta bo napad musi sam minąć.',
@@ -170,7 +170,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. najczęściej dochodzi do zagryzienia języka i należy włożyć patyk między zęby, by nie było krwawienia (nawet podczas drgawek należy próbować).',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. często bezwiednie następuje oddanie moczu.',
@@ -207,7 +207,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkich wymienionych.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -278,7 +278,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -303,7 +303,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie wymienione.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -320,7 +320,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. sprawdzasz oznaki życia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. wsiadasz do autobusu bo nadjechał ten na który czekałeś.',
@@ -353,7 +353,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi B, C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -374,7 +374,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. udrażniasz drogi oddechowe i sprawdzasz obecność oddechu, podejmujesz uciśnięcia klatki piersiowej, jeśli jest brak oddechu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. po stwierdzeniu braku oddechu prowadzisz oddech zastępczy.',
@@ -399,7 +399,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. 30 uciśnięć kl. piersiowej, 2 wdechy.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. dowolnym z wymienionych.',
@@ -428,7 +428,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A, B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -445,7 +445,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. złamanie żeber i mostka.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. uszkodzenie naczyń w kl. piersiowej.',
@@ -474,7 +474,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. w miarę możliwości odizolować drogi oddechowe poszkodowanego od atmosfery toksycznej i ewakuować ze strefy zagrożenia',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. ułożyć w pozycji bezpiecznej i czekać na przybycie ratowników.',
@@ -499,7 +499,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. poszkodowany wypił środki ochrony roślin.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. należy prowadzić oddech zastępczy z użyciem mokrej chusteczki.',
@@ -528,7 +528,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wentylować go tylko przy użyciu worka samorozprężalnego.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -545,7 +545,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. utrata przytomności i niedrożność górnych dróg oddechowych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. zaburzenia świadomości i próby samobójcze.',
@@ -574,7 +574,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. przy zachowanym oddechu, ułożysz poszkodowanego w pozycji bocznej bezpiecznej i wezwiesz pomoc.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wezwiesz pomoc by nie tracić czasu na zbędne działania.',
@@ -603,7 +603,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. 3,2,4.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -616,7 +616,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. ma charakterystyczny zapach i barwę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. jest lżejszy od powietrza.',
@@ -645,7 +645,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. podejrzewasz zatrucie gazami spalinowymi w łazience (CO).',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. uważasz że piła alkohol w łazience podczas kąpieli.',
@@ -678,7 +678,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. Prawidłowe jest A i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -699,7 +699,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. udrożnić drogi oddechowe i w przypadku braku oddechu wykonać 5 oddechów ratowniczych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystkie prawdziwe.',
@@ -716,7 +716,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. zawroty głowy.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. drapanie w gardle.',
@@ -749,7 +749,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. sprawdzić jamę ustną, następnie udrożnić drogi oddechowe i w przypadku braku oddechu wykonać 5 oddechów ratowniczych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystkie prawdziwe.',
@@ -778,7 +778,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. postępowanie z osobą podtopioną jest takie samo, niezależnie od rodzaju wody.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -799,7 +799,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. uzyskanie powrotu czynności życiowych może wystąpić po kilkudziesięciu minutach resuscytacji.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystkie powyższe stwierdzenia są fałszywe.',
@@ -849,7 +849,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. 36%.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. 45%.',
@@ -866,7 +866,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 1% powierzchni całkowitej ciała.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 1,5% powierzchni całkowitej ciała.',
@@ -903,7 +903,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe odpowiedzi to C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -928,7 +928,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie wymienione.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -941,7 +941,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. ocena stanu świadomości i oddechu u poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. stabilizacja kręgosłupa szyjnego, udrożnienie dróg oddechowych i prowadzenie oddechu zastępczego.',
@@ -978,7 +978,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie wymienione.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -987,7 +987,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. zaburzenia rytmu serca.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. uraz kręgosłupa szyjnego.',
@@ -1019,8 +1019,8 @@ export const kpp: Test = {
           isCorrect: false
         },
         {
-          answer: 'C. III0.',
-          isCorrect: false
+          answer: 'C. III°.',
+          isCorrect: true
         },
         {
           answer: 'D. chemicznym.',
@@ -1045,7 +1045,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 3,2,5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 4,1,2,3.',
@@ -1078,7 +1078,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. 3, 1, 5.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1091,7 +1091,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 1, 3.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 3, 5.',
@@ -1120,7 +1120,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 9%, 18%.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 9%, 20%.',
@@ -1145,7 +1145,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 2,3,5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 5,3,4.',
@@ -1178,7 +1178,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. 3, 2, 5.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1191,7 +1191,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. prowokować wymioty w celu eliminacji trucizny pod warunkiem, że jest przytomny, dbając by się nie zachłysnął.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. zabezpieczyć pozostałe opakowania po środkach by przekazać je ratownikom.',
@@ -1228,7 +1228,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1249,7 +1249,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. postępowanie w obu przypadkach jest takie samo.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystko zależy od stężenia substancji żrącej.',
@@ -1266,7 +1266,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. piekącym, swędzącym rumieniem na skórze, bólem przy dotyku.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. brakiem czucia.',
@@ -1303,7 +1303,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1328,7 +1328,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1353,7 +1353,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1403,7 +1403,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi C, D, A.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1420,7 +1420,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. występuje niedobór tlenu w tkankach w stosunku do zapotrzebowania, prowadzący do niedotlenienia organizmu',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. następuje wzrost ciśnienia wywołany zmianą pozycji ciała.',
@@ -1437,7 +1437,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. następuje spadek ciśnienia wywołany zmianą pozycji ciała.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. następuje wzrost ciśnienia wywołany zmianą pozycji ciała.  ',
@@ -1470,7 +1470,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 1, 2.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 1, 4.',
@@ -1491,7 +1491,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. zaburzenia rytmu serca',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. niekorzystne działanie prądu na skórę (późniejsze blizny).',
@@ -1524,7 +1524,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wszystkie wymienione.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. tylko 1.',
@@ -1537,11 +1537,11 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A 3,1.',
-          isCorect: true
+          isCorrect: true
         },
         {
           answer: 'B. 1,4.',
-          isCorect: false
+          isCorrect: false
         },
         {
           answer: 'C. 1,2,3.',
@@ -1578,7 +1578,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. czynności ujęte w punktach D i B mają zawsze pierwszeństwo przed innymi działaniami.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1603,7 +1603,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe odpowiedzi A, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1620,7 +1620,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 1,2,4,5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 1,3,4.',
@@ -1645,7 +1645,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 2, 4, 5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 1, 4, 5.',
@@ -1674,7 +1674,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. blada, chłodna i spocona skóra.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. złamanie otwarte podudzia lewego bez krwotoku.',
@@ -1703,7 +1703,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A i B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1728,7 +1728,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi C i/lub B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1749,7 +1749,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. zwolniona czynność serca.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. uczucie zimna.',
@@ -1778,7 +1778,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1795,7 +1795,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. potrącenie poszkodowanego przez ten samochód osobowy.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. na podstawie takiego obrazu nie można przypuszczać jaki był mechanizm urazu.',
@@ -1812,7 +1812,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. leżąca z nogami zgiętymi w stawach biodrowych i kolanowych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. półsiedząca.',
@@ -1841,7 +1841,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. należy wykonać opatrunek osłaniający z gazy jałowej i codofixu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. należy wykonać opatrunek uciskowy z gazy jałowej z użyciem bandaża elastycznego.',
@@ -1878,7 +1878,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1903,7 +1903,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi C i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -1916,7 +1916,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. zabezpieczenie miejsca zdarzenia, dotarcie do poszkodowanego, udzielenie pomocy.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. zabezpieczenie miejsca zdarzenia, unieruchomienie złamań, podanie tlenu.',
@@ -1937,7 +1937,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. ograniczenia ruchomości odcinka szyjnego kręgosłupa.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. usztywnienia kręgosłupa szyjnego.',
@@ -1966,7 +1966,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. założyć wilgotny opatrunek osłaniający przykryty szczelnie folią.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. założyć opatrunek uciskowy przykryty folią termoizolacyjną.',
@@ -1991,7 +1991,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. podejmowanie decyzji o transporcie poszkodowanych do ośrodków leczniczych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. tamowanie krwotoków.',
@@ -2028,7 +2028,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2037,7 +2037,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. zatamowanie krwotoku, w razie potrzeby przez ucisk na tętnicę powyżej miejsca złamania.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. ułożenie odłamów w pozycji zbliżonej do fizjologicznej dla stworzenia warunków dla zastosowania opatrunku uciskowego.',
@@ -2062,7 +2062,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. poziomą.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. półsiedzącą.',
@@ -2099,7 +2099,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. unieruchomić staw w pozycji zastanej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. dla zmniejszenia obrzęku zastosować opatrunek z bandaża elastycznego.',
@@ -2128,7 +2128,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. mocujemy do drugiej kończyny przy użyciu przekładki pomiędzy nimi.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2153,7 +2153,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. każdą z wymienionych metod.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2178,7 +2178,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie powyższe są fałszywe.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2190,7 +2190,8 @@ export const kpp: Test = {
           isCorrect: false
         },
         {
-          answer: 'B. wypadkowi komunikacyjnemu towarzyszy uraz głowy, C. masz do czynienia z upadkiem z wysokości.'
+          answer: 'B. wypadkowi komunikacyjnemu towarzyszy uraz głowy, C. masz do czynienia z upadkiem z wysokości.',
+          isCorrect: false,
         },
         {
           answer: 'D. prawdziwe są odpowiedzi A i C.',
@@ -2198,7 +2199,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2207,7 +2208,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. w przypadku krwotoków zewnętrznych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. w przypadku krwotoków wewnętrznych.',
@@ -2248,7 +2249,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe jest postępowanie wskazane w odpowiedziach A, B, C, i D, po wcześniejszym zatamowaniu krwawienia zewnętrznego (jeżeli występuje).',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2265,7 +2266,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. ułożenie w pozycji przeciwwstrząsowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. tlenoterapia.',
@@ -2298,7 +2299,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe odpowiedzi to: A, C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2323,7 +2324,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi B, C i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2332,7 +2333,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. każde przemieszczenie poszkodowanego na mocy decyzji ratownika to ewakuacja, a na mocy decyzji lekarza lub ratownika medycznego to transport.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. przemieszczanie poszkodowanego na noszach to zawsze ewakuacja, a przemieszczenie przy wykorzystaniu karetki - to transport.',
@@ -2361,7 +2362,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. terapeutycznym i transportowym.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. reanimacyjnym.',
@@ -2382,7 +2383,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. sił i środków podmiotów ratowniczych obecnych na miejscu zdarzenia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. sił i środków ratowniczych powiatu.',
@@ -2415,7 +2416,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 4, 5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 1, 4.',
@@ -2448,7 +2449,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. najpierw żółtej, potem czerwonej.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2461,7 +2462,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. stworzenie możliwości zbadania i ewakuacji poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. stworzenie możliwości zbadania poszkodowanego.',
@@ -2486,7 +2487,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. wspomagają działania Zespołów Ratownictwa Medycznego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. są realizowane tylko i wyłącznie w przypadku technicznych trudności, uniemożliwiających dotarcie do poszkodowanego przez członków Zespołu Ratownictwa Medycznego.',
@@ -2506,19 +2507,19 @@ export const kpp: Test = {
       question: '101. Do zadań koordynatora medycznych działań ratowniczych (KMDR) KSRG należy: 1. koordynacja działań z zakresu kwalifikowanej pierwszej pomocy, segregacji pierwotnej do czasu przybycia ZRM. 2. realizuje wraz z ratownikami KSRG kpp w strefach zagrożenie dla ZRM. 3. prowadzenie i ewentualne nadzorowanie segregacji, jako procesu określania priorytetów terapeutyczno-transportowych. 4. przekazuje informacje o wykonaniu dostępu do poszkodowanego i możliwości podjęcia medycznych czynności ratowniczych (mcr) przez ZRM. 5. transport poszkodowanych z kodem czerwonym do specjalistycznej placówki służby zdrowia. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 1, 2, 3, 4.      ',
+          answer: 'A. 1, 2, 3, 4.',
+          isCorrect: true
+        },
+        {
+          answer: 'B. 1, 2, 3.',
           isCorrect: false
         },
         {
-          answer: 'B. 1, 2, 3.      ',
+          answer: 'C. 2, 3, 4.',
           isCorrect: false
         },
         {
-          answer: 'C. 2, 3, 4.      ',
-          isCorrect: false
-        },
-        {
-          answer: 'D. 3, 4, 5.      ',
+          answer: 'D. 3, 4, 5.',
           isCorrect: false
         },
         {
@@ -2540,7 +2541,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. transportu lżej poszkodowanych do miejsca zamieszkania.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. ujednolicania metodyki planowania transportu poszkodowanej lub zagrożonej ludności do izb przyjęć lub szpitalnych oddziałów wyspecjalizowanych w zakresie medycyny ratunkowej lub innych podmiotów prowadzących ratownictwo medyczne w warunkach szpitalnych.',
@@ -2556,19 +2557,19 @@ export const kpp: Test = {
       question: '103. Kwalifikowana pierwsza pomoc to określenie czynności podejmowanych wobec osoby w stanie nagłego zagrożenia zdrowotnego przez ratownika. W rozumieniu Ustawy o Państwowym Ratownictwie Medycznym ratownikiem może być: 1. wyłącznie osoba posiadająca dyplom szkoły lub uczelni medycznej. 2. wyłącznie osoba zatrudniona lub pełniąca służbę w jednostkach współpracujących z systemem ratownictwa medycznego lub będąca członkiem tych jednostek. 3. osoba posiadająca ważne zaświadczenie o ukończeniu kursu w zakresie kwalifikowanej pierwszej pomocy i uzyskaniu tytułu ratownika. 4. osoba której stan zdrowia pozwala na udzielanie kwalifikowanej pierwszej pomocy. 5. osoba posiadająca dyplom ukończenia szkoły medycznej oraz pełną zdolność do czynności prawnych. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 1, 3, 4.       ',
+          answer: 'A. 1, 3, 4.',
           isCorrect: false
         },
         {
-          answer: 'B. 1, 2,3.        ',
+          answer: 'B. 1, 2,3.',
           isCorrect: false
         },
         {
-          answer: 'C. 3, 4.      ',
-          isCorrect: false
+          answer: 'C. 3, 4.',
+          isCorrect: true
         },
         {
-          answer: 'D. 3, 4, 5.       ',
+          answer: 'D. 3, 4, 5.',
           isCorrect: false
         },
         {
@@ -2594,7 +2595,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. tak, wynika to z Ustawy o Państwowym Ratownictwie Medycznym z 2006 roku.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. nie podlega żadnej ochronie prawnej.',
@@ -2615,7 +2616,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. nie zmienia się raz przyjętego ułożenia poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. musi być zapewniony swobodny wypływ śliny i innych wydzielin.',
@@ -2644,7 +2645,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. usuwasz widoczne ciało obce z jamy ustnej, następnie rozpoczynasz resuscytacje krążeniowo oddechową zaczynając od 30 uciśnięć klatki piersiowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. siadasz okrakiem na udach poszkodowanego i wykonujesz 5 uciśnięć nadbrzusza.',
@@ -2657,7 +2658,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. zadzwonić po pogotowie ratunkowe i rozpocząć oddech wspomagany z częstością 10 oddechów na minutę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. rozpocząć uciski klatki piersiowej, a po minucie zadzwonić po Zespół Ratownictwa Medycznego. Wykonać 2 uciśnięcia nadbrzusza, a następnie położyć pacjenta w pozycji bezpiecznej.',
@@ -2694,7 +2695,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wykluczyć obecność ciała obcego i wysunąć żuchwę na szczękę jednocześnie stabilizując kręgosłup szyjny. Rozważyć założenie rurki ustno-gardłowej.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2703,7 +2704,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. ocenić przytomność leżącego, sprawdzić oddech, potem wezwać Zespół Ratownictwa Medycznego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. zadzwonić po Zespół Ratownictwa Medycznego i czekać na karetkę przed domem.',
@@ -2728,7 +2729,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. u tonących w pierwszej chwili po wydobyciu staramy się wylać całą wodę zgromadzoną w układzie oddechowym.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. jeżeli nie ma pewności co do mechanizmu tonięcia, zakładamy kołnierz ortopedyczny.',
@@ -2757,7 +2758,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. pozycję taką stosuje się ze względu na łatwą kontrolę tętna u poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. ułożenie poszkodowanego w tej pozycji nie gwarantuje przeżycia.',
@@ -2786,7 +2787,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. tlenoterapia bierna.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. założenie poszkodowanemu rurki ustno-gardłowej.',
@@ -2807,7 +2808,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. wezwę pomoc, sprawdzę jego podstawowe funkcje życiowe (stan świadomości, oddech, krążenie), a następnie zależnie od sytuacji podejmę decyzję o ewakuacji lub udzieleniu pomocy w samochodzie.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. wyciągnę poszkodowanego z samochodu i zacznę oddechy zastępcze.',
@@ -2840,7 +2841,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. 5, 4, 3, 2, 1. ',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. 4, 2, 1, 3, 5.',
@@ -2882,7 +2883,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. udrożnienie dróg oddechowych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. unieruchomienie złamanej kończyny.',
@@ -2919,7 +2920,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. u nieprzytomnych, aby zmniejszyć zagrożenie niedrożnością dróg oddechowych.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -2928,7 +2929,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. po ocenie oddechu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. jeżeli poszkodowany ma poważne obrażenia.',
@@ -2957,7 +2958,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. A-zorientowany, V-reaguje na głos, P- reaguje na bodźce bólowe, U- brak reakcji.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. A- brak reakcji, V- reaguje na bodźce bólowe, P- reaguje na bodźce słowne, U-zorientowany.',
@@ -2982,7 +2983,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. od płatka ucha do kącika ust.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. od czubka jego nosa do brody.',
@@ -3002,24 +3003,24 @@ export const kpp: Test = {
       question: '121. Jeśli wystąpią trudności w prowadzeniu skutecznej wentylacji za pomocą maski i worka samorozprężalnego, należy: 1. poprawić ułożenie maski na twarzy poszkodowanego. 2. ponownie spróbować udrożnić drogi oddechowe za pomocą odpowiednich rękoczynów. 3. poczekać z decyzją co, do dalszego postępowania na przybycie lekarza, gdyż możemy zaszkodzić poszkodowanemu. 4. sprawdzić szczelność układu do wentylacji. 5. pomimo trudności kontynuować wentylację, bo każdy manewr sprawdzający to strata czasu. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 2, 4, 5.        ',
+          answer: 'A. 2, 4, 5.',
           isCorrect: false
         },
         {
-          answer: 'B. 1, 3, 4.        ',
+          answer: 'B. 1, 3, 4.',
           isCorrect: false
         },
         {
-          answer: 'C. 2, 3, 4.        ',
+          answer: 'C. 2, 3, 4.',
           isCorrect: false
         },
         {
-          answer: 'D. 3, 4, 5.        ',
+          answer: 'D. 3, 4, 5.',
           isCorrect: false
         },
         {
           answer: 'E. 1, 2, 4',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3032,7 +3033,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. utrzymanie, przy właściwym dopływie tlenu, wysokiego stężenia tlenu w mieszaninie oddechowej, nawet na poziomie bliskim 85%.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. ułatwienie prowadzenia oddechu zastępczego (w takim przypadku nie trzeba dbać',
@@ -3057,7 +3058,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. natychmiastowa RKO i wczesna defibrylacja (w ciągu 4-5 minut) może znacznie zwiększyć liczbę uratowanych poszkodowanych z nagłym zatrzymaniem krążenia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. jeśli defibrylacja była wykonana w ciągu 10 minut, RKO nie ma sensu.',
@@ -3086,7 +3087,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. utracie przytomności i stwierdzeniu braku oddechu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. bladości i ochłodzeniu powłok skórnych.',
@@ -3103,7 +3104,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. 30 uciśnięć klatki piersiowej oraz jak najszybszym użyciu AED.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. 2 oddechów ratowniczych oraz jak najszybszym użyciu AED.',
@@ -3128,7 +3129,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. na środku klatki piersiowej poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. na górnej 1/4 części mostka poszkodowanego.',
@@ -3157,7 +3158,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 30:2.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 15:2.',
@@ -3186,7 +3187,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. jeżeli u poszkodowanego pojawią się oznaki życia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. przed naklejeniem elektrod AED.',
@@ -3207,7 +3208,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. wygarnięcia „na ślepo" ewentualnych ciał obcych, będących przyczyną niedrożności dróg oddechowych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. usunięcia tylko widocznych ciał obcych.',
@@ -3228,7 +3229,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. zachęcaniu poszkodowanego do kaszlu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. wykonaniu 5 uderzeń w okolicę międzyłopatkową.',
@@ -3261,7 +3262,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. przy zastosowaniu maski, rezerwuaru tlenowego i przepływu tlenu 12-16 l/min pozwala      osiągnąć wdechowe stężenie tlenu nie wyższe niż 75%.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. zabezpiecza przed zakażeniem ratownika prowadzącego wentylację.',
@@ -3294,7 +3295,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. 100-120 razy na minutę.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3303,7 +3304,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. uciskanie jedną lub dwoma dłońmi (zależnie od gabarytów poszkodowanego),       z częstością 100-120 razy na minutę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. uciskanie dwoma dłońmi tak, by odchylenie mostka nie przekraczało około 1,5 cm.',
@@ -3340,7 +3341,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. całkowitej niedrożności dróg oddechowych spowodowanej ciałem obcym.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. częściowej niedrożności dróg oddechowych.',
@@ -3365,7 +3366,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. przez 10 sekund pochylając się uchem nad ustami i nosem poszkodowanej, starasz się usłyszeć oddech i wyczuć go na swoim policzku, jednocześnie obserwując ruchy klatki piersiowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. obserwować przez 5 sekund, czy unosi się klatka piersiowa.',
@@ -3382,7 +3383,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. odzyskania prawidłowego oddechu przez poszkodowanego, przybycia na miejsce zdarzenia Zespołu Ratownictwa Medycznego i przejęcia poszkodowanego, fizycznego wyczerpania ratownika, niebezpieczeństwa.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. w bardzo niesprzyjających warunkach atmosferycznych.',
@@ -3411,7 +3412,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. nadal prowadzisz podjęte działania ratownicze (resuscytacje krążeniowo-oddechową) zgodnie z algorytmem.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. w pierwszej kolejności owijasz klatkę piersiową poszkodowanego bandażem elastycznym, dopiero wówczas rozpoczynasz wykonywanie RKO.',
@@ -3444,7 +3445,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe odpowiedzi C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3457,7 +3458,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 2, 5.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 3, 4.',
@@ -3482,7 +3483,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 2 min.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 5 min.',
@@ -3507,7 +3508,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. stabilizować ręcznie kręgosłup szyjny.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. podać tlen.',
@@ -3540,7 +3541,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. w sposób zsynchronizowany na komendę ratownika trzymającego głowę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. w inny niż wymienione sposób.',
@@ -3553,7 +3554,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. od strony jego nóg.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. od strony jego głowy.',
@@ -3578,7 +3579,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. 10 sek.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. 15 sek.',
@@ -3619,7 +3620,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3632,7 +3633,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 3 ratowników.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 4 ratowników.',
@@ -3661,7 +3662,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. badamy i opatrujemy wstępnie w pozycji zastanej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. sadzamy go i podajemy tlen.',
@@ -3690,7 +3691,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. obrażenia stanowiące bezpośrednie zagrożenie życia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. przyczyny podwyższenia temperatury ciała.',
@@ -3715,7 +3716,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. prawdziwe są odpowiedzi A i B.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A i C.',
@@ -3728,7 +3729,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. wykonaniu badania wstępnego i wykonaniu niezbędnych interwencji.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. udrożnieniu poszkodowanego.',
@@ -3761,7 +3762,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. od głowy do stóp na końcu kończyny górne.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. zawsze od strony złamanych kończyn.',
@@ -3786,7 +3787,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. oceny nawrotu kapilarnego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. oceny wypełnienia żył szyjnych.',
@@ -3811,7 +3812,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. założyć kołnierz ortopedyczny.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. ocenić wypełnienie żył szyjnych',
@@ -3840,7 +3841,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. prawdziwe są odpowiedzi A i B.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A i C',
@@ -3857,7 +3858,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. głowa musi być nadal stabilizowana ręcznie.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. oceniamy nawrót kapilarny.',
@@ -3882,7 +3883,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. stabilizujemy go w pozycji, na którą pozwalają zaistniałe ograniczenia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. mimo to staramy się ustabilizować kręgosłup równo w osi ciała.',
@@ -3919,7 +3920,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe odpowiedzi A, B, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3928,7 +3929,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. płytkę paznokciową.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. mięsień dwugłowy.',
@@ -3969,7 +3970,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. obejrzeć, obmacać, opukać. ',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -3982,7 +3983,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. śladów obrażeń i bolesności .',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. potwierdzenia prawidłowego nawrotu kapilarnego.',
@@ -4007,7 +4008,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. jest on przekładany na nosze typu deska.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. zostanie unieruchomiony.',
@@ -4040,7 +4041,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. nikt nie może dotykać poszkodowanego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. ratownik wciska przycisk „Analiza".',
@@ -4069,7 +4070,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe są odpowiedzi A, B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4078,7 +4079,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. przyklejamy do gołej klatki piersiowej po jej ewentualnym wytarciu i usunięciu zbyt obfitego owłosienia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. przyklejamy do gołej klatki piersiowej po jej ewentualnym wytarciu.',
@@ -4111,7 +4112,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. należy odsunąć źródło tlenu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. poszkodowany może być wentylowany.',
@@ -4140,7 +4141,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. natychmiast po podłączeniu defibrylatora i ocenie rytmu jeżeli są wskazania.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystkie powyższe są fałszywe.',
@@ -4169,7 +4170,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A, B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4178,7 +4179,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. brak czynności elektrycznej komór serca i przedsionków lub tylko komór.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. aktywność elektryczna bez tętna.',
@@ -4203,7 +4204,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. jedną pod prawym obojczykiem, drugą w przedniej linii pachowej przedniej lewej tuż pod mięśniem piersiowym, ułożenie przednio-boczne. (zgodnie z piktogramem umieszczonym na elektrodach).',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. elektrody mogą pozostać na klatce piersiowej w dowolnych miejscach po obu stronach mostka poszkodowanego.',
@@ -4240,7 +4241,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. jak najwcześniej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. w obecności rodziny.',
@@ -4261,7 +4262,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. utrzymywanie kontaktu wzrokowego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. utrzymywanie nadmiernego dystansu.',
@@ -4294,7 +4295,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe są A, B, C, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4315,7 +4316,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. dokonujący ręcznej stabilizacji odcinka szyjnego kręgosłupa.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. drugi, który dokonuje jednocześnie badania urazowego.',
@@ -4336,7 +4337,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. akceptacji, zainteresowania, kontaktu wzrokowego i bycia dobrym słuchaczem.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. akceptacji, zainteresowania, unikania kontaktu wzrokowego i bycia dobrym słuchaczem.',
@@ -4361,7 +4362,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. powiedzieć, kim jest, zapytać, co się wydarzyło i informować, co i w jakim celu będzie wykonywane.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. używać pod adresem poszkodowanego stwierdzeń w rodzaju „ja wiem lepiej", co daje mu',
@@ -4390,7 +4391,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. rozpoznanie charakteru zdarzenia, jego okoliczności, rodzaju zagrożeń, ustalenie orientacyjnej liczby poszkodowanych, ustalenia priorytetów działania i ewentualne uznanie zdarzenia za masowe.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. rozpoznanie charakteru zdarzenia, jego okoliczności, rodzaju zagrożeń dla akcji, ustalenie orientacyjnej liczby poszkodowanych i ich ewakuacja.',
@@ -4419,7 +4420,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. ocena miejsca zdarzenia, ocena wstępna, szybkie badanie urazowe lub badanie miejscowe.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4428,7 +4429,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. nie pociągać głowy w osi długiej i nie odchylać głowy poszkodowanego ku tyłowi.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. co 2 minuty sprawdzać tętno na tętnicy szyjnej.',
@@ -4457,7 +4458,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. słuchać i wykonywać polecenia AED.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. podtrzymywać odchyloną ku tyłowi ku tyłowi głowę poszkodowanego, aby udrożnić drogi oddechowe.',
@@ -4490,7 +4491,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. rozpocząć się jak najszybciej i trwać, w miarę możliwości, do czasu osiągnięcia przez poszkodowanego równowagi psychicznej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. rozpocząć się po ustaleniu diagnozy w celu jasnego sprecyzowania form leczenia powinno zostać wstrzymane.',
@@ -4511,7 +4512,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. gwałtowny ból uciskający w klatce piersiowej, pojawiają się po silnym kaszlu, większym wysiłku fizycznym lub po urazie klatki piersiowej, zazwyczaj szybko narastająca duszność, przyspieszenie tętna, bladość powłok skórnych, nadmierna potliwość, pogłębiające się ogólne osłabienie.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. prawdziwe A i B.',
@@ -4544,7 +4545,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe B, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4557,7 +4558,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. maksimum 27 minut tlenoterapii.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. ponad 30 minut tlenoterapii.',
@@ -4590,7 +4591,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. prawdziwe A i B.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. prawdziwe A, B i C.',
@@ -4619,7 +4620,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A i B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4644,7 +4645,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4657,7 +4658,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. to złamanie z przerwaniem ciągłości skóry.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. to złamanie, w którym na ranę zakładamy opatrunek uciskowy.',
@@ -4694,7 +4695,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe B i D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4707,7 +4708,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. dochodzi do osłabienia i /lub zniesienia odruchów obronnych.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. nieuchronnie prowadzi do zatrzymania krążenia.',
@@ -4744,7 +4745,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawdziwe A, B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4752,19 +4753,19 @@ export const kpp: Test = {
       question: '191. Jaka jest prawidłowa kolejność czynności niezbędnych do skutecznej resuscytacji osób, u których doszło do nagłego zatrzymania krążenia według koncepcji zwanej „łańcuchem przeżycia"? 1. wczesna defibrylacja. 2. wczesne wezwanie pomocy. 3. wczesne rozpoczęcie RKO. 4. opieka poresuscytacyjna. 5. wczesne rozpoznanie. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 1, 3, 2, 5, 4.     ',
+          answer: 'A. 1, 3, 2, 5, 4.',
           isCorrect: false
         },
         {
-          answer: 'B. 5, 2, 3, 1, 4.      ',
+          answer: 'B. 5, 2, 3, 1, 4.',
+          isCorrect: true
+        },
+        {
+          answer: 'C. 2, 3, 4, 1, 5.',
           isCorrect: false
         },
         {
-          answer: 'C. 2, 3, 4, 1, 5.      ',
-          isCorrect: false
-        },
-        {
-          answer: 'D. 1, 2, 3, 4, 5.      ',
+          answer: 'D. 1, 2, 3, 4, 5.',
           isCorrect: false
         },
         {
@@ -4786,7 +4787,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. rozpocząć resuscytację krążeniowo-oddechową.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. ułożyć poszkodowanego w pozycji bezpiecznej.',
@@ -4807,7 +4808,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. wysunięcie żuchwy.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. odgięcie głowy połączone z wysunięciem żuchwy.',
@@ -4840,7 +4841,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. prawidłowe są odpowiedzi B, C.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. prawidłowe są odpowiedzi A, B, C.',
@@ -4869,7 +4870,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E.  maska do tlenoterapii biernej z rezerwuarem podłączona tlenem       o przepływie 15 l/min.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -4882,7 +4883,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. gwałtowne ściskanie worka samorozprężalnego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. wykonanie dwóch oddechów zastępczych w czasie nie przekraczającym 5 sekund.',
@@ -4907,7 +4908,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. rozpoczęcie uciskania klatki piersiowej zanim całkowicie powróci do pozycji wyjściowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. minimalizowanie przerw pomiędzy kolejnymi seriami uciśnięć klatki piersiowej.',
@@ -4927,23 +4928,23 @@ export const kpp: Test = {
       question: '198. Które z poniższych objawów występujących u osoby dorosłej, która w trakcie jedzenia zakrztusiła się pokarmem, są charakterystyczne dla ciężkiej niedrożności dróg oddechowych? 1. bezgłośny kaszel. 2. głośny kaszel. 3. niemożność oddychania. 4. postępująca utrata przytomności. 5. możliwość swobodnego mówienia. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 1, 3, 5.      ',
+          answer: 'A. 1, 3, 5.',
           isCorrect: false
         },
         {
-          answer: 'B. 1, 3, 4.     ',
+          answer: 'B. 1, 3, 4.',
+          isCorrect: true
+        },
+        {
+          answer: 'C. 3, 4, 5.',
           isCorrect: false
         },
         {
-          answer: 'C. 3, 4, 5.      ',
+          answer: 'D. 1, 4, 5.',
           isCorrect: false
         },
         {
-          answer: 'D. 1, 4, 5.     ',
-          isCorrect: false
-        },
-        {
-          answer: 'E. 2, 4, 5. ',
+          answer: 'E. 2, 4, 5.',
           isCorrect: false
         }
       ]
@@ -4952,19 +4953,19 @@ export const kpp: Test = {
       question: '199. Które z poniższych objawów występujących u dziecka, które w trakcie jedzenia zakrztusiło się pokarmem, są charakterystyczne dla łagodnej niedrożności dróg oddechowych? 1. bezgłośny kaszel. 2. głośny kaszel. 3. sinica. 4. możliwość nabrania powietrza przed kaszlem. 5. głośny płacz. Prawidłowa odpowiedź to. ',
       answers: [
         {
-          answer: 'A. 1, 3, 4.      ',
+          answer: 'A. 1, 3, 4.',
           isCorrect: false
         },
         {
-          answer: 'B. 1, 2, 5.      ',
+          answer: 'B. 1, 2, 5.',
           isCorrect: false
         },
         {
-          answer: 'C. 2, 4, 5.     ',
-          isCorrect: false
+          answer: 'C. 2, 4, 5.',
+          isCorrect: true
         },
         {
-          answer: 'D. 1, 4, 5.      ',
+          answer: 'D. 1, 4, 5.',
           isCorrect: false
         },
         {
@@ -4982,7 +4983,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. zabezpiecza przed zachłyśnięciem.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. może spowodować niedrożność.',
@@ -5002,19 +5003,19 @@ export const kpp: Test = {
       question: '201. Które ze stwierdzeń odnoszących się do prowadzenia resuscytacji krążeniowo-oddechowej u nieprzytomnej osoby dorosłej z całkowitą niedrożnością dróg oddechowych spowodowanej ciałem obcym są prawdziwe? 1. przed rozpoczęciem podawania oddechów ratowniczych należy podjąć próbę usunięcia palcem z jamy ustnej niewidocznych ciał obcych. 2. należy rozpocząć RKO od 30 uciśnięć klatki piersiowej bezzwłocznie jak tylko poszkodowany przestanie odpowiadać lub straci przytomność. 3. należy sprawdzić zawartość jamy ustnej w poszukiwaniu ciała obcego przed rozpoczęciem wykonywania oddechów ratowniczych. 4. należy rozpocząć uciskanie klatki piersiowej tylko w sytuacji braku tętna na tętnicy szyjnej. 5. uciśnięcia klatki piersiowej i oddechy ratownicze należy prowadzić w sekwencji 30:2. Prawidłowa odpowiedź to:',
       answers: [
         {
-          answer: 'A. 1, 2, 3.       ',
+          answer: 'A. 1, 2, 3.',
           isCorrect: false
         },
         {
-          answer: 'B. 2, 4, 5.       ',
+          answer: 'B. 2, 4, 5.',
           isCorrect: false
         },
         {
-          answer: 'C. 2, 3, 5.       ',
-          isCorrect: false
+          answer: 'C. 2, 3, 5.',
+          isCorrect: true
         },
         {
-          answer: 'D. 2, 3, 4.       ',
+          answer: 'D. 2, 3, 4.',
           isCorrect: false
         },
         {
@@ -5044,7 +5045,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. środek klatki piersiowej (dolna połowa mostka).',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5057,7 +5058,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. obecności treści płynnej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. obecności ciała obcego.',
@@ -5090,7 +5091,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. opadnięcia języka na tylną ścianę gardła.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wszystkie odpowiedzi są prawidłowe.',
@@ -5119,7 +5120,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E.  prawidłowe są odpowiedzi A, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5144,7 +5145,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe są odpowiedzi B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5152,23 +5153,23 @@ export const kpp: Test = {
       question: '207. Podczas prowadzenia resuscytacji krążeniowo-oddechowej przez dwóch ratowników u 8-miesięcznego dziecka stosunek uciśnięć klatki piersiowej do wentylacji płuc powinien wynosić:',
       answers: [
         {
-          answer: 'A. 3:1.     ',
+          answer: 'A. 3:1.',
           isCorrect: false
         },
         {
-          answer: 'B. 5:1.     ',
+          answer: 'B. 5:1.',
           isCorrect: false
         },
         {
-          answer: 'C. 15:1.     ',
+          answer: 'C. 15:1.',
           isCorrect: false
         },
         {
-          answer: 'D. 15:2.     ',
-          isCorrect: false
+          answer: 'D. 15:2.',
+          isCorrect: true
         },
         {
-          answer: 'E. 30:2. ',
+          answer: 'E. 30:2.',
           isCorrect: false
         }
       ]
@@ -5177,19 +5178,19 @@ export const kpp: Test = {
       question: '208. Podczas prowadzenia resuscytacji krążeniowo-oddechowej przez dwóch ratowników u 6 letniego dziecka stosunek uciśnięć klatki piersiowej do wentylacji płuc powinien wynosić:',
       answers: [
         {
-          answer: 'A. 10:2.     ',
+          answer: 'A. 10:2.',
           isCorrect: false
         },
         {
-          answer: 'B. 15:2.     ',
+          answer: 'B. 15:2.',
+          isCorrect: true
+        },
+        {
+          answer: 'C. 20:2.',
           isCorrect: false
         },
         {
-          answer: 'C. 20:2.     ',
-          isCorrect: false
-        },
-        {
-          answer: 'D. 30:2.     ',
+          answer: 'D. 30:2.',
           isCorrect: false
         },
         {
@@ -5202,20 +5203,20 @@ export const kpp: Test = {
       question: '209. Podczas prowadzenia resuscytacji krążeniowo-oddechowej u osoby dorosłej stosunek uciśnięć klatki piersiowej do wentylacji płuc powinien wynosić:',
       answers: [
         {
-          answer: 'A. 15:2.     ',
+          answer: 'A. 15:2.',
           isCorrect: false
         },
         {
-          answer: 'B. 20:2.     ',
+          answer: 'B. 20:2.',
           isCorrect: false
         },
         {
-          answer: 'C. 30:1.     ',
+          answer: 'C. 30:1.',
           isCorrect: false
         },
         {
-          answer: 'D. 30:2.     ',
-          isCorrect: false
+          answer: 'D. 30:2.',
+          isCorrect: true
         },
         {
           answer: 'E. 30:3.',
@@ -5227,19 +5228,19 @@ export const kpp: Test = {
       question: '210. Podczas prowadzenia resuscytacji krążeniowo-oddechowej noworodka, u którego zaraz po urodzeniu (świeżorodek) nie stwierdzono oznak życia, stosunek uciśnięć klatki piersiowej do wentylacji płuc powinien wynosić:',
       answers: [
         {
-          answer: 'A. 3:1.     ',
+          answer: 'A. 3:1.',
+          isCorrect: true
+        },
+        {
+          answer: 'B. 5:1.',
           isCorrect: false
         },
         {
-          answer: 'B. 5:1.     ',
+          answer: 'C. 15:2.',
           isCorrect: false
         },
         {
-          answer: 'C. 15:2.     ',
-          isCorrect: false
-        },
-        {
-          answer: 'D. 15:5.     ',
+          answer: 'D. 15:5.',
           isCorrect: false
         },
         {
@@ -5257,7 +5258,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 100-120 razy na minutę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 120-130 razy na minutę.',
@@ -5286,7 +5287,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. dwoma kciukami, podczas gdy dłonie obejmują klatkę piersiową.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. dłonią jednej ręki.',
@@ -5311,7 +5312,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. metodą dwóch kciuków, podczas gdy dłonie obejmują klatkę piersiową.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. dłonią jednej ręki.',
@@ -5332,7 +5333,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. 1/3 wymiaru przednio-tylnego.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. 1/2 wymiaru przednio-tylnego.',
@@ -5353,7 +5354,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. braku oddechu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. braku tętna na tętnicy szyjnej.',
@@ -5390,7 +5391,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. obróceniu na bok z utrzymaniem głowy i szyi w osi podłużnej ciała.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. odgięciu głowy do tyłu.',
@@ -5411,7 +5412,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. 10 oddechów na minutę.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. 12 oddechów na minutę.',
@@ -5432,7 +5433,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. bezpiecznej na lewym boku.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. bezpiecznej na prawym boku.',
@@ -5465,7 +5466,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wykonaniu 5 oddechów ratowniczych, a następnie rozpoczęciu resuscytacji krążeniowo-oddechowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. próbie usunięcia palcem niewidocznego ciała obcego z jamy ustnej.',
@@ -5478,7 +5479,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. ocenie stanu dziecka.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. wykonaniu 5 uderzeń w okolicę międzyłopatkową.',
@@ -5515,7 +5516,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. prawidłowe są odpowiedzi A i B.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. prawidłowe są odpowiedzi A i C.',
@@ -5540,7 +5541,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wykonaniu 5 oddechów ratowniczych, a następnie rozpoczęciu resuscytacji krążeniowo-oddechowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wykonaniu 5 uderzeń w okolicę międzyłopatkową.',
@@ -5561,7 +5562,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. ocenie stanu dziecka.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. wykonaniu 5 uciśnięć klatki piersiowej.',
@@ -5594,7 +5595,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe są odpowiedzi B i C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5615,7 +5616,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wykonaniu 30 uciśnięć klatki piersiowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. próbie usunięcia niewidocznego ciała obcego z jamy ustnej.',
@@ -5628,7 +5629,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. zachęcaniu do spontanicznego kaszlu.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. wykonaniu 5 uderzeń w okolicę międzyłopatkową.',
@@ -5669,7 +5670,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wykonaniu 5 uderzeń w okolicę międzyłopatkową, a następnie 5 uciśnięć nadbrzusza.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5690,7 +5691,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. wykonaniu 5 uderzeń w okolicę międzyłopatkową, a następnie 5 uciśnięć na wysokości klatki piersiowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. wykonaniu 5 uderzeń w okolice międzyłopatkową, a następnie 5 uciśnięć nadbrzusza.',
@@ -5715,7 +5716,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. przechylenie na lewą stronę w osi długiej ciała.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. uniesienie nóg 30 cm powyżej tułowia.',
@@ -5740,7 +5741,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. sprawdzeniu poprawności ułożenia rąk na klatce piersiowej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. zaprzestaniu uciskania klatki piersiowej.',
@@ -5769,7 +5770,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. odległością od płatka ucha do kącika ust.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5790,7 +5791,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. w wieku od 1 roku do momentu przed osiągnięciem widocznych cech pokwitania.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. żadna z odpowiedzi nie jest prawidłowa.',
@@ -5803,7 +5804,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. tylko głęboko nieprzytomnej.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. z zachowanym odruchem wymiotnym.',
@@ -5828,7 +5829,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. migotaniu komór i częstoskurczu komorowym bez tętna.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. asystoli.',
@@ -5869,7 +5870,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowa odpowiedź A, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5894,7 +5895,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowa odpowiedz to A, B, D.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5907,7 +5908,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. masy ciała',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. masy ciała i Wzrostu',
@@ -5928,7 +5929,7 @@ export const kpp: Test = {
       answers: [
         {
           answer: 'A. wzrostu',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'B. masy ciała',
@@ -5969,7 +5970,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. poprawne odpowiedzi A, B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -5977,23 +5978,23 @@ export const kpp: Test = {
       question: '240. Podczas prowadzenia resuscytacji krążeniowo-oddechowej przez jednego ratownika u 6-miesięcznego dziecka stosunek uciśnięć klatki piersiowej do wentylacji płuc powinien wynosić:',
       answers: [
         {
-          answer: 'A. 3:1.       ',
+          answer: 'A. 3:1.',
           isCorrect: false
         },
         {
-          answer: 'B. 5:1.       ',
+          answer: 'B. 5:1.',
           isCorrect: false
         },
         {
-          answer: 'C. 15:1.       ',
+          answer: 'C. 15:1.',
           isCorrect: false
         },
         {
-          answer: 'D. 15:2.       ',
-          isCorrect: false
+          answer: 'D. 15:2.',
+          isCorrect: true
         },
         {
-          answer: 'E. 30:2. ',
+          answer: 'E. 30:2.',
           isCorrect: false
         }
       ]
@@ -6011,7 +6012,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. w wieku od pierwszego miesiąca do 1 roku życia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. w wieku od 1 roku do momentu przed osiągnięciem widocznych cech pokwitania.',
@@ -6040,7 +6041,7 @@ export const kpp: Test = {
         },
         {
           answer: 'D. w wieku od narodzin do pierwszego miesiąca życia.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'E. żadna z odpowiedzi nie jest prawidłowa',
@@ -6069,7 +6070,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. noworodka od narodzin do kilku godzin po porodzie.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -6086,7 +6087,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. przyklejając elektrody jedną umieścić pod prawym obojczykiem drugą wysoko pod lewą pachą.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. wszystkie czynności wykonujemy jak u poszkodowanej nie będącej w ciąży.',
@@ -6119,7 +6120,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. poprawne odpowiedzi to A, B, C.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -6144,7 +6145,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie odpowiedzi są poprawne.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -6169,7 +6170,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. wszystkie odpowiedzi są poprawne.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     },
@@ -6182,7 +6183,7 @@ export const kpp: Test = {
         },
         {
           answer: 'B. niewydolność krążeniowa.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'C. niewydolność oddechowa.',
@@ -6211,7 +6212,7 @@ export const kpp: Test = {
         },
         {
           answer: 'C. niewydolność oddechowa.',
-          isCorrect: false
+          isCorrect: true
         },
         {
           answer: 'D. przedawkowanie leków .',
@@ -6244,7 +6245,7 @@ export const kpp: Test = {
         },
         {
           answer: 'E. prawidłowe są A, B.',
-          isCorrect: false
+          isCorrect: true
         }
       ]
     }
