@@ -16,7 +16,6 @@ export class TestComponent implements OnInit {
   ngOnInit() {
     this.route.data
       .subscribe((data: { test: Test }) => {
-        console.log("TCL: TestComponent -> ngOnInit -> data", data)
         this.test = data.test;
       });
   }

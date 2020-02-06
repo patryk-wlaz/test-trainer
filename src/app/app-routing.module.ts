@@ -6258,6 +6258,8 @@ const kpp: Test = {
   ]
 };
 
+export const tests = [kpp];
+
 const routes: Routes = [
   {
     path: kpp.route,
@@ -6267,6 +6269,7 @@ const routes: Routes = [
   {
     path: '**',
     component: MainViewComponent,
+    data: { tests },
   },
 ];
 
