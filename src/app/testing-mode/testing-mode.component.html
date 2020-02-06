@@ -1,32 +1,34 @@
-<p>Click to start test:</p>
-<button (click)="start()">
-  {{ testQuestions ? 'Restart' : "Start" }}
-</button>
-
-<div *ngIf="testQuestions">
-  <p>Pozostało {{timeLeft / 1000}} sekund na pytanie:</p>
-  <app-question
-    [question]="currentQuestion"
-    (answerClick)="onAnswerClick($event)"
-    mode="test"
-    class="question">
-  </app-question>
-  <button (click)="swapQuestion()">
-    Next
+<div class="wrapper">
+  <p class="header font">Kliknij aby rozpocząć nowy test:</p>
+  <button (click)="start()" class="btn">
+    {{ testQuestions ? 'Restart' : "Start" }}
   </button>
-</div>
 
-<div *ngIf="correctAmount || correctAmount === 0">
-  <p>Koniec egzaminu</p>
-  <p>Prawidłowo rozwiązałeś {{correctAmount}} pytań z {{test.amounts.all}}. Wymagane jest {{test.amounts.required}} prawidłowych odpowiedzi.</p>
-  <p *ngIf="correctAmount >= test.amounts.required else negative">Wynik pozytywny</p>
-  <ng-template #negative>
-    <p>Wynik negatywny</p>
-  </ng-template>
-  <app-question
-    *ngFor="let question of testResults"
-    [question]="question"
-    mode="results"
-    class="question">
-  </app-question>
+  <div *ngIf="testQuestions" class="wrapper">
+    <p class="text font">Pozostało {{timeLeft / 1000}} sekund na pytanie:</p>
+    <app-question
+      [question]="currentQuestion"
+      (answerClick)="onAnswerClick($event)"
+      mode="test"
+      class="question">
+    </app-question>
+    <button (click)="swapQuestion()" class="btn">
+      Następne pytanie
+    </button>
+  </div>
+
+  <div *ngIf="correctAmount || correctAmount === 0" class="wrapper">
+    <p class="header font">Koniec egzaminu</p>
+    <p class="text font">Prawidłowo rozwiązałeś {{correctAmount}} pytań z {{test.amounts.all}}. Wymagane jest podanie {{test.amounts.required}} prawidłowych odpowiedzi.</p>
+    <p  class="text font" *ngIf="correctAmount >= test.amounts.required else negative">Wynik pozytywny</p>
+    <ng-template #negative>
+      <p class="text font">Wynik negatywny</p>
+    </ng-template>
+    <app-question
+      *ngFor="let question of testResults"
+      [question]="question"
+      mode="results"
+      class="question">
+    </app-question>
+  </div>
 </div>

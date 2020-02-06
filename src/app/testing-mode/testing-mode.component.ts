@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Question, Test } from '../config/model';
-import { isEmpty, sortBy, take, cloneDeep, map, some, filter } from 'lodash-es';
+import { reverse, isEmpty, sortBy, take, cloneDeep, map, some, filter } from 'lodash-es';
 
 @Component({
   selector: 'app-testing-mode',
@@ -60,6 +60,7 @@ export class TestingModeComponent implements OnInit {
     this.currentQuestion = null;
     this.timeLeft = null;
 
+    reverse(this.testResults); // to display in the same order as iot was displayed to the user
     const correct = filter(this.testResults, result => some(result.answers, answer => answer.checked && answer.isCorrect));
     this.correctAmount = correct.length;
   }

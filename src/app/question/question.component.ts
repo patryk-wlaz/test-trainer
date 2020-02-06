@@ -33,7 +33,7 @@ export class QuestionComponent {
     if (this.mode === 'showAll') { return correctClass && answer.isCorrect; }
     if (this.mode === 'results') {
       return correctClass && answer.isCorrect
-        || !correctClass && answer.checked;
+        || !correctClass && answer.checked && !answer.isCorrect;
     }
 
     return answer.checked && (answer.isCorrect === correctClass);
