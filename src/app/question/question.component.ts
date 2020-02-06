@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Question, Answer, Modes } from '../config/model';
 import { map } from 'lodash-es';
 
@@ -7,16 +7,13 @@ import { map } from 'lodash-es';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.scss']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent {
   @Input() question: Question;
   @Input() mode: Modes;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Output() answerClick = new EventEmitter<Question>();
 
   onPick(answer: Answer): void {
+    if (this.mode === 'results') { return; }
     this.question = {
       ...this.question,
       answers: map(this.question.answers, ans => ({
@@ -26,14 +23,20 @@ export class QuestionComponent implements OnInit {
           : false, // single choice
       })),
     };
+    this.answerClick.emit(this.question);
   }
 
   shouldUseRevealedAnswerClass(answer: Answer, correctClass: boolean): boolean {
-    if (!answer.checked && this.mode !== 'showAll') { return false; }
-    if (this.mode === 'showAll') {
-      return correctClass && answer.isCorrect;
+    if (this.mode === 'test') { return false; }
+    // if (this.mode !== 'showAll') { return false; }
+
+    if (this.mode === 'showAll') { return correctClass && answer.isCorrect; }
+    if (this.mode === 'results') {
+      return correctClass && answer.isCorrect
+        || !correctClass && answer.checked;
     }
-    return answer.isCorrect === correctClass;
+
+    return answer.checked && (answer.isCorrect === correctClass);
   }
 
 }
