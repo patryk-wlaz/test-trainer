@@ -14,6 +14,7 @@ export type Modes = 'showAll' | 'test' | 'results';
 export interface Test {
   name: string;
   route: string;
+  updatedAt: number;
   description: string;
   amounts: {
     all: number;

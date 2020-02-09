@@ -8,7 +8,8 @@ import { Test } from './config/model';
 
 // tslint:disable: max-line-length
 const kpp: Test = {
-  name: 'Testy na egzamin kpp',
+  name: 'Testy na egzamin potwierdzający posiadanie tytułu ratownika',
+  updatedAt: 1578524400000,
   route: 'kpp',
   description: 'Test pierwszej pomocy',
   amounts: {

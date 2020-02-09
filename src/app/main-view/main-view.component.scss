@@ -18,11 +18,16 @@
   cursor: pointer;
 
   .name {
+    text-align: center;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
   }
 
   .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
   }
 }

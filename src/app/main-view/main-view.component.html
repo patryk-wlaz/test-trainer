@@ -2,5 +2,6 @@
   <div *ngFor="let test of tests" class="test" routerLink="/{{test.route}}">
     <p class="name">{{test.name}}</p>
     <p class="description">{{test.description}}</p>
+    <p class="description">Zaktualizowano: {{test.updatedAt | date:'yyy.MM.dd'}}</p>
   </div>
 </div>
