@@ -8,14 +8,14 @@ import { Test } from './config/model';
 
 // tslint:disable: max-line-length
 const kpp: Test = {
-  name: 'Testy na egzamin potwierdzający posiadanie tytułu ratownika',
+  name: 'Recertyfikacja KPP',
   updatedAt: 1578524400000,
   route: 'kpp',
-  description: 'Test pierwszej pomocy',
+  description: 'Test na egzamin potwierdzający posiadanie tytułu ratownika',
   amounts: {
-    all: 3,
-    required: 2,
-    timeForQuestion: 6000,
+    all: 30,
+    required: 27,
+    timeForQuestion: 60000,
   },
   questions: [
     {
@@ -226,7 +226,11 @@ const kpp: Test = {
           isCorrect: false
         },
         {
-          answer: 'B. występują zaburzenia świadomości aż do jej utraty. C. może być spowodowana przedawkowaniem insuliny.',
+          answer: 'B. występują zaburzenia świadomości aż do jej utraty.',
+          isCorrect: false
+        },
+        {
+          answer: 'C. może być spowodowana przedawkowaniem insuliny.',
           isCorrect: false
         },
         {
@@ -740,7 +744,7 @@ const kpp: Test = {
       ]
     },
     {
-      question: '30. Osobie, która uległa podtopieniu, po wyjęciu z wody należy:',
+      question: '30. Osobie, która uległa podtopieniu, po wyjęciu z wody należy: (duplikat pyt. 28 - powielenie to występuje w materiałach źródłowych)',
       answers: [
         {
           answer: 'A. wylać wodę z dróg oddechowych poprzez odpowiednie ułożenie.',
@@ -1615,7 +1619,7 @@ const kpp: Test = {
       ]
     },
     {
-      question: '65. W krwotoku tętniczym przedramienia, który nie zmniejsza się po zaopatrzeniu opatrunkiem uciskowym założonym w miejscu krwawienia, należy rozważyć następujące postępowanie: 1. ułożeniem poszkodowanego płasko oraz umieszczenie kończyny powyżej poziomu serca. 2. wzmocnienie ucisku poprzez owinięcie opatrunku dodatkowymi zwojami bandaża. 3. zdjęcie już założonego opatrunku i ponowne założenie grubszego opatrunku. 4. założenie opaski zaciskowej na przedramieniu 5-7 cm powyżej miejsca krwawienia. 5. założenie drugiej opaski zaciskowej na ramieniu jeżeli pierwsza jest nieskuteczna. Prawidłowa odpowiedź to:',
+      question: '65. W krwotoku tętniczym przedramienia, który nie zmniejsza się po zaopatrzeniu opatrunkiem uciskowym założonym w miejscu krwawienia, należy rozważyć następujące postępowanie: 1. ułożenie poszkodowanego płasko oraz umieszczenie kończyny powyżej poziomu serca. 2. wzmocnienie ucisku poprzez owinięcie opatrunku dodatkowymi zwojami bandaża. 3. zdjęcie już założonego opatrunku i ponowne założenie grubszego opatrunku. 4. założenie opaski zaciskowej na przedramieniu 5-7 cm powyżej miejsca krwawienia. 5. założenie drugiej opaski zaciskowej na ramieniu jeżeli pierwsza jest nieskuteczna. Prawidłowa odpowiedź to:',
       answers: [
         {
           answer: 'A. 1,3,5.',
@@ -2197,7 +2201,11 @@ const kpp: Test = {
           isCorrect: false
         },
         {
-          answer: 'B. wypadkowi komunikacyjnemu towarzyszy uraz głowy, C. masz do czynienia z upadkiem z wysokości.',
+          answer: 'B. wypadkowi komunikacyjnemu towarzyszy uraz głowy.',
+          isCorrect: false,
+        },
+        {
+          answer: 'C. masz do czynienia z upadkiem z wysokości.',
           isCorrect: false,
         },
         {
@@ -2511,7 +2519,7 @@ const kpp: Test = {
       ]
     },
     {
-      question: '101. Do zadań koordynatora medycznych działań ratowniczych (KMDR) KSRG należy: 1. koordynacja działań z zakresu kwalifikowanej pierwszej pomocy, segregacji pierwotnej do czasu przybycia ZRM. 2. realizuje wraz z ratownikami KSRG kpp w strefach zagrożenie dla ZRM. 3. prowadzenie i ewentualne nadzorowanie segregacji, jako procesu określania priorytetów terapeutyczno-transportowych. 4. przekazuje informacje o wykonaniu dostępu do poszkodowanego i możliwości podjęcia medycznych czynności ratowniczych (mcr) przez ZRM. 5. transport poszkodowanych z kodem czerwonym do specjalistycznej placówki służby zdrowia. Prawidłowa odpowiedź to:',
+      question: '101. Do zadań koordynatora medycznych działań ratowniczych (KMDR) KSRG należy: 1. koordynacja działań z zakresu kwalifikowanej pierwszej pomocy, segregacji pierwotnej do czasu przybycia ZRM. 2. realizuje wraz z ratownikami KSRG kpp w strefach zagrożenia dla ZRM. 3. prowadzenie i ewentualne nadzorowanie segregacji, jako procesu określania priorytetów terapeutyczno-transportowych. 4. przekazuje informacje o wykonaniu dostępu do poszkodowanego i możliwości podjęcia medycznych czynności ratowniczych (mcr) przez ZRM. 5. transport poszkodowanych z kodem czerwonym do specjalistycznej placówki służby zdrowia. Prawidłowa odpowiedź to:',
       answers: [
         {
           answer: 'A. 1, 2, 3, 4.',
@@ -2685,7 +2693,7 @@ const kpp: Test = {
       question: '108. Udzielasz pomocy 6-letniej ofierze wypadku samochodowego, u której podejrzewasz uraz kręgosłupa szyjnego. Dziecko jest nieprzytomne, oddycha płytko, z wysiłkiem, słychać charczenie. Częstość oddechów 30 na minutę. Aby udrożnić drogi oddechowe powinieneś wykonać następujący manewr:',
       answers: [
         {
-          answer: 'A. maksymalnie odchylając głowę do tyłu.',
+          answer: 'A. maksymalnie odchylić głowę do tyłu.',
           isCorrect: false
         },
         {
@@ -4210,7 +4218,7 @@ const kpp: Test = {
       question: '169. Elektrody AED umieszczamy:',
       answers: [
         {
-          answer: 'A. jedną pod prawym obojczykiem, drugą w przedniej linii pachowej przedniej lewej tuż pod mięśniem piersiowym, ułożenie przednio-boczne. (zgodnie z piktogramem umieszczonym na elektrodach).',
+          answer: 'A. jedną pod prawym obojczykiem, drugą w przedniej linii pachowej tuż pod mięśniem piersiowym, ułożenie przednio-boczne. (zgodnie z piktogramem umieszczonym na elektrodach).',
           isCorrect: true
         },
         {
@@ -4372,11 +4380,7 @@ const kpp: Test = {
           isCorrect: true
         },
         {
-          answer: 'D. używać pod adresem poszkodowanego stwierdzeń w rodzaju „ja wiem lepiej", co daje mu',
-          isCorrect: false
-        },
-        {
-          answer: 'E. pewność wysokich kompetencji ratownika.',
+          answer: 'D. używać pod adresem poszkodowanego stwierdzeń w rodzaju „ja wiem lepiej", co daje mu pewność wysokich kompetencji ratownika.',
           isCorrect: false
         }
       ]
@@ -4468,7 +4472,7 @@ const kpp: Test = {
           isCorrect: true
         },
         {
-          answer: 'C. podtrzymywać odchyloną ku tyłowi ku tyłowi głowę poszkodowanego, aby udrożnić drogi oddechowe.',
+          answer: 'C. podtrzymywać odchyloną ku tyłowi głowę poszkodowanego, aby udrożnić drogi oddechowe.',
           isCorrect: false
         },
         {
