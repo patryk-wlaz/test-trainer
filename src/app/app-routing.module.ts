@@ -744,7 +744,7 @@ const kpp: Test = {
       ]
     },
     {
-      question: '30. Osobie, która uległa podtopieniu, po wyjęciu z wody należy: (duplikat pyt. 28 - powielenie to występuje w materiałach źródłowych)',
+      question: '30. Osobie, która uległa podtopieniu, po wyjęciu z wody należy:',
       answers: [
         {
           answer: 'A. wylać wodę z dróg oddechowych poprzez odpowiednie ułożenie.',
