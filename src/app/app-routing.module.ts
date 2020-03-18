@@ -25177,7 +25177,7 @@ const kpp: Test = {
   ]
 };
 
-export const tests = [kpp];
+export const tests = [kpp, inspekcjaAll];
 
 const routes: Routes = [
   {
