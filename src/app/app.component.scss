@@ -1,15 +1,30 @@
+@import '~src/variables';
+
 .header-wrapper {
   display: flex;
-  width: 483px;
+  width: 300px;
   align-items: center;
-  margin: 16px 75px;
+  margin: 5px 5px;
   cursor: pointer;
 }
 
 .header {
-  font-size: 24px;
+  font-size: 14px;
+  margin-left: 5px;
+  margin: 0 0 0 5px;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 10px;
-  margin: 0 0 0 15px;
   padding: 0;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .header-wrapper {
+    width: 483px;
+    margin: 16px 75px;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-left: 10px;
+    margin: 0 0 0 15px;
+  }
 }

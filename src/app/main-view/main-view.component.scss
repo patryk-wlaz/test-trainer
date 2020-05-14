@@ -1,16 +1,20 @@
+@import '~src/variables';
+
 .tests-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 50px;
+  padding: 0;
 }
 
 .test {
-  padding: 20px;
+  margin: 20px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: #D8C99B;
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,17 +23,47 @@
 
   .name {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
   }
 
   .description {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 .test:hover {
   border: 1px solid #AB1B24;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .tests-wrapper {
+    padding: 30px;
+  }
+
+  .test {
+    padding: 20px;
+    width: 300px;
+
+    .name {
+      font-size: 16px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .tests-wrapper {
+    padding: 50px;
+    flex-direction: row;
+  }
+
+  .test {
+    width: 350px;
+  }
 }
