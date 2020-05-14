@@ -1,8 +1,13 @@
+@import '~src/variables';
+
+.question {
+  font-size: 14px;
+}
+
 .answer {
   display: flex;
-  margin: 15px 0;
+  margin: 5px 0;
   cursor: pointer;
-  font-size: 22px;
   justify-content: space-between;
 }
 
@@ -21,31 +26,59 @@ label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+
+.answer-label {
+  padding: 2px 0 2px 20px;
+  line-height:15px;
+  background-repeat:no-repeat;
+  background-position: 0 2px;
+  font-size: 12px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+.red-check{
+  background-image:url(../../assets/red-check.png);
+}
+.no-check{
+  background-image:url(../../assets/no-check.png);
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .question {
+    font-size: 16px;
   }
-  
-  input[type=checkbox].css-checkbox {
-      position: absolute; 
-      overflow: hidden; 
-      clip: rect(0 0 0 0); 
-      height:1px; 
-      width:1px; 
-      margin:-1px; 
-      padding:0;
-      border:0;
+
+  .answer {
+    margin: 5px 0;
   }
-  
-  input[type=checkbox].css-checkbox + label.css-label {
+
+  .answer-label {
+    font-size: 14px;
+    background-position: 0 10px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .question {
+    font-size: 18px;
+  }
+
+  .answer-label {
     padding: 20px;
-    line-height:15px;
-    background-repeat:no-repeat;
-    background-position: 0 18px;
-    font-size:15px;
-    vertical-align:middle;
-    cursor:pointer;
+    background-position: 0 20px;
+    font-size: 16px;
   }
-  .red-check{
-    background-image:url(../../assets/red-check.png);
-  }
-  .no-check{
-    background-image:url(../../assets/no-check.png);
-  }
+}

@@ -9,7 +9,7 @@ import { Test } from '../config/model';
 })
 export class TestComponent implements OnInit {
   test: Test;
-  mode: string;
+  mode = 'test';
 
   constructor(private route: ActivatedRoute) {}
 

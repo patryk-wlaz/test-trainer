@@ -1,3 +1,5 @@
+@import '~src/variables';
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -8,22 +10,21 @@
   border : 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 250px;
   margin: 20px;
   padding: 20px;
 }
 
 .btn {
   display: inline-block;
-  margin: 20px;
+  margin: 7px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  whitespace: nowrap;
   padding: 6px 12px;
-  font-size: 1.4rem;
+  font-size: 12px;
   border-radius: 3px;
   border: 1px solid transparent;
   text-decoration: none;
@@ -59,11 +60,42 @@
 }
 
 .header {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .text {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+  .btn {
+    font-size: 16px !important;
+    margin: 20px !important;
+    padding: 10px 15px !important;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .question {
+    width: 500px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .question {
+    width: 800px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
 }

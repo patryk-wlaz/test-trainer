@@ -1,3 +1,5 @@
+@import '~src/variables';
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,19 @@
   border : 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 250px;
   margin: 20px;
   padding: 20px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .question {
+    width: 500px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .question {
+    width: 800px;
+  }
 }

@@ -1,18 +1,20 @@
+@import '~src/variables';
+
 .mode-buttons-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   .btn {
     display: inline-block;
-    margin: 20px;
+    margin: 7px;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    whitespace: nowrap;
     padding: 6px 12px;
-    font-size: 1.4rem;
+    font-size: 12px;
     border-radius: 3px;
     border: 1px solid transparent;
     text-decoration: none;
@@ -47,9 +49,28 @@
   text-align: center;
   color: #292935;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 32px;
-  margin-left: 32px;
+  line-height: 28px;
+  margin-left: 28px;
   margin-bottom: 0;
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+  .mode-buttons-wrapper {
+    flex-direction: row;
+  }
+
+  .btn {
+    font-size: 16px !important;
+    margin: 20px !important;
+    padding: 10px 15px !important;
+  }
+
+  .header {
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 32px;
+  }
 }

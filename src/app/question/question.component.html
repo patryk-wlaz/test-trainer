@@ -1,4 +1,4 @@
-<h2>{{question.question}}</h2>
+<h2 class="question">{{question.question}}</h2>
 <div
   *ngFor="let answer of question.answers"
   class="answer"
@@ -9,7 +9,7 @@
   <label
     [for]="answer.answer"
     name="checkbox2_lbl"
-    class="css-label"
+    class="answer-label"
     [class.red-check]="answer.checked"
     [class.no-check]="!answer.checked">
     {{answer.answer}}
