@@ -25177,7 +25177,7807 @@ const kpp: Test = {
   ]
 };
 
-export const tests = [kpp, inspekcjaAll];
+const patent: Test = {
+  name: 'Patent strzelecki',
+  updatedAt: 1655879410310,
+  route: 'patent',
+  description: 'Test na patent strzelecki',
+  amounts: {
+    all: 10,
+    required: 9,
+    timeForQuestion: 60000,
+  },
+  questions: [
+    {
+      "question": "Ograniczenia regulaminowe strzelby gładkolufowej",
+      "answers": [
+        {
+          "answer": "A: maksymalna długość komory nabojowej: 70mm, wagomiar max: 12",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: maksymalna długość komory nabojowej: 76mm, wagomiar max: 16",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: maksymalna długość komory nabojowej: 76mm, wagomiar max: 12",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Maksymalna długość lufy w pistolecie sportowym to",
+      "answers": [
+        {
+          "answer": "A: 220mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 183mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 153mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Osoba posiadająca pozwolenie na broń do celów sportowych jest obowiązana przedstawić właściwemu organowi Policji aktualne orzeczenie lekarskie i psychologiczne",
+      "answers": [
+        {
+          "answer": "A: co roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie ma takiego obowiązku",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: raz na 5 lat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W razie przekroczenia granic stanu wyższej konieczności",
+      "answers": [
+        {
+          "answer": "A: sprawca nie podlega karze",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sąd może zastosować nadzwyczajne złagodzenie kary, a nawet odstąpić od jej wymierzenia",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: sąd wydaje wyrok uniewinniający, jeśli sprawca działał w dużym wzburzeniu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Aby przenieść punkt trafienia broni w prawo, regulując przyrządy celownicze należy",
+      "answers": [
+        {
+          "answer": "A: przesunąć muszkę w prawo lub szczerbinę w lewo",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przesunąć muszkę w lewo lub szczerbinę w prawo",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: opuścić słupek muszki lub podnieść szczerbinę",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią używaną do strzelania konkurencji zatwierdzonych przez ISSF może być m.in. broń palna centralnego zapłonu, w tym",
+      "answers": [
+        {
+          "answer": "A: pistolet centralnego zapłonu, kaliber od 7.65 do 9.43mm, o ciężarze nie przekraczającym 1400g, oporze języka spustowego nie mniejszym niż 1360g, długości lufy nie większej niż 160mm, mieszczący się w pudełku 300x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: karabin dowolny centralnego zapłonu, kaliber do 8mm, o dowolnym oporze języka spustowego i ciężarze nie przekraczającym 8000g",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: karabin sportowy centralnego zapłonu, kaliber do 8mm, o dowolnym oporze języka spustowego i ciężarze nie większym niż 9000g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Aby zakupić broń palną należy przedstawić sprzedawcy",
+      "answers": [
+        {
+          "answer": "A: pozwolenie na posiadanie broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: legitymację posiadacza broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zaświadczenie uprawniające do zakupu danego typu broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Przywóz broni i amunicji z państw nie będących członkami Unii Europejskiej przez obywateli polskich wymaga",
+      "answers": [
+        {
+          "answer": "A: posiadania Europejskiej Karty Broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadania zaświadczenia wydanego przez właściwego konsula Rzeczypospolitej Polskiej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: uprzedniego wydania zaświadczenia przez władze państwa z którego będzie przywożona broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń uznaje się za załadowaną, jeśli",
+      "answers": [
+        {
+          "answer": "A: po naciśnięciu spustu nastąpiłby wystrzał",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiada nabój w: komorze nabojowej, bębnie lub w podłączonym albo stanowiącym część broni magazynku",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: posiadacz broni ma przy sobie naładowany magazynek pasujący do broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu sportowego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 6500g, dowolne mechaniczne przyrządy celownicze",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: kaliber 5.6mm, ciężar max: 5500g, zamknięte mechaniczne przyrządy celownicze",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 8000g, otwarte mechaniczne przyrządy celownicze",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią palną alarmową jest",
+      "answers": [
+        {
+          "answer": "A: urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, jest zdolne do wystrzelenia z lufy o kalibrze nie mniejszym niż 25 mm substancji w postaci ładunku pirotechnicznego celem wywołania efektu wizualnego lub akustycznego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 1 metr",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broń lufowa, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń - z wyłączeniem broni sportowej i myśliwskiej - wydaje się osobie, która ukończyła",
+      "answers": [
+        {
+          "answer": "A: 18 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 21 lat",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 17 lat, na wniosek stowarzyszenia obronnego po uzyskaniu zgody rodzica lub innego opiekuna prawnego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kiedy i w jaki sposób w czasie trwania konkurencji można odłożyć broń",
+      "answers": [
+        {
+          "answer": "A: tylko po wyjęciu magazynka i włożeniu wskaźnika bezpieczeństwa, z lufą skierowaną w stronę kulochwytu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: tylko po włożeniu magazynka i wyjęciu wskaźnika bezpieczeństwa, z lufą skierowaną w stronę kulochwytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w czasie obserwacji tarczy przez lunetę, kładąc załadowaną broń z lufą skierowaną w kierunku tarczy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń obowiązku rejestracji broni, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: odbiera pozwolenie na broń oraz orzeka przepadek broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: zwraca się z żądaniem natychmiastowej rejestracji broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Opłata za egzamin potwierdzający posiadanie odpowiednich kwalifikacji do uprawiania sportów o charakterze strzeleckim pobierana jest na podstawie przepisów",
+      "answers": [
+        {
+          "answer": "A: Regulaminów Polskiego Związku Strzelectwa Sportowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Ustawy o Broni i Amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: rozporządzenia ministra odpowiedzialnego za sprawy kultury fizycznej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Strzelbę zarejestrowaną do celów kolekcjonerskich można sprzedać wyłącznie",
+      "answers": [
+        {
+          "answer": "A: osobie mającej pozwolenie na strzelby do celów kolekcjonerskich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osobie posiadającej pozwolenie do celów kolekcjonerskich",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: osobie mającej pozwolenie na strzelby",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnia obowiązku rejestracji broni popełnia",
+      "answers": [
+        {
+          "answer": "A: występek",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wykroczenie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: eksces intensywny",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Magazyn broni wyposaża się w",
+      "answers": [
+        {
+          "answer": "A: gaśnicę pianową typu D - do gaszenia pożarów metali palnych np. magnezu, sodu, uranu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: gaśnicę tetrową typu B - do gaszenia pożarów cieczy i ciał stałych, które paląc się ulegają stopieniu np. benzyny, polietylenu, smoły",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: gaśnicę proszkową ABC o masie środka gaśniczego co najmniej 4 kg oraz koc gaśniczy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Zakres przedmiotowy teoretycznej części egzaminu ze znajomości przepisów dotyczących posiadania broni obejmuje sprawdzenie",
+      "answers": [
+        {
+          "answer": "A: znajomości ustawy o broni i amunicji oraz przepisów kodeksu karnego dotyczących przestępstw związanych z bronią",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: znajomości przepisów ustawy z dnia 21 maja 1999 r. o broni i amunicji oraz przepisów wydanych na jej podstawie oraz znajomości przepisów Kodeksu karnego dotyczących przestępstw związanych z bronią",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: znajomości posługiwania się bronią i wzorcowego regulaminu strzelnic",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broni palnej NIE wolno wziąć ze sobą",
+      "answers": [
+        {
+          "answer": "A: do sądu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: na spacer zatłoczonym deptakiem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na wakacje",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Nie wymaga się pozwolenia na broń",
+      "answers": [
+        {
+          "answer": "A: otrzymaną na drodze spadku lub darowizny",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: podczas używania broni w celach sportowych, szkoleniowych lub rekreacyjnych na strzelnicy działającej na podstawie zezwolenia właściwego organu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: posiadaną do celów pamiątkowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń palną i amunicję do tej broni można posiadać",
+      "answers": [
+        {
+          "answer": "A: na podstawie pozwolenia na broń wydanego przez właściwego ze względu na miejsce stałego pobytu zainteresowanej osoby lub siedzibę zainteresowanego podmiotu komendanta wojewódzkiego Policji, a w przypadku żołnierzy zawodowych - na podstawie pozwolenia wydanego przez właściwego komendanta oddziału Żandarmerii Wojskowej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: na podstawie pozwolenia na broń wydanego przez komendanta wojewódzkiego Policji, bez względu na miejsce zamieszkania zainteresowanej osoby lub siedzibę zainteresowanego podmiotu, a w przypadku żołnierzy zawodowych - na podstawie pozwolenia wydanego przez właściwy organ wojskowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na podstawie pozwolenia na broń wydanego przez właściwego, ze względu na miejsce zamieszkania zainteresowanej osoby lub siedzibę zainteresowanego podmiotu, komendanta powiatowego Policji, a w przypadku żołnierzy zawodowych - na podstawie pozwolenia wydanego przez właściwy organ wojskowy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów kolekcjonerskich lub pamiątkowych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: wyłącznie odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, sportowym, szkoleniowym, rekonstrukcji historycznej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wyłącznie odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, rekonstrukcji historycznych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wyłącznie odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, sportowym z wyłączeniem broni samoczynnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zasady wydawania i cofania pozwoleń na broń, nabywania, rejestracji, przechowywania, zbywania i deponowania broni i amunicji, przewozu przez terytorium Rzeczypospolitej Polskiej oraz przywozu z zagranicy i wywozu za granicę broni i amunicji, jak również zasady posiadania broni i amunicji przez cudzoziemców oraz zasady funkcjonowania strzelnic określa",
+      "answers": [
+        {
+          "answer": "A: rozporządzenie ministra spraw wewnętrznych i administracji z dnia 3 kwietnia 2000 r. w sprawie przechowywania, noszenia oraz przechowywania broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ustawa z dnia 21 maja 1999 r. o broni i amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: ustawa z dnia 24 maja 2013 r. o środkach przymusu bezpośredniego i broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Komora nabojowa to",
+      "answers": [
+        {
+          "answer": "A: tylna część lufy, w której umieszczany jest nabój przed wystrzałem",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: miejsce, w które wkłada się naładowany magazynek",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pomieszczenie służące do elaboracji amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń służącą do celów kolekcjonerskich może być wydane na",
+      "answers": [
+        {
+          "answer": "A: broń palną centralnego zapłonu z lufami gwintowanymi, o kalibrze do 12 mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: samoczynną broń palną w postaci pistoletów maszynowych o kalibrze od 6 mm do 12 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń palną wytworzoną lub przerobioną w sposób pozwalający na zatajenie jej przeznaczenia, a także broń imitującą inne przedmioty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów sportowych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: centralnego zapłonu z lufami gwintowanymi o kalibrze do 12mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: gazowej w kalibrze od 6 do 12mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przeznaczonej do strzelania wyłącznie amunicją ślepą, w tym samoczynnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń zasad przechowywania, noszenia oraz ewidencjonowania broni i amunicji, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: zarządza kontrolę sposobu przechowywania broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: jest zobligowany przeszukać miejsce stałego pobytu osoby",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Istotnymi częściami amunicji są",
+      "answers": [
+        {
+          "answer": "A: pociski wypełnione materiałami wybuchowymi, chemicznymi środkami obezwładniającymi lub zapalającymi albo innymi substancjami, których działanie zagraża życiu lub zdrowiu, spłonki inicjujące spalanie materiału miotającego i materiał miotający w postaci prochu strzelniczego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: pociski, materiał miotający w postaci prochu strzelniczego, łuski, spłonki inicjujące spalanie materiału miotającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: naboje rozdzielnego ładowania do broni wyprodukowanej przed rokiem 1895",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Opłata za wystawienie jednej promesy to",
+      "answers": [
+        {
+          "answer": "A: 17 zł",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 10 zł",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 242 zł",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu małokalibrowego do ruchomej tarczy",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 5500g, opór spustu min: 500g, optyczne przyrządy cel. bez ograniczeń krotności, długość lufy max: 1000mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: kaliber 5.6mm, ciężar max: 6500g, opór spustu min: 100g, optyczne przyrządy cel. do krotności 4x, długość lufy max: 1000mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 8000g, opór spustu min: 1000g, optyczne przyrządy cel. do krotności 6x, długość lufy max: 1000mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ewidencja posiadanej broni i amunicji podmiotu posiadającego broń i amunicję",
+      "answers": [
+        {
+          "answer": "A: może być prowadzona w formie elektronicznych wydruków komputerowych, przy czym zmiany wpisów muszą być dokonywane kolorem czerwonym w sposób czytelny, ze wskazaniem daty zmiany i nazwiska osoby uprawnionej do dokonania takiej zmiany",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: musi być prowadzona w formie papierowej, a wpisy w ewidencji muszą być dokonywane kolorem niebieskim lub czarnym w sposób czytelny",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: może być prowadzona z wykorzystaniem elektronicznych metod przetwarzania informacji pod warunkiem zastosowania rozwiązań systemowych umożliwiających rejestrację i przechowywanie wszystkich operacji wraz z kopią zapasową oraz pozwalających na ich weryfikację na podstawie dokumentów przechowywanych przez podmiot posiadający broń i amunicję przez okres 5 lat od dokonania ostatniego wpisu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Posiadanie broni, nie mając przy sobie legitymacji osoby dopuszczonej do posiadania broni i świadectwa broni stanowi",
+      "answers": [
+        {
+          "answer": "A: przestępstwo",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wykroczenie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: eksces ekstensywny",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zaświadczenie uprawniające do nabycia broni ważne jest",
+      "answers": [
+        {
+          "answer": "A: 3 miesiące",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: bezterminowo",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 6 miesięcy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicję można nabywać",
+      "answers": [
+        {
+          "answer": "A: na podstawie legitymacji posiadacza broni lub świadectwa broni, wyłącznie do broni określonej w legitymacji",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: na podstawie zaświadczenia uprawniającego do zakupu amunicji, wystawionego przez właściwy organ Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na podstawie dowodu zakupu broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czoki w broni gładkolufowej służą do",
+      "answers": [
+        {
+          "answer": "A: blokowania wybranej komory nabojowej, aby strzelać tylko z jednej lufy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kształtowania wiązki wystrzelonego śrutu, co ma wpływ na celność i skuteczny zasięg strzału",
+          "isCorrect": true
+        },
+        {
+          "answer": "C:  zmniejszania światła przewodu lufy, aby skorzystać z amunicji o mniejszym kalibrze",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Stan wyższej konieczności określa, że nie popełnia przestępstwa ten, kto",
+      "answers": [
+        {
+          "answer": "A: unika zamachu np. poprzez ukrycie się",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ratuje ludzkie zdrowie lub życie, minimalizując liczbę ofiar",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ratując dobro chronione prawem poświęca dobro, które nie przedstawia wartości oczywiście wyższej od dobra ratowanego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palną pozbawioną cech użytkowych można posiadać na podstawie",
+      "answers": [
+        {
+          "answer": "A: karty rejestracyjnej broni pozbawionej cech użytkowych wydanej przez właściwego ze względu na miejsce stałego pobytu zainteresowanej osoby lub siedzibę zainteresowanego podmiotu komendanta wojewódzkiego Policji, a w przypadku żołnierzy zawodowych - właściwego komendanta oddziału Żandarmerii Wojskowej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: legitymacji osoby dopuszczonej do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dowodu zakupu i świadectwa broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kaliber broni to",
+      "answers": [
+        {
+          "answer": "A: średnica przewodu lufy mierzona w komorze nabojowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: uśredniona średnica przewodu lufy broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: najmniejsza średnica przewodu lufy. W przypadku luf gwintowanych, średnica mierzona na polach gwintu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnia obowiązku zawiadomienia Policji o utracie lub zbyciu broni palnej popełnia",
+      "answers": [
+        {
+          "answer": "A: wykroczenie lub przestępstwo, zależnie od rodzaju utraconej broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wykroczenie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: zbrodnię",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wymiar pudełka pistoletów na 25m",
+      "answers": [
+        {
+          "answer": "A: 420x200x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 420x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 300x150x50mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów kolekcjonerskich, nie uprawnia do posiadania następujących rodzajów broni:",
+      "answers": [
+        {
+          "answer": "A: broni palnej bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: samoczynnej broni palnej, zdolnej do rażenia celów na odległość",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broni alarmowej albo innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą, w tym samoczynnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Maksymalna długość lufy w karabinie pneumatycznym lub małokalibrowym do ruchomej tarczy",
+      "answers": [
+        {
+          "answer": "A: 850mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 1000mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 762mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Szkolić z obsługi broni i strzelania na strzelnicy może",
+      "answers": [
+        {
+          "answer": "A: instruktor PZSS lub LOK",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadacz pozwolenia na broń palną do celów szkoleniowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każda trzeźwa osoba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Opłata za wystawienie jednej promesy na zakup trzech sztuk broni palnej to",
+      "answers": [
+        {
+          "answer": "A: 17 zł",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 10 zł",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 3 x 17 zł = 51 zł",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy organy Policji mogą ograniczyć lub wykluczyć możliwość noszenia broni?",
+      "answers": [
+        {
+          "answer": "A: Tak, co potwierdza się w legitymacji posiadacza broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Nie, chyba że pozwolenie na broń zostało czasowo zawieszone lub odebrane",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, ale tylko w przypadku broni posiadanej na podstawie pozwolenia do celów kolekcjonerskich lub pamiątkowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Znalazca broni",
+      "answers": [
+        {
+          "answer": "A: może złożyć pisemne oświadczenie woli o przeniesieniu własności znalezionej broni na rzecz Skarbu Państwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może wystąpić z wnioskiem o wydanie pozwolenia na znalezioną broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nie ma żadnych praw względem znalezionej broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do WPA należy zgłaszać",
+      "answers": [
+        {
+          "answer": "A: zakup amunicji lub jej zużycie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zakup/sprzedaż broni lub zmianę miejsca stałego pobytu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: obie odpowiedzi są poprawne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zakończenie strzelania na strzelnicy zgłasza się",
+      "answers": [
+        {
+          "answer": "A: innym osobom korzystającym z przyległych osi strzeleckich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: właścicielowi strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: prowadzącemu strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnia obowiązku zawiadomienia Policji o zmianie miejsca stałego pobytu w ciągu 14 dni od zmiany podlega karze",
+      "answers": [
+        {
+          "answer": "A: utraty pozwolenia na broń i całej posiadanej broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny, ograniczenia wolności lub pozbawienia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: aresztu albo grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów łowieckich, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: dopuszczonej do wykonywania polowań na podstawie odrębnych przepisów oraz broni palnej w postaci pistoletów lub rewolwerów",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: centralnego zapłonu z lufami gwintowanymi o kalibrze do 12mm, broni gładkolufowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dopuszczonej do wykonywania polowań na podstawie odrębnych przepisów",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za amunicję nie uważa się",
+      "answers": [
+        {
+          "answer": "A: pocisków wypełnionych chemicznymi środkami obezwładniającymi",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: spłonek inicjujących spalanie materiału miotającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pocisków z rdzeniem stalowym osadzonych w łusce nabojowej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba uzależniona od alkoholu lub substancji psychoaktywnych może otrzymać pozwolenie na bron?",
+      "answers": [
+        {
+          "answer": "A: Tylko jeśli dobrze funkcjonuje w społeczeństwie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, jeśli jest niekarana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii broni szczególnie niebezpiecznej zalicza się",
+      "answers": [
+        {
+          "answer": "A: samoczynną broń palną, zdolną do rażenia celów na odległość",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: karabiny wyborowe, o donośności powyżej 1200m",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolety niewielkich rozmiarów, które łatwo ukryć",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Przedsiębiorca, który uzyskał koncesję na prowadzenie działalności gospodarczej w zakresie usług ochrony osób i mienia, jeżeli broń jest mu niezbędna w zakresie i formach określonych w koncesji, po uzyskaniu świadectwa broni może wynajmować broń od",
+      "answers": [
+        {
+          "answer": "A: Policji lub Sił Zbrojnych Rzeczypospolitej Polskiej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: organizacji sportowych i łowieckich",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: podmiotów prowadzących strzelnice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Strzelający powinni nosić",
+      "answers": [
+        {
+          "answer": "A: ochronniki słuchu i wzroku",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: identyfikatory, ułatwiające prowadzącemu kontrolę tożsamości",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: licencję sportową w widocznym miejscu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kontrolę magazynu broni stwierdzającą, czy magazyn broni spełnia warunki określone w przepisach oraz czy sposób zabezpieczenia broni i amunicji jest zgodny z wymogami określonymi w przepisach przeprowadza",
+      "answers": [
+        {
+          "answer": "A: kierownik podmiotu posiadającego broń i amunicję lub zatrudniona przez niego i upoważniona pisemnie osoba posiadająca dopuszczenie do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: upoważniony przez komendanta wojewódzkiego (Komendanta Stołecznego) Policji funkcjonariusz Policji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: przedstawiciel Państwowej Straży Pożarnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za bezpieczeństwo w zorganizowanych formach szkolenia strzeleckiego i w strzelaniach rekreacyjnych jest odpowiedzialny",
+      "answers": [
+        {
+          "answer": "A: prowadzący strzelanie, posiadający uprawnienia, o których mowa w rozporządzeniu MSWiA z 6 października 2011 roku (Dz. U. z 2011 r, poz. 1418)",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: kierownik strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wyznaczona przez prowadzącego strzelanie osoba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W rozumieniu UoBiA bronią palną jest",
+      "answers": [
+        {
+          "answer": "A: każda przenośna broń lufowa, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego i rażenia celów na odległość nie mniejszą niż 1 m",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: każda przenośna broń, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każda przenośna broń lufowa, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Istotnymi częściami broni palnej są",
+      "answers": [
+        {
+          "answer": "A: szkielet broni, baskila, lufa z komorą nabojową, zamek, komora zamkowa oraz bęben nabojowy",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: szkielet, lufa, przyrządy optyczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: szkielet broni, lufa, mechanizm spustowo-uderzeniowy, kurek, iglica, komora zamkowa oraz bęben nabojowy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Noszenie broni oznacza",
+      "answers": [
+        {
+          "answer": "A: przemieszczanie się z bronią załadowaną",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: chodzenie z bronią poza strzelnicą",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każdy sposób przemieszczania broni rozładowanej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba będąca pod wpływem alkoholu lub innych środków odurzających, udział w zajęciach z bronią",
+      "answers": [
+        {
+          "answer": "A: absolutnie nie może wziąć",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: może wziąć za zgodą prowadzącego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: może wziąć, pod warunkiem że jest to trening bez amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Obrona konieczna to działanie wyłącznie w celu",
+      "answers": [
+        {
+          "answer": "A: minimalizacji ekscesu intensywnego lub ekstensywnego sprawcy przestępstwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odparcia bezpośredniego, bezprawnego zamachu na jakiekolwiek dobro chronione prawem",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: uchylenia bezpośredniego niebezpieczeństwa grożącemu dobru chronionemu prawem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy na strzelnicy wolno używać broni innych osób korzystających ze strzelnicy?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale tylko za zgodą użytkownika broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, o ile posiada się pozwolenie na dany rodzaj broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Nie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Minimalny ciężar oporu spustu karabin standardowy",
+      "answers": [
+        {
+          "answer": "A: 500g",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 1500g",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: bez ograniczeń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za dający się przystosować do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego uznaje się",
+      "answers": [
+        {
+          "answer": "A: przedmiot, który ze względu na swoją budowę lub materiał, z którego jest wykonany, może być łatwo przerobiony w celu miotania",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: zdatną do użytku lufę z komorą nabojową",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: magazynek lub bęben nabojowy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas zajęć strzeleckich, strzelający bezzwłocznie przerywa strzelanie po usłyszeniu następującej komendy wydanej przez prowadzącego strzelanie lub inną osobę",
+      "answers": [
+        {
+          "answer": "A: STOP",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: NIE STRZELAĆ",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ZAKOŃCZYĆ STRZELANIE",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenia na broń nie wymaga się między innymi w przypadku",
+      "answers": [
+        {
+          "answer": "A: posiadania broni palnej o kalibrze powyżej 6 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: gromadzenia broni w zbiorach muzealnych na podstawie odrębnych przepisów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: posiadania przedmiotów przeznaczonych do obezwładniania osób za pomocą energii elektrycznej o średniej wartości prądu w obwodzie przekraczającej 10 mA",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane w celach kolekcjonerskich, może być wydane na pistolety i rewolwery centralnego zapłonu o kalibrach",
+      "answers": [
+        {
+          "answer": "A: 15,65 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 12,43 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 6,35 mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba nie mająca skończonych 21 lat może otrzymać pozwolenie na broń?",
+      "answers": [
+        {
+          "answer": "A: Tak, od 18 lat, na wniosek szkoły, organizacji sportowej, PZŁ lub stowarzyszenia obronnego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, jeśli PZSS wyrazi zgodę",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, od 16 lat, na wniosek szkoły, organizacji sportowej, PZŁ lub stowarzyszenia obronnego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów szkoleniowych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, sportowym",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, sportowym, kolekcjonerskim",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: odpowiadającej celom: ochrony osobistej, ochrony osób lub mienia, łowieckim, sportowym z wyłączeniem broni samoczynnej przystosowanej do strzelania wyłącznie przy pomocy prochu czarnego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku używania przez osobę posiadającą pozwolenie na broń, broni w celach sportowych lub szkoleniowych poza strzelnicą, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: może zażądać wykonania na koszt sprawcy ekspertyzy ustalającej, czy miejsce używania broni było bezpieczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: składa wniosek do Prokuratury w sprawie posługiwania się bronią bez wymaganych uprawnień",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Szczegółowe zasady zachowania bezpieczeństwa na strzelnicy określa",
+      "answers": [
+        {
+          "answer": "A: instrukcja szkolenia pracowników ochrony",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: regulamin strzelnicy",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: prowadzący strzelanie przed rozpoczęciem strzelania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zabrania się kierowania wylotu lufy w kierunku",
+      "answers": [
+        {
+          "answer": "A: innym niż kulochwyt",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: innym niż bezpieczny, jeśli broń jest rozładowana",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ludzi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dopuszcza się przechowywanie broni palnej w",
+      "answers": [
+        {
+          "answer": "A: szafce nocnej zamykanej na klucz",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sejfie klasy S1, niezależnie od wagi lub wymiarów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: ciężkiej metalowej szafie przytwierdzonej do ściany",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Rozporządzenie w sprawie wzorcowego regulaminu strzelnic określa wzorcowy regulamin bezpiecznego funkcjonowania strzelnic, z uwzględnieniem",
+      "answers": [
+        {
+          "answer": "A: warunków korzystania ze strzelnicy, sposobu obchodzenia się z bronią oraz zachowania się osób przebywających na strzelnicy",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: warunków korzystania ze strzelnicy, sposobu obchodzenia się z bronią, zachowania się osób przebywających na strzelnicy oraz przemieszczania się osób i pojazdów po terenie strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: warunków korzystania ze strzelnicy przez osoby niepełnosprawne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kiedy można wprowadzać na strzelnicę zwierzęta?",
+      "answers": [
+        {
+          "answer": "A: gdy jest przerwa w strzelaniu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: tylko w wyjątkowych okolicznościach, na uwięzi i pod ścisłym nadzorem opiekuna",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: gdy opiekun zwierzęcia nie bierze udziału w strzelaniu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego, służących do przewozu pasażerów, broń",
+      "answers": [
+        {
+          "answer": "A: obie odpowiedzi są prawidłowe",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: może być załadowana bez wprowadzonego naboju do komory nabojowej i przewożona w stanie zabezpieczonym, ale wyłącznie do ochrony osobistej, ochrony bezpieczeństwa innych osób oraz mienia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przewozi się w stanie rozładowanym, bez amunicji w komorze nabojowej i w magazynkach nabojowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie są ograniczenia butów dla zawodników wg regulaminów ISSF?",
+      "answers": [
+        {
+          "answer": "A: muszą posiadać odpowiednie loga ISSF oraz krajowego związku strzelectwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: muszą stanowić komplet ze strojem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nie mogą zakrywać kostek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Nabywca broni jest obowiązany zarejestrować ją w ciągu",
+      "answers": [
+        {
+          "answer": "A: 7 dni od dnia nabycia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 5 dni od dnia nabycia",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 24 godzin od dnia nabycia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoby posiadające broń i amunicję do broni palnej w celach kolekcjonerskich oraz pamiątkowych, w przypadku przechowywania tej broni i amunicji poza urządzeniami klasy S1, mogą je przechowywać w gablotach przeznaczonych do przechowywania broni po spełnieniu następujących warunków",
+      "answers": [
+        {
+          "answer": "A: dopuszcza się zamiennie montaż dowolnych drzwi, ale muszą być wyposażone w dwa zamki atestowane i blokadę przeciwwyważeniową",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zabezpieczyć drzwi wejściowe do pomieszczenia, w którym przechowywana jest broń, w instalację alarmową",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: gabloty do przechowywania broni i amunicji posiadają zamknięcia co najmniej 5 według normy PN-EN 12209",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń służącą do celów kolekcjonerskich może być wydane na",
+      "answers": [
+        {
+          "answer": "A: samoczynną broń palną w postaci karabinków o kalibrze od 5,45 mm do 7,62 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń dopuszczoną do wykonywania polowań na podstawie odrębnych przepisów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broń palną, której nie można wykryć przy pomocy urządzeń przeznaczonych do kontroli osób i bagażu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Na strzelnicy stanowiska strzeleckie oraz miejsca bezpiecznego pobytu wyznacza",
+      "answers": [
+        {
+          "answer": "A: właściciel strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzący strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: organizator strzelania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "O sytuacji, która może być niebezpieczna lub spowodować wypadek należy niezwłocznie powiadomić",
+      "answers": [
+        {
+          "answer": "A: kierownika strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sędziego głównego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: prowadzącego strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Posiadacz broni, w przypadku jej utraty, zobowiązany jest niezwłocznie powiadomić o tym fakcie policję, nie później jednak niż w ciągu",
+      "answers": [
+        {
+          "answer": "A: 12 godzin od chwili stwierdzenia utraty broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 24 godzin od chwili stwierdzenia utraty broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 48 godzin od chwili stwierdzenia utraty broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba posiadająca pozwolenie na broń wydane w celu ochrony osobistej obowiązana jest raz na 5 lat przedstawić właściwemu organowi Policji orzeczenia lekarskie i psychologiczne potwierdzające, że może dysponować bronią, wystawione nie wcześniej niż",
+      "answers": [
+        {
+          "answer": "A: 2 miesiące przed upływem tego terminu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 3 miesiące przed upływem tego terminu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 1 miesiąc przed upływem tego terminu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Po zakończeniu strzelania, przed opuszczeniem stanowiska broń",
+      "answers": [
+        {
+          "answer": "A: musi zostać schowana do kabury, pokrowca lub futerału",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: musi zostać załadowana, odbezpieczona i skontrolowana przez prowadzącego strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: musi zostać rozładowana, zabezpieczona i skontrolowana przez prowadzącego strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kiedy można wejść przed stanowisko strzeleckie",
+      "answers": [
+        {
+          "answer": "A: gdy wszyscy korzystający z osi potwierdzą rozładowanie i zabezpieczenie broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: gdy nikt nie strzela",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: gdy zgodę wyrazi prowadzący strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "W ramach obrony koniecznej działa ten, kto:",
+      "answers": [
+        {
+          "answer": "A: odpiera bezpośredni, bezprawny zamach na jakiekolwiek dobro chronione prawem",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: odpiera zamach przy pomocy broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broni się przed przestępstwem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie konkurencje są strzelane na 300m wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: karabin dowolny (mały kaliber), karabin standardowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: karabin dowolny (duży kaliber), karabin standardowy",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: karabin dowolny (mały i duży kaliber), karabin standardowy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Konkurencja pistolet 30 + 30 jest rozgrywana na dystansie",
+      "answers": [
+        {
+          "answer": "A: 50m",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 25m",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 10m",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Maksymalna odległość między muszką, a szczerbinką w pistoletach na 25m",
+      "answers": [
+        {
+          "answer": "A: 153mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 183mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 220mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Po zakończeniu strzelania",
+      "answers": [
+        {
+          "answer": "A: broń rozładowuje się i przedstawia do kontroli prowadzącemu strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: po sprawdzeniu broni przez prowadzącego strzelanie, broń chowa się do kabury i opuszcza stanowisko strzeleckie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: samemu sprawdza się broń, a następnie po uzyskaniu zgody od prowadzącego strzelanie, opuszcza się stanowisko strzeleckie z bronią",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń palną nieprzeznaczoną do ochrony osobistej nosi się",
+      "answers": [
+        {
+          "answer": "A: w ukryciu, lub na widoku w kaburze bezpośrednio przylegającej do ciała",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w sposób jak najmniej widoczny, w kaburze przylegającej do ciała, o ile jest to możliwe ze względu na jej ilość i wielkość",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: tylko rozładowaną, bez naboju w komorze lub w magazynkach nabojowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane w celu pamiątkowym, nie uprawnia do posiadania następujących rodzajów broni:",
+      "answers": [
+        {
+          "answer": "A: karabinków samoczynnych o kalibrze od 5,45 mm do 7,62 mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: gładkolufowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: centralnego zapłonu z lufami gwintowanymi, o kalibrze do 12 mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Świadectwo broni  może być wydane między innymi",
+      "answers": [
+        {
+          "answer": "A: przedsiębiorcom i jednostkom organizacyjnym, którzy na podstawie odrębnych przepisów powołali wewnętrzne służby ochrony, jeżeli broń jest niezbędna do wykonywania przez te służby zadań wynikających z planu ochrony",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: podmiotom wykonującym zadania związane z realizacją zabezpieczenia imprezy masowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obydwie odpowiedzi są prawidłowe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenia na broń nie wymaga się w przypadku",
+      "answers": [
+        {
+          "answer": "A: obie odpowiedzi są błędne",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadania broni pneumatycznej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: posiadania pistoletów i rewolwerów gazowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Elaboracja amunicji to",
+      "answers": [
+        {
+          "answer": "A: dobieranie typu i serii amunicji do danego egzemplarza broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wytwarzanie amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: selekcja nabojów o tej samej wadze pocisku i naważce prochu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego amunicję przewozi się",
+      "answers": [
+        {
+          "answer": "A: w opakowaniach fabrycznych przeznaczonych do sprzedaży detalicznej lub w pudełkach i pojemnikach, w sposób uniemożliwiający uderzenie w spłonkę naboju",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w hermetycznych opakowaniach próżniowych lub opakowaniach z zabezpieczeniem spłonki naboju folią bąbelkową lub trocinami",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w magazynkach danego rodzaju broni, do której amunicja jest przewożona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Karabin dowolny 60 strzałów leżąc jest to konkurencja strzelana na dystansie",
+      "answers": [
+        {
+          "answer": "A: 300m",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 50m",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 100m",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zgodnie z zapisem UoBiA amunicją są",
+      "answers": [
+        {
+          "answer": "A: naboje przeznaczone do strzelania z broni palnej wypełnione materiałami wybuchowymi, chemicznymi, zapalającymi lub innymi substancjami, których użycie zagraża życiu i zdrowiu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: naboje przeznaczone do strzelania z broni palnej i gazowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: naboje przeznaczone do strzelania z broni palnej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń i amunicję w pasażerskich statkach powietrznych przewozi się",
+      "answers": [
+        {
+          "answer": "A: przy sobie lub w bagażu podręcznym",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w pasażerskich statkach powietrznych przewożenie broni i amunicji jest zabronione",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w lukach bagażowych lub w miejscu wskazanym przez przewoźnika, jako bagaż rejestrowany, do którego pasażerowie nie mają dostępu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Jakie konkurencje są strzelane na 50m wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: karabin sportowy, karabin dowolny, ruchoma tarcza (karabin małokalibrowy)",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pistolet dowolny, karabin sportowy, karabin dowolny, ruchoma tarcza (karabin małokalibrowy)",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pistolet szybkostrzelny, karabin sportowy, karabin dowolny, ruchoma tarcza (karabin małokalibrowy)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Decocker jest używany w celu",
+      "answers": [
+        {
+          "answer": "A: odblokowania iglicy do pozycji &quot;gotów&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zrzucenia zamka, co przeładuje broń przygotowując ją do strzału",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zwolnienia napięcia kurka",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu dowolnego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6 lub do 8mm, ciężar max: 6500g, dowolne mechaniczne przyrządy celownicze",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 5.6 lub do 8mm, ciężar max: 8000g, dowolne mechaniczne przyrządy celownicze",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 5.6 lub do 8mm, ciężar max: 6500g, otwarte mechaniczne przyrządy celownicze",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jednostkami organizacyjnymi uprawnionymi do deponowania broni i amunicji są?",
+      "answers": [
+        {
+          "answer": "A: Powiatowa Komenda Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Wojewódzka Komenda Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Policja, Żandarmeria Wojskowa lub organ celny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń w liczbie powyżej 50 egzemplarzy przechowuje się w",
+      "answers": [
+        {
+          "answer": "A: w urządzeniach spełniających wymagania co najmniej klasy S1 z normy PN-EN 14450",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odpowiednio przystosowanym do tego pomieszczeniu, zwanym &quot;magazynem broni&quot;, w urządzeniach spełniających wymagania co najmniej klasy S1 z normy PN-EN 14450",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: w pomieszczeniu zamkniętym drzwiami spełniającymi wymagania, o których mowa w normie PN-EN 1627, plombowanych lub zaopatrzonych w inny wskaźnik sygnalizujący wejście osób nieuprawnionych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią palną sygnałową jest",
+      "answers": [
+        {
+          "answer": "A: broń lufowa, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 1 metr",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, jest zdolne do wystrzelenia z lufy o kalibrze nie mniejszym niż 25 mm substancji w postaci ładunku pirotechnicznego celem wywołania efektu wizualnego lub akustycznego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Konkurencja SKEET to strzelanie do rzutków",
+      "answers": [
+        {
+          "answer": "A: wyrzucanych z dwóch budek (wysokiej i niskiej)",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wyrzucanych ze schronu znajdującego się 12m od linii stanowisk",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wyrzucanych ze schronu znajdującego się 15m od linii stanowisk",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń służącą do celów kolekcjonerskich nie może być wydane na",
+      "answers": [
+        {
+          "answer": "A: broń palną, której nie można wykryć przy pomocy urządzeń przeznaczonych do kontroli osób i bagażu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: karabiny wyborowe z optycznymi przyrządami celowniczymi o donośności powyżej 1200m",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń dopuszczoną do wykonywania polowań na podstawie odrębnych przepisów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego amunicję przewozi się w ilości",
+      "answers": [
+        {
+          "answer": "A: która mieści się do magazynków broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w ilości uzasadnionej potrzebami osoby przewożącej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nie większej niż 100 sztuk, tylko jeśli osoba przewożąca udaje się na strzelnicę",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto nosi broń, naruszając ograniczenie lub wykluczenie możliwości jej noszenia określone przez właściwy organ Policji w pozwoleniu na broń, albo nosi broń, naruszając zakaz jej noszenia wprowadzony przez ministra właściwego do spraw wewnętrznych, podlega karze",
+      "answers": [
+        {
+          "answer": "A: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: ograniczenia wolności do lat trzech",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: cofnięcia pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Przesyłanie broni i amunicji odbywa się za pośrednictwem",
+      "answers": [
+        {
+          "answer": "A: operatorów świadczących usługi pocztowe",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: podmiotów innych niż operatorzy świadczący usługi pocztowe",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: konwojowanych transportów broni i amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń do celów sportowych można przemieszczać załadowaną m.in.",
+      "answers": [
+        {
+          "answer": "A: na strzelnicy poza stanowiskami strzeleckimi",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w lesie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: w komunikacji miejskiej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Klucz do szafy z bronią palną należy",
+      "answers": [
+        {
+          "answer": "A: zdeponować w WPA w terminie 5 dni od zakupu broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: schować za kaloryferem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przechowywać uniemożliwiając dostęp osobom nieuprawnionym",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za broń uważa się",
+      "answers": [
+        {
+          "answer": "A: mechanizm spustowo-uderzeniowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: lufę z komorą nabojową",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pokrywę zamkową",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią sygnałową jest",
+      "answers": [
+        {
+          "answer": "A: urządzenie, które jest zdolne do wystrzelenia pocisku z lufy i rażenia celu na odległość, a energia kinetyczna pocisku opuszczającego lufę przekracza 17 J",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: obie odpowiedzi są błędne",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: jest urządzenie, które w wyniku działania sprężonych gazów, wywołuje efekt akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 1 metr",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów sportowych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: bocznego zapłonu z lufami gwintowanymi o kalibrze do 6mm; centralnego zapłonu z lufami gwintowanymi o kalibrze do 12mm; gładkolufowej; przystosowanej do strzelania wyłącznie przy pomocy prochu czarnego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broni wskazywanej przez regulamin Międzynarodowej Federacji Sportu Strzeleckiego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: bocznego zapłonu z lufami niegwintowanymi o kalibrze do 6mm; centralnego zapłonu z lufami gwintowanymi o kalibrze do 15mm; przystosowanej do strzelania wyłącznie przy pomocy prochu czarnego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto nosi broń znajdując się w stanie po użyciu alkoholu, środka odurzającego lub substancji psychotropowej albo środka zastępczego podlega karze",
+      "answers": [
+        {
+          "answer": "A: ograniczenia wolności do lat 2",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: grzywny do 300 stawek dziennych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie są ograniczenia w ubiorze zawodników strzelających konkurencje pistoletowe wg regulaminów ISSF?",
+      "answers": [
+        {
+          "answer": "A: strój musi posiadać widoczne logo ISSFu oraz odpowiedniej dla danego kraju organizacji strzeleckiej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: elementy ubioru nie mogą podpierać lub unieruchamiać ciała, głowy, pleców, mostka, stóp lub kostek",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: strój musi być schludny, a zwodnicy danego klubu powinni nosić jednakowe barwy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Szafę S1 należy kupić",
+      "answers": [
+        {
+          "answer": "A: przed zakupem pierwszej sztuki broni palnej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: przed uzyskaniem pozwolenia na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: po uzyskaniu pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Po otrzymaniu ostatecznej decyzji administracyjnej o cofnięciu pozwolenia na broń, osoba której pozwolenie cofnięto, jest zobowiązana zwrócić legitymację posiadacza broni w terminie",
+      "answers": [
+        {
+          "answer": "A: 14 dni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 48 godzin",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 7 dni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy ważność Europejskiej karty broni palnej po upływie okresu ważności może zostać przedłużona?",
+      "answers": [
+        {
+          "answer": "A: tak, jednorazowo na okres do 3 miesięcy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: tak, może być przedłużona na kolejny okres",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nie, nie może być przedłużana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pociski są wprawiane w ruch obrotowy w celu",
+      "answers": [
+        {
+          "answer": "A: ustabilizowania toru lotu, co znacznie ułatwia celny strzał",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wektoryzacji prędkości, co znacznie podnosi energię kinetyczną pocisku",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przewiercenia celu jak wiertło, co znacznie zwiększa penetrację",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji cofa pozwolenie jeżeli osoba, której pozwolenie wydano",
+      "answers": [
+        {
+          "answer": "A: jest objęta postępowaniem w sprawie o wykroczenie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: została ukarana mandatem karnym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: jest skazana prawomocnym orzeczeniem sądu za nieumyślne przestępstwo przeciwko życiu i zdrowiu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Strzelnica to ",
+      "answers": [
+        {
+          "answer": "A: obiekt przeznaczony do prowadzenia strzelań szkoleniowych, sportowych i rekreacyjnych oraz treningów strzeleckich",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: ograniczony wałem ziemnym teren, pozwalający na organizację zawodów strzeleckich zgodnie z regulaminem PZSS",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: miejsce do bezpiecznego strzelania, wyposażone w kulochwyt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba wnioskująca o wydanie pozwolenia na broń jest zobowiązana dołączyć orzeczenie lekarskie i psychologiczne?",
+      "answers": [
+        {
+          "answer": "A: tak, tylko jeśli nie ma jeszcze skończonych 21 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: tak, na żądanie odpowiedniego organu Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: tak",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii broni szczególnie niebezpiecznej zalicza się",
+      "answers": [
+        {
+          "answer": "A: broń palną wyposażoną w tłumik huku lub przystosowaną do strzelania z użyciem tłumika huku",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broń palną ze zmniejszonym oporem mechanizmu spustowo-uderzeniowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń palną wyposażoną w tłumik płomienia lub przystosowaną do strzelania z użyciem tłumika płomienia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń palną można udostępnić na strzelnicy wyłącznie",
+      "answers": [
+        {
+          "answer": "A: trzeźwej osobie, pod kontrolą właściciela broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: innemu posiadaczowi pozwolenia na broń palną",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: posiadaczowi pozwolenia do celów sportowych lub łowieckich",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W rozumieniu ustawy o broni i amunicji, bronią pneumatyczną jest",
+      "answers": [
+        {
+          "answer": "A: bezpieczne dla życia lub zdrowia urządzenie, które w wyniku działania sprężonego powietrza jest zdolne do wystrzelenia pocisku z lufy lub elementu ją zastępującego i przez to zdolne do rażenia celu na odległość, a energia kinetyczna pocisku opuszczającego lufę lub element ją zastępujący przekracza 17 J",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: niebezpieczne dla życia lub zdrowia urządzenie, które w wyniku działania sprężonego gazu jest zdolne do wystrzelenia pocisku z lufy lub elementu ją zastępującego i przez to zdolne do rażenia celu na odległość, a energia kinetyczna pocisku opuszczającego lufę lub element ją zastępujący przekracza 17 J",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: niebezpieczne dla życia lub zdrowia urządzenie, które w wyniku działania sprężonego powietrza jest zdolne do wystrzelenia pocisku z lufy lub elementu ją zastępującego i przez to zdolne do rażenia celu na odległość, a energia kinetyczna pocisku opuszczającego lufę lub element ją zastępujący nie przekracza 17 J",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego broń do ochrony osobistej lub bezpieczeństwa innych osób oraz mienia ",
+      "answers": [
+        {
+          "answer": "A: może być załadowana bez wprowadzonego naboju do komory nabojowej i przewożona w stanie zabezpieczonym",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: może być załadowana i przygotowana do strzału. Właściciel może ją dodatkowo zabezpieczyć",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: musi być rozładowana, bez naboju w komorze nabojowej lub magazynkach",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Magazyn broni powinien być zabezpieczony",
+      "answers": [
+        {
+          "answer": "A: syreną alarmową, której czujniki umieszczone są na drzwiach i w oknie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kratą w oknach oraz drzwiami antywłamaniowymi wyposażonymi w zamki o skomplikowanym mechanizmie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: systemem sygnalizacji włamania i napadu spełniającym wymagania co najmniej normy PN-EN 50131-1 z transmisją sygnału alarmu do uzbrojonego stanowiska interwencyjnego, pełniącego całodobowy dyżur",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów kolekcjonerskich uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: zbieranie starych wojskowych koców",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: udokumentowane członkostwo w stowarzyszeniu o charakterze kolekcjonerskim",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: udokumentowane członkostwo w stowarzyszeniu o charakterze kolekcjonerskim, udokumentowana działalność kolekcjonerska i potwierdzone zaangażowanie w kolekcjonerstwo broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czyszczenie broni należy przeprowadzać",
+      "answers": [
+        {
+          "answer": "A: przed kontrolą przechowywania przez Policję",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie ma wymogów w tej kwestii",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: minimum raz w miesiącu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku pożaru największe niebezpieczeństwo sprawia",
+      "answers": [
+        {
+          "answer": "A: broń palna",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: czarny proch",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: amunicja centralnego zapłonu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto przechowuje oraz nosi broń i amunicję w sposób umożliwiający dostęp do nich osób nieuprawnionych, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: grzywny albo ograniczenia wolności",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Po komendzie &quot;ROZŁADUJ&quot; należy",
+      "answers": [
+        {
+          "answer": "A: rozładować broń, zabezpieczyć wskaźnikiem bezpieczeństwa i umieścić na stanowisku strzeleckim",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: rozładować broń, zabezpieczyć wskaźnikiem bezpieczeństwa i zanieść do kontroli prowadzącemu strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: rozładować broń, zabezpieczyć wskaźnikiem bezpieczeństwa i schować do futerału lub pokrowca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Strzelectwo sportowe składa się z następujących dyscyplin",
+      "answers": [
+        {
+          "answer": "A: strzelanie z broni krótkiej, strzelanie z broni długiej, strzelanie do ruchomej tarczy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: strzelanie z broni krótkiej, strzelanie z broni długiej, strzelanie do rzutków, strzelanie do ruchomej tarczy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: strzelanie z pistoletu, strzelanie z karabinu, strzelanie z broni gładkolufowej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Magazynek do broni palnej można zakupić",
+      "answers": [
+        {
+          "answer": "A: za okazaniem pozwolenia na posiadanie broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: bez żadnych dokumentów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: na podstawie legitymacji posiadacza broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Na zawodach strzeleckich z broni krótkiej na 25 m, magazynek ładujemy nabojami",
+      "answers": [
+        {
+          "answer": "A: w trakcie czasu przygotowawczego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przed komendą &quot;ŁADUJ&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: po komendzie &quot;ŁADUJ&quot;",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Każda osoba przebywająca na strzelnicy, w przypadku niezastosowania się do poleceń prowadzącego strzelanie może być",
+      "answers": [
+        {
+          "answer": "A: ukarana odjęciem punktów lub dyskwalifikacją",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pozbawiona licencji zawodniczej PZSS",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: usunięta ze strzelnicy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń jest wydawane na czas",
+      "answers": [
+        {
+          "answer": "A: nieokreślony, pod warunkiem przedstawiania co 7 lat aktualnych badań lekarskich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 5 lat od momentu złożenia wniosku do właściwego organu Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nieokreślony",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Nie podlega karze, kto przekracza granice obrony koniecznej",
+      "answers": [
+        {
+          "answer": "A: gdy zastosował sposób obrony niewspółmierny do niebezpieczeństwa zamachu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: gdy miał na celu uniemożliwienie dokonania przestępstwa przeciwko życiu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pod wpływem strachu lub wzburzenia usprawiedliwionych okolicznościami zamachu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Promesa to potoczne określenie",
+      "answers": [
+        {
+          "answer": "A: uprzedniej zgody przewozowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zaświadczenia uprawniającego do nabycia broni palnej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicję do nowo kupionej broni można zakupić",
+      "answers": [
+        {
+          "answer": "A: w momencie zakupu broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: po zarejestrowaniu nowej broni, na podstawie wpisu w legitymacji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są poprawne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Amunicja centralnego zapłonu to amunicja",
+      "answers": [
+        {
+          "answer": "A: w której masa zapłonowa wprasowana jest bezpośrednio w kryzę łuski",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w której ładunek inicjujący umieszczony jest w dnie łuski",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: każda o kalibrze mniejszym niż 7.62mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zbywający broń i amunicję do tej broni obowiązany jest powiadomić o tym fakcie właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: w czasie do 24 godzin od chwili zbycia broni lub amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: niezwłocznie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: w ciągu 5 dni od dnia zbycia broni lub amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakiego kalibru jest śrut w amunicji do strzelby w kalibrze 12GA",
+      "answers": [
+        {
+          "answer": "A: 12mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zależy od potrzeb strzelca, jest wiele rozmiarów śrutu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 1/12 funta ołowiu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią szczególnie niebezpieczną jest",
+      "answers": [
+        {
+          "answer": "A: samoczynna broń palna, przystosowana przez wytwórcę do odstrzelenia za jednym uruchomieniem spustu więcej niż jednego naboju, niezależnie od dokonanych następnie zmian konstrukcyjnych lub przeróbek",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń po zmianach konstrukcyjnych lub przeróbkach",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Samoczynna broń palna, zdolna do rażenia celów na odległość",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu pneumatycznego",
+      "answers": [
+        {
+          "answer": "A: kaliber 4.5mm, ciężar max: 6500g, mechaniczne przyrządy cel., muszka w obrębie lufy, od tylnej strony mechanizmu do wylotu lufy 762mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 4.5mm, ciężar max: 5500g, mechaniczne przyrządy cel., muszka w obrębie lufy, od tylnej strony mechanizmu do wylotu lufy 850mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 4.5mm, ciężar max: 5500g, mechaniczne przyrządy cel., muszka w obrębie lufy, od tylnej strony mechanizmu do wylotu lufy 762mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Posiadanie ręcznych miotaczy gazu obezwładniającego jest",
+      "answers": [
+        {
+          "answer": "A: dozwolone, po uzyskaniu pozwolenia na broń do ochrony osobistej lub ochrony osób lub mienia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zabronione",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dozwolone bez pozwolenia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu pneumatycznego ruchoma tarcza",
+      "answers": [
+        {
+          "answer": "A: kaliber 4.5mm, ciężar max: 6500g, optyczne przyrządy cel. do krotności 6x, długość lufy max: 1000mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 4.5mm, ciężar max: 5500g, optyczne przyrządy cel. do krotności 4x, długość lufy max: 1000mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 4.5mm, ciężar max: 5500g, mechaniczne przyrządy cel. do krotności 6x, długość lufy max: 762mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Opłatę za przechowywanie broni oraz amunicji wpłaca się najpóźniej",
+      "answers": [
+        {
+          "answer": "A: w dniu odbioru broni i amunicji z depozytu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 5 dni przed planowanym dniem odbioru broni i amunicji z depozytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w dniu przekazania broni i amunicji do depozytu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dopuszczalne przyrządy celownicze w karabinie do ruchomej tarczy",
+      "answers": [
+        {
+          "answer": "A: otwarte lub zamknięte mechaniczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zamknięte mechaniczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: luneta z wbudowanym krzyżem celowniczym",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba deponująca broń w jednostce Policji ma prawo do dostępu do niej w celu okazania jej osobom zainteresowanym jej nabyciem oraz oceny stanu broni?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale dopiero po uzgodnieniu z jednostką deponującą",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, w każdej chwili",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba, nabywająca broń i amunicję w państwach niebędących państwami członkowskimi Unii Europejskiej, jeżeli nie posiada pozwolenia na broń, jest obowiązana:",
+      "answers": [
+        {
+          "answer": "A: przekraczając granicę Rzeczypospolitej Polskiej, do pisemnego zgłoszenia najbliższej jednostce Policji przywóz broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zarejestrować broń w ciągu 5 dni od dnia nabycia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: niezwłocznie złożyć przywożoną broń i amunicję do depozytu właściwego organu celnego, a także, w terminie 14 dni od dnia przywozu broni na terytorium Rzeczypospolitej Polskiej, wystąpić do właściwego organu Policji z wnioskiem o wydanie pozwolenia na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Policja może za pokwitowaniem odebrać broń, amunicję oraz dokumenty potwierdzające legalność posiadania broni osobie posiadającej broń, przeciwko której toczy się postępowanie karne o umyślne przestępstwo, do czasu prawomocnego zakończenia tego postępowania, na okres",
+      "answers": [
+        {
+          "answer": "A: 1 roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie dłuższy niż 3 lata",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: do 2 lat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Iloma nabojami ładowany jest pistolet dowolny w czasie zawodów?",
+      "answers": [
+        {
+          "answer": "A: jednym nabojem",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: maksymalnie 5 nabojów w magazynku",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zależy to od preferencji zawodnika",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto porzuca broń lub amunicje, popełnia w myśl UoBiA",
+      "answers": [
+        {
+          "answer": "A: przestępstwo",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wykroczenie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zbrodnię",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zarejestrowanie broni wymagającej pozwolenia potwierdza się",
+      "answers": [
+        {
+          "answer": "A: wyłącznie w dokumentach posiadacza broni przechowywanych przez właściwy organ Policji lub Żandarmerii Wojskowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w legitymacji posiadacza broni lub w świadectwie broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: oddzielną decyzją administracyjną wydaną przez właściwy organ Policji lub Żandarmerii Wojskowej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za bezpieczne prowadzenie zawodów strzeleckich jest odpowiedzialny",
+      "answers": [
+        {
+          "answer": "A: prowadzący strzelanie, posiadający uprawnienia, o których mowa w Art. 44 Ustawy o kulturze fizycznej, w zakresie strzelectwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sędzia główny oraz sędzia prowadzący strzelanie, posiadający licencję sędziego strzelectwa przyznawaną przez PZSS",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: organizator zawodów, zrzeszony w PZSS",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto bez wymaganej rejestracji posiada albo zbywa osobie nieuprawnionej broń pneumatyczną albo miotacz gazu obezwładniającego podlega karze",
+      "answers": [
+        {
+          "answer": "A: ograniczenia wolności do lat 2",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny albo aresztu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pozbawienia wolności do 1 roku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń obowiązku poddania się badaniom lekarskim i psychologicznym, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: obligatoryjnie cofa pozwolenie na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odbiera pozwolenie na broń oraz orzeka przepadek broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do dyscypliny strzelań ze strzelby gładkolufowej zaliczane są konkurencje",
+      "answers": [
+        {
+          "answer": "A: ruchoma tarcza, skeet, trap",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: skeet, trap, double trap, automatic trap",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: skeet, trap, triple trap ",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnił obowiązku zwrotu legitymacji osoby dopuszczonej do posiadania broni, legitymacji posiadacza broni, karty rejestracyjnej broni lub europejskiej karty broni palnej podlega karze",
+      "answers": [
+        {
+          "answer": "A: aresztu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: aresztu albo grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palna na strzelnicy poza stanowiskami strzeleckimi musi być",
+      "answers": [
+        {
+          "answer": "A: rozładowana, schowana wyłącznie w pokrowcu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zabezpieczona i schowana w kaburze",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: rozładowana, zabezpieczona i schowana w kaburze lub kasecie przeznaczonej do przenoszenia broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe karabinu standardowego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 6500g, opór spustu min: 100g, optyczne przyrządy cel., długość lufy max: 1000mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber do 8mm, ciężar max: 5500g, opór spustu min: 1500g, mechaniczne przyrządy cel., długość lufy max: 762mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 8000g, opór spustu min: 1000g, optyczne przyrządy cel., długość lufy max: 1000mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Handlowanie amunicją bez zezwolenia to",
+      "answers": [
+        {
+          "answer": "A: przestępstwo",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: przewinienie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wykroczenie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń pneumatyczna przeznaczona do strzelania pociskami dowolnego rodzaju i kształtu o kalibrze 4.5mm (0.177&quot;) wykonanymi ze stopu ołowiu to m.in.",
+      "answers": [
+        {
+          "answer": "A: pistolety na sprężone powietrze lub CO2 o ciężarze nie przekraczającym 1600g, oporze języka spustowego nie mniejszym niż 600 g, mieszczące się w pudełku o wewnętrznych wymiarach 420mm x 200 mm x 50 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: karabiny na sprężone powietrze lub CO2 o ciężarze nie przekraczającym 4500g, dowolnym oporze języka spustowego, w których odległość od wylotu lufy do końca celownika nie przekracza 650 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolety na sprężone powietrze lub CO2 o ciężarze nie przekraczającym 1500g, oporze języka spustowego nie mniejszym niż 500 g, mieszczące się w pudełku w wewnętrznych wymiarach 420mm x 200 mm x 50 mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broni odpowiadającej celom łowieckim i broni odpowiadającej celom sportowym oraz amunicji do takiej broni można użyczać",
+      "answers": [
+        {
+          "answer": "A: osobom posiadającym pozwolenie na broń wydane w celach łowieckich lub sportowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: za zgodą organu Policji, który wydał pozwolenie na tę broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nie można użyczać",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy gotowe lub obrobione istotne części broni uważa się za broń?",
+      "answers": [
+        {
+          "answer": "A: tak",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: tak, jeśli można za ich pomocą skonstruować przedmiot zdolny razić cele na odległość",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: tak, jeśli posiada je osoba nie mająca pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy organy Policji mają prawo zobowiązać posiadacza pozwolenia na broń do poddania się badaniom lekarskim i psychologicznym?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale tylko wówczas, gdy posiadacz broni popełnił przestępstwo lub wykroczenie związane z użyciem lub wykorzystaniem broni w celach innych niż określono w pozwoleniu na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, w przypadku, gdy istnieje uzasadnione podejrzenie, że osoba taka wykazuje istotne zaburzenia funkcjonowania psychologicznego, uzależnienie od alkoholu lub substancji psychoaktywnych, ograniczoną sprawność psychofizyczną oraz zaburzenia psychiczne, o których mowa w ustawie o ochronie zdrowia psychicznego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń służącą do celów sportowych może być wydane na",
+      "answers": [
+        {
+          "answer": "A: samoczynną broń palną w postaci pistoletów maszynowych o kalibrze od 6 mm do 12 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń palną wytworzoną lub przerobioną w sposób pozwalający na zatajenie jej przeznaczenia, a także broń imitującą inne przedmioty",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń palną centralnego zapłonu z lufami gwintowanymi, o kalibrze do 12 mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenia na broń nie wymaga się w przypadku",
+      "answers": [
+        {
+          "answer": "A: posiadania broni palnej rozdzielnego ładowania, wytworzonej po roku 1885 oraz replik tej broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadania broni alarmowej o kalibrze powyżej 6 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: posiadania broni palnej pozbawionej cech użytkowych",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dzieci na strzelnicy",
+      "answers": [
+        {
+          "answer": "A: mogą przebywać tylko w wyjątkowych okolicznościach",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: mogą przebywać wyłącznie pod bezpośrednim nadzorem rodziców lub opiekunów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nie mogą przebywać, poza zajęciami organizowanymi przez placówkę edukacyjną",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bez pozwolenia można posiadać broń czarnoprochową",
+      "answers": [
+        {
+          "answer": "A: rozdzielnego ładowania, wytworzoną przed 1885 lub repliki tej broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: na podstawie Karty Rejestracji Broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na naboje scalone, wytworzoną przed 1895 lub repliki tej broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicję można przechowywać ",
+      "answers": [
+        {
+          "answer": "A: w sejfie S1, wyłącznie w opakowaniach uniemożliwiających zbicie spłonki",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w sejfie S1, poza magazynkami do broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w sejfie S1, w magazynkach, workach, paczkach lub luzem",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Od decyzji Komendanta Wojewódzkiego Policji można się odwołać do",
+      "answers": [
+        {
+          "answer": "A: Samorządowego Kolegium Odwoławczego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Wojewódzkiego Sądu Administracyjnego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Komendanta Głównego Policji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnia obowiązku rejestracji broni palnej podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pozbawienia wolności do 1 roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny albo aresztu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Legitymacja posiadacza broni upoważnia do",
+      "answers": [
+        {
+          "answer": "A: użyczania broni na strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zakupu amunicji .22lr, o ile została wydana do celów sportowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przemieszczania się z bronią palną",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Magazyn broni stanowi oddzielne pomieszczenie w budynku o konstrukcji niepalnej, wydzielone ścianami murowanymi, usytuowane w miarę możliwości na piętrze, posiadające m.in:",
+      "answers": [
+        {
+          "answer": "A: zabezpieczenie systemem sygnalizacji pożarowej z transmisją sygnału alarmu do pełniącego całodobowy dyżur pracownika monitoringu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dwa zamki kluczowe o skomplikowanym mechanizmie z zabezpieczeniem antywłamaniowym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: skrzynię z piaskiem lub inne urządzenie służące do przechwytywania pocisków, z oznaczeniem „TU KIERUJ BROŃ”, w miejscu ładowania i rozładowywania broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Muszka i szczerbinka to przyrządy celownicze",
+      "answers": [
+        {
+          "answer": "A: mechaniczne zamknięte",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: mechaniczne otwarte",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: optyczne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicją szczególnie niebezpieczną jest amunicja",
+      "answers": [
+        {
+          "answer": "A: scalona lub ślepa przeznaczona do strzelania z samoczynnej broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: bojowa",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: z pociskami podkalibrowymi, z płaszczem lub elementem wiodącym wykonanym z tworzyw sztucznych, z wyłączeniem amunicji przeznaczonej do strzelania z broni gładkolufowej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Naładowany magazynek, niepodpięty do broni, może mieć przy sobie",
+      "answers": [
+        {
+          "answer": "A: osoba posiadająca pozwolenie do celów sportowych, łowieckich, szkoleniowych lub ochrony osobistej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osoba posiadająca dopuszczenie do broni obiektowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: osoba posiadająca dowolne pozwolenie na broń o kalibrze odpowiadającym amunicji w magazynku",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Bronią używaną do strzelania konkurencji zatwierdzonych przez ISSF może być broń gładkolufowa w tym:",
+      "answers": [
+        {
+          "answer": "A: broń śrutowa, to jest strzelba o kalibrze wagomiarowym nie większym niż 16, z komorą nabojową o długości do 86mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń śrutowa, to jest strzelba o kalibrze wagomiarowym nie większym niż 12, z komorą nabojową o długości do 86mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń śrutowa, to jest strzelba o kalibrze wagomiarowym nie większym niż 12, z komorą nabojową o długości do 76mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Jaka konkurencja pistoletowa jest strzelana na 50m wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: pistolet szybkostrzelny",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pistolet sportowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolet dowolny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osobie posiadającej broń przeciwko której toczy się postępowanie karne o umyślne przestępstwa lub umyślne przestępstwa skarbowe, policja może za pokwitowaniem odebrać broń i amunicję oraz dokumenty potwierdzające legalność posiadania broni?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale tylko do czasu prawomocnego zakończenia tego postępowania, na okres nie dłuższy niż 7 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, ale tylko do czasu prawomocnego zakończenia tego postępowania, na okres nie dłuższy niż 5 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, ale tylko do czasu prawomocnego zakończenia tego postępowania, na okres nie dłuższy niż 3 lata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów pamiątkowych uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: udokumentowane nabycie broni w drodze spadku, darowizny lub wyróżnienia",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: otrzymywanie pogróżek od nieznanych osób",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wykonywanie zawodu o charakterze szczególnie niebezpiecznym dla życia i zdrowia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu standardowego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 1500g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 420x200x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, zamknięte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 123mm, pudełko: 300x150x100mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wymiar pudełka pistoletu pneumatycznego",
+      "answers": [
+        {
+          "answer": "A: 420x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 300x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 420x200x50mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto używa w celach szkoleniowych lub sportowych broni zdolnej do rażenia celów na odległość poza strzelnicami, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny albo ograniczenia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto przywozi na terytorium RP z państwa spoza UE broń lub amunicję bez zaświadczenia właściwego konsula RP podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny, ograniczenia wolności lub pozbawienia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: aresztu albo pozbawienia wolności",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń i amunicja w czasie przewozu środkami transportu publicznego powinny",
+      "answers": [
+        {
+          "answer": "A: znajdować się w pojemniku bezpiecznym lub w skrzyni metalowej zamykanej co najmniej jednym zamkiem o skomplikowanym mechanizmie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: być zabezpieczone w sposób uniemożliwiający powstanie zagrożenia życia, zdrowia lub mienia",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: znajdować się w pojemniku służącym do transportu broni i amunicji, wyposażonym w urządzenie utrudniający jego zabór, wykorzystującym działanie alarmu akustycznego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zarejestrować lub wyrejestrować broń należy ",
+      "answers": [
+        {
+          "answer": "A: w ciągu 5 dni od kupna/sprzedaży",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w ciągu 7 dni od kupna/sprzedaży",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w ciągu 48 godzin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czerwona książeczka to potoczne określenie",
+      "answers": [
+        {
+          "answer": "A: zaświadczenia uprawniającego do zakupu broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: legitymacji posiadacza broni palnej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Stan wyższej konieczności jest to działanie wyłącznie w celu",
+      "answers": [
+        {
+          "answer": "A: uchylenia bezpośredniego niebezpieczeństwa, grożącego jakiemukolwiek dobru chronionemu prawem, bądź ratowania dobra chronionego prawem, poświęcając dobro o wartości niższej od dobra ratowanego, jeżeli niebezpieczeństwa nie można uniknąć inaczej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: uchylenia bezpośredniego niebezpieczeństwa, grożącemu dobru chronionemu prawem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: odparcia bezpośredniego, bezprawnego zamachu na jakiekolwiek dobro chronione prawem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ceteris paribus, największy wpływ na siłę odrzutu broni przy wystrzale ma",
+      "answers": [
+        {
+          "answer": "A: ładunek prochu w naboju oraz masa broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: typ pocisku oraz postawa strzelecka",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: szybkostrzelność broni oraz długość lufy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba, która złożyła broń do depozytu Policji może ją pokazać osobom zainteresowanym zakupem",
+      "answers": [
+        {
+          "answer": "A: po wcześniejszym ustaleniu terminu z właściwym Komendantem Wojewódzkim Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: po wcześniejszym ustaleniu terminu z dzielnicowym ze swojego rejonu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: po wcześniejszym ustaleniu terminu z jednostką deponującą",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, jest zdolne do wystrzelenia z lufy o kalibrze nie mniejszym niż 25 mm substancji w postaci ładunku pirotechnicznego celem wywołania efektu wizualnego lub akustycznego stanowi",
+      "answers": [
+        {
+          "answer": "A: broń palną alarmową",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: rakietnicę",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń palną sygnałową",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy dopuszcza się przesyłanie broni lub amunicji za pośrednictwem poczty?",
+      "answers": [
+        {
+          "answer": "A: Bezwzględnie nie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, ale za pośrednictwem operatorów świadczących usługi pocztowe, o ile świadczą oni tego rodzaju usługi",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, ale wyłącznie za pośrednictwem operatorów świadczących swoje usługi na terenie RP",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Noszenie broni oznacza",
+      "answers": [
+        {
+          "answer": "A: każdy sposób przemieszczania załadowanej broni przez osobę posiadającą broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: posiadanie przy sobie broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każdy sposób przemieszczania załadowanej lub rozładowanej broni przez osobę posiadającą broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto przewozi broń lub amunicję środkami transportu publicznego, nie spełniając warunku prawidłowego zabezpieczenia, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny albo ograniczenia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: aresztu albo grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Po usłyszeniu na strzelnicy komendy &quot;STOP&quot; lub &quot;PRZERWIJ OGIEŃ&quot;, należy",
+      "answers": [
+        {
+          "answer": "A: schować broń do kabury i czekać na komendę prowadzącego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odłożyć broń na stolik i pozostać w postawie gotowości",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: natychmiast przerwać strzelanie i pozostać w postawie gotowości",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Osoba, której cofnięto dopuszczenie do posiadania broni, jest zobowiązana zwrócić dokumenty potwierdzające legalność posiadania broni i amunicji do właściwego organu Policji, w terminie",
+      "answers": [
+        {
+          "answer": "A: 7 dni od dnia otrzymania ostatecznej decyzji o cofnięciu dopuszczenia do posiadania broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 30 dni licząc od dnia otrzymania decyzji o cofnięciu dopuszczenia do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 14 dni od dnia otrzymania informacji o cofnięciu dopuszczenia do posiadania broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu szybkostrzelnego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, zamknięte przyrządy celownicze, odl mucha-szczerbinka: 153mm, lufa max: 220mm, pudełko: 300x200x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 1300g, opór spustu min: 500g, zamknięte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 183mm, pudełko: 420x200x50mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Każdy korzystający ze strzelnicy ma obowiązek wpisania się do &quot;Książki rejestru pobytu na strzelnicy&quot;, którą prowadzi",
+      "answers": [
+        {
+          "answer": "A: kierownik jednostki szkolącej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzący strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kierownik strzelnicy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicją, w myśl UoBiA, są",
+      "answers": [
+        {
+          "answer": "A: pociski, których zasada działania opiera się na wykorzystaniu energii ciśnienia gazów prochowych powstałej podczas spalania się materiału miotającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: naboje scalone, naboje ślepe oraz naboje wypełnione chemicznym środkiem obezwładniającym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: naboje przeznaczone do strzelania z broni palnej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Aby móc pracować z bronią, która NIE jest moją własnością muszę posiadać",
+      "answers": [
+        {
+          "answer": "A: pozwolenie na posiadanie broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zgodę Komendanta Wojewódzkiego Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dopuszczenie do posiadania broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Używanie broni w celach sportowych, szkoleniowych lub rekreacyjnych na strzelnicy działającej na podstawie zezwolenia właściwego organu",
+      "answers": [
+        {
+          "answer": "A: wymaga posiadania dopuszczenia do posiadania broni w celach sportowych, szkoleniowych lub rekreacyjnych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie wymaga posiadania dopuszczenia, ani pozwolenia",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wymaga posiadania pozwolenia na broń palną wydanego do celów sportowych, szkoleniowych lub rekreacyjnych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń można przechowywać wyłącznie",
+      "answers": [
+        {
+          "answer": "A: w szafie S1 ",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w szafie S1 w miejscu stałego pobytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w szafie S1 w lokalu, do którego dostęp ma tylko posiadacz broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bez zaświadczenia uprawniającego do nabycia części do broni, zgodnie z pozwoleniem do tej broni, można zakupić",
+      "answers": [
+        {
+          "answer": "A: bęben nabojowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zamek broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: magazynek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Posiadacz broni w przypadku jej utraty jest zobowiązany niezwłocznie zawiadomić o tym",
+      "answers": [
+        {
+          "answer": "A: Komendanta Wojewódzkiego Policji odpowiedniego miejscu zamieszkania osoby, która utraciła broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Policję albo Żandarmerię Wojskową",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Komendanta Powiatowego Policji odpowiedniego dla miejsca, w którym broń została utracona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas rejestracji, kupioną broń trzeba",
+      "answers": [
+        {
+          "answer": "A: okazać do sprawdzenia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przywieźć do organu rejestrującego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są błędne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Osoba posiadająca broń palną i amunicję w celu kolekcjonerskim, w przypadku przechowywania jej poza urządzeniami spełniającymi wymagania co najmniej klasy S1 z normy PN-EN 14450, obowiązana jest",
+      "answers": [
+        {
+          "answer": "A: Wymagane są oba te zabezpieczenia jednocześnie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: zabezpieczyć okna przez zamontowanie w nich krat, siatki, żaluzji antywłamaniowych spełniających wymagania co najmniej normy PN-EN 1627 albo szyb o podwyższonej odporności, co najmniej P4A z normy PN-EN 356",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: drzwi wejściowe do pomieszczenia, w którym jest przechowywana broń i amunicja zabezpieczyć blachą stalową o grubości co najmniej 2 mm i wyposażyć w blokadę przeciwwyważeniową oraz zamknięcie przynajmniej na jeden zamek co najmniej 7 z normy PN-EN 12209 i zasuwę drzwiową zamykaną na kłódkę co najmniej 5 z normy PN-EN 12320",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Z najwyższą ostrożnością należy się posługiwać bronią",
+      "answers": [
+        {
+          "answer": "A: nieposiadającą włożonego wskaźnika bezpieczeństwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: każdą, bez wyjątku",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: rozładowaną, którą posługuje się osoba bez pozwolenia na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Który szereg broni jest ułożony od najmniejszego do największego odrzutu przy wystrzale",
+      "answers": [
+        {
+          "answer": "A: pistolet bocznego zapłonu, karabin bocznego zapłonu, strzelba",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pistolet bocznego zapłonu, pistolet centralnego zapłonu, strzelba",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pistolet centralnego zapłonu, karabin bocznego zapłonu, karabin centralnego zapłonu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dokumenty niezbędne do wyrejestrowania sprzedanej innemu strzelcowi broni to:",
+      "answers": [
+        {
+          "answer": "A: dowód sprzedaży broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dowód sprzedaży broni oraz promesa od kupującego",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pisemny wniosek z uzasadnieniem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Trening bezstrzałowy jest dozwolony",
+      "answers": [
+        {
+          "answer": "A: rozładowaną bronią",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pod warunkiem, że nie przeszkadza innym uczestnikom zajęć",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na stanowisku strzeleckim lub innym miejscu wyznaczonym przez prowadzącego strzelanie i za jego zgodą",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "O fakcie kradzieży broni lub amunicji należy powiadomić Policję albo Żandarmerię Wojskową",
+      "answers": [
+        {
+          "answer": "A: niezwłocznie, nie później jednak niż w ciągu 24 godzin od stwierdzenia kradzieży",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w ciągu 7 dni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w ciągu 3 dni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji cofa pozwolenie jeżeli osoba, której pozwolenie wydano",
+      "answers": [
+        {
+          "answer": "A: jest uzależniona od alkoholu lub od substancji psychoaktywnych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: bierze udział w imprezach alkoholowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: jest uzależniona od nikotyny",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba dopuszczona do posiadania broni, podczas wykonywania zadań służbowych obowiązana jest posiadać przy sobie",
+      "answers": [
+        {
+          "answer": "A: świadectwo broni, legitymację osoby dopuszczonej do posiadania broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: świadectwo broni, dowód osobisty, legitymację osoby dopuszczonej do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: świadectwo broni, notarialną kopię umowy zlecającej przewóz broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoby posiadające broń palną i amunicję do niej w celu ochrony osobistej, są obowiązane przechowywać ją",
+      "answers": [
+        {
+          "answer": "A: w urządzeniach spełniających wymagania co najmniej klasy S1 według normy PN-EN 14450",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w magazynie broni wyjętą z futerału i rozładowaną, ze zwolnionym kurkiem i odłączonym magazynkiem, zabezpieczoną, technicznie sprawną, ukompletowaną, czystą i zakonserwowaną",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w miejscu swojego zamieszkania, w sposób uniemożliwiający dostęp do broni osób nieupoważnionych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoby posiadające broń i amunicję na podstawie pozwolenia na broń, są obowiązane przechowywać ją",
+      "answers": [
+        {
+          "answer": "A: w urządzeniach spełniających wymagania co najmniej klasy S1 według normy PN-EN 14450",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w szafie pancernej z przynajmniej dwoma zamkami atestowanymi",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w urządzeniach spełniających wymagania co najmniej klasy S2 według normy PN-EN 14450",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Minimalny ciężar oporu spustu karabin pneumatyczny, sportowy lub dowolny",
+      "answers": [
+        {
+          "answer": "A: 1500g",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 500g",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: bez ograniczeń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za przechowywanie broni oraz amunicji w depozycie jest pobierana opłata w wysokości",
+      "answers": [
+        {
+          "answer": "A: 1% wartości rynkowej broni przekazanej do depozytu za każdą dobę przechowywania",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 1% opłaty za wydanie pozwolenia na broń osobie fizycznej za każdą dobę przechowywania",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 100 zł za każdy miesiąc przechowywania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Maksymalny ciężar broni karabin dowolny",
+      "answers": [
+        {
+          "answer": "A: 5500g",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 8000g",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 6500g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Nabywanie broni lub amunicji przy użyciu środków porozumiewania się na odległość jest",
+      "answers": [
+        {
+          "answer": "A: dozwolone, tylko jeśli zakupu dokonujemy w podmiocie posiadającym odpowiednią koncesję",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dozwolone",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: zabronione",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Na terenie strzelnicy można prowadzić trening bezstrzałowy",
+      "answers": [
+        {
+          "answer": "A: na linii ognia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w dowolnym miejscu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w miejscu oznaczonym lub wyznaczonym przez prowadzącego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto bez wymaganego pozwolenia wyrabia broń palną albo amunicję, lub nią handluje, podlega karze",
+      "answers": [
+        {
+          "answer": "A: pozbawienia wolności od 1 roku do lat 10",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: pozbawienia wolności od 6 miesięcy do lat 8",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pozbawienia wolności od 6 miesięcy do lat 10",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy dozwolone jest dokonanie przeróbki broni zmieniającej tylko jej kaliber?",
+      "answers": [
+        {
+          "answer": "A: Tak, w wyjatkowych sytuacjach, a w szczególności gdy zaprzestano produkcji amunicji do tej broni lub zakup amunicji do tej broni jest mocno ograniczony przez co broń nie może być użytkowana",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie, taka przeróbka jest zabroniona",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, dla kolekcjonerów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jadąc na dłuższe wakacje za granicę",
+      "answers": [
+        {
+          "answer": "A: należy wskazać osobę, której przekażemy klucze do szafy na wypadek kontroli Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie wpływa to na zasady związane z posiadaniem broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: należy zdać broń i amunicję do depozytu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto narusza zakaz przesyłania broni lub amunicji za pośrednictwem podmiotów innych niż operatorzy świadczący usługi pocztowe, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: aresztu albo grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Po ukończeniu strzelania, należy",
+      "answers": [
+        {
+          "answer": "A: schować broń do kabury i pozostać na linii ognia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wyjąć magazynek z broni i zejść z linii ognia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pozostać na linii ognia z bronią w pozycji gotowości i czekać na komendę prowadzącego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Składanie się, celowanie i strzelanie &quot;na sucho&quot; dozwolone jest",
+      "answers": [
+        {
+          "answer": "A: w dowolnym miejscu, przy zachowaniu warunków bezpieczeństwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: tylko po komendzie START",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na stanowisku strzeleckim lub innym miejscu wyznaczonym przez prowadzącego strzelanie i za jego zgodą",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji wydaje pozwolenie na broń, jeżeli wnioskodawca",
+      "answers": [
+        {
+          "answer": "A: udokumentuje potrzebę posiadania broni, złoży odpowiednio wypełniony wniosek wraz z opłatą skarbową",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie stanowi zagrożenia dla samego siebie, porządku lub bezpieczeństwa publicznego oraz przedstawi ważną przyczynę posiadania broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: w okresie ostatnich 5 lat nie był skazany prawomocnym wyrokiem za przestępstwo umyślne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dopuszczenie do posiadania broni wydaje się osobom mającym ukończonych",
+      "answers": [
+        {
+          "answer": "A: 18 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 21 lat",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 16 lat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Istotną częścią amunicji nie jest",
+      "answers": [
+        {
+          "answer": "A: proch strzelniczy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: łuska",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: spłonka",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Po wzięciu broni do ręki należy",
+      "answers": [
+        {
+          "answer": "A: sprawdzić, czy nie jest uszkodzona",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sprawdzić, czy jest rozładowana",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: upewnić się, że magazynek nie jest podpięty",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba, która utraciła uprawnienie do posiadania broni, jest obowiązana niezwłocznie",
+      "answers": [
+        {
+          "answer": "A: przekazać broń najbliższej jednostce organizacyjnej Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zdać broń i amunicję do tej broni do depozytu prowadzonego przez organ Policji, który cofnął pozwolenie do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zbyć broń i amunicję do tej broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii amunicji szczególnie niebezpiecznej zalicza się amunicję",
+      "answers": [
+        {
+          "answer": "A: pozbawioną pocisków ołowianych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wytworzoną niefabrycznie, niezależnie przez kogo została wytworzona",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: z pociskami wypełnionymi materiałami zapalającymi",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Stan wyższej konieczności to",
+      "answers": [
+        {
+          "answer": "A: stan, w którym grozi niebezpieczeństwo jakiemukolwiek dobru chronionemu prawem, jeżeli niebezpieczeństwa nie można inaczej uniknąć, a dobro poświęcone przedstawia wartość niższą od dobra ratowanego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: stan zagrożenia życia lub zdrowia ludzkiego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: stan odpierania bezpośredniego, bezprawnego zamachu na jakiekolwiek dobro chronione prawem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów sportowych uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: członkostwo w stowarzyszeniu strzeleckim, organizującym zawody sportowe",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: udokumentowane członkostwo w stowarzyszeniu o charakterze strzeleckim, posiadanie kwalifikacji sportowych oraz licencji właściwego polskiego związku strzeleckiego",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: udokumentowane członkostwo w stowarzyszeniu o charakterze strzeleckim, osiąganie wybitnych wyników sportowych na zawodach rangi minimum krajowej, zaświadczenie od trenera o braniu udziału w szkoleniu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozostawianie broni bez dozoru jest ",
+      "answers": [
+        {
+          "answer": "A: zabronione",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: dozwolone, gdy na strzelnicy są wyłącznie osoby posiadające pozwolenie na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zabronione, o ile sędzia stanowiskowy nie wyrazi zgody",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W jaki sposób należy złożyć oświadczenie potwierdzające zapoznanie się z regulaminem strzelnicy?",
+      "answers": [
+        {
+          "answer": "A: nie ma takiego obowiązku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ustnie: prowadzącemu strzelanie lub sędziemu stanowiskowemu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pisemnie poprzez wpis do książki rejestru pobytu na strzelnicy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Miotacze gazu obezwładniającego można posiadać",
+      "answers": [
+        {
+          "answer": "A: na podstawie karty rejestracyjnej miotacza gazu obezwładniającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: na podstawie pozwolenia na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: bez zezwolenia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osobom deklarującym zakup broni palnej lub amunicji w innym państwie członkowskim Unii Europejskiej właściwy terytorialnie komendant wojewódzki Policji, na ich wniosek, poświadcza",
+      "answers": [
+        {
+          "answer": "A: uprzednią zgodę przewozową",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: zgodę przewozową i uprzednią zgodę przewozową",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zgodę przewozową",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W razie przekroczenia granic stanu wyższej konieczności sąd nie zastosuje nadzwyczajnego złagodzenia kary, ani nie odstąpi od jej wymierzenia jeśli",
+      "answers": [
+        {
+          "answer": "A: w wyniku działania sprawcy uszczerbku doznało ludzkie zdrowie lub życie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: sprawca poświęcił dobro, które ma szczególny obowiązek chronić nawet z narażeniem się na niebezpieczeństwo osobiste",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: sprawca uciekł z miejsca zdarzenia po fakcie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Gotowe lub obrobione istotne części broni lub amunicji uważa się za broń lub amunicję",
+      "answers": [
+        {
+          "answer": "A: tak",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: nie, tylko gotowe lub obrobione części amunicji oraz broni uważa się za broń lub amunicję",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nie, tylko gotowe istotne części broni i amunicji uważa się za broń lub amunicję",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń można ładować",
+      "answers": [
+        {
+          "answer": "A: z pomocą innej osoby, jeśli strzelec nie jest w stanie zrobić tego samodzielnie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: samodzielnie, w dowolnym miejscu na strzelnicy, jeśli lufa jest skierowana w kierunku bezpiecznym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: samodzielnie, na stanowisku strzeleckim, z lufą skierowaną w kulochwyt, tylko po komendzie &quot;ŁADUJ&quot;",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów sportowych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: pistoletów sygnałowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: gładkolufowej",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broni alarmowej w postaci rewolwerów centralnego zapłonu o kalibrze od 6 do 12mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Nabywca amunicji jest obowiązany zarejestrować ją w ciągu",
+      "answers": [
+        {
+          "answer": "A: 5 dni od dnia nabycia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie ma takiego obowiązku",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 14 dni od dnia nabycia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Posiadacze pozwoleń do celów kolekcjonerskich mogą nosić broń",
+      "answers": [
+        {
+          "answer": "A: wyłącznie za zgodą właściwego organu Policji",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: przemieszczając się na strzelnicę",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ukrytą i w kaburze lub futerale",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy dopuszcza się nabywanie broni przy użyciu środków porozumiewania się na odległość?",
+      "answers": [
+        {
+          "answer": "A: Nie dopuszcza się w ten sposób nabywania broni, chyba że posiada się do tego celu upoważnienie swojego państwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, ale wcześniej nabywca (w przypadku gdy posiada miejsce stałego pobytu lub siedzibę na terytorium RP) dostarcza zbywcy, mającemu miejsce stałego pobytu lub siedzibę na terytorium innego niż RP państwa, zgodę przewozową i upoważnienie władz swojego państwa do nabycia danego rodzaju i liczby palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, ale wcześniej nabywca (w przypadku gdy posiada miejsce stałego pobytu lub siedzibę na terytorium RP) dostarcza zbywcy, mającemu również miejsce stałego pobytu lub siedzibę na terytorium RP, zaświadczenie uprawniające do jej nabycia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Osoba, która występuje z podaniem o wydanie dopuszczenia do posiadania broni jest zobowiązana",
+      "answers": [
+        {
+          "answer": "A: przedstawić zaświadczenie potwierdzające fakt zatrudnienia w podmiocie posiadającym broń na „okaziciela”",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przedstawić aktualne zaświadczenie lekarskie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zdać egzamin przed komisją powołaną przez właściwy organ Policji ze znajomości przepisów dot. posiadania i używania danej broni oraz umiejętności posługiwania się tą bronią",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kurek to element",
+      "answers": [
+        {
+          "answer": "A: uderzający w iglicę, co inicjuje eksplozję prochu i wystrzał",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wskazujący, czy broń posiada załadowany nabój w komorze",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: czopujący koniec lufy, gdy broń musi być rozładowana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń i amunicja w czasie przewozu środkami transportu publicznego",
+      "answers": [
+        {
+          "answer": "A: powinny być zabezpieczone w sposób uniemożliwiający dostęp do nich osób nieupoważnionych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: powinny być pilnowane przez posiadacza, nie są jednak wymagane dodatkowe zabezpieczenia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: powinny być przewożone w sposób wygodny dla właściciela i współpasażerów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W magazynie broni przechowuje się następującą dokumentację",
+      "answers": [
+        {
+          "answer": "A: wykazy pracowników upoważnionych do pobierania broni i amunicji z magazynu, książkę wydania-przyjęcia broni i amunicji, karty rozchodu amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ewidencję posiadanej broni i amunicji, wraz z kopiami dokumentów zakupu broni i amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: książkę stanu uzbrojenia, książkę rejestru otwierania i zamykania magazynu broni, protokoły i listy przeprowadzonych strzelań z broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń, zasady użyczania broni osobie nieuprawnionej, organ Policji",
+      "answers": [
+        {
+          "answer": "A: żąda przedstawienia aktualnych orzeczeń lekarskich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: organ Policji cofa obligatoryjnie pozwolenie na broń",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Posiadacz pozwolenia na broń w przypadku sprzedaży broni palnej kolekcjonerskiej jest zobowiązany",
+      "answers": [
+        {
+          "answer": "A: powiadomić właściwy organ Policji w terminie 5 dni tylko w przypadku sprzedaży broni poza terytorium RP",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie ciąży na posiadaczu pozwolenia żaden obowiązek w tym zakresie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: niezwłocznie powiadomić pisemnie o tym fakcie właściwy organ Policji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Poza funkcjonariuszami państwowych formacji uzbrojonych opisanych w UoBiA, kto może być zwolniony z egzaminu przed Policją przy wydawaniu pozwolenia na broń?",
+      "answers": [
+        {
+          "answer": "A: O ile zdali taki egzamin na podstawie odrębnych przepisów: członkowie PZŁ w zakresie broni myśliwskiej oraz członkowie PZSS posiadający licencję zezwalającą na uprawianie strzelectwa sportowego, w zakresie broni sportowej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Nikt więcej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Członkowie stowarzyszeń kolekcjonerskich, obronnych, sportowych lub myśliwskich",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią szczególnie niebezpieczną jest",
+      "answers": [
+        {
+          "answer": "A: broń palna, wyposażona w tłumik huku lub przystosowana do strzelania z użyciem tłumika huku",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broń zbudowana w oparciu o szkielet broni, lufę z komorą nabojową, zamek oraz magazynek lub bęben nabojowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każda przenośna broń lufowa, która miota, jest przeznaczona do miotania lub może być przystosowana do miotania jednego lub większej liczby pocisków lub substancji w wyniku działania materiału miotającego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do czego służy Europejska karta broni palnej?",
+      "answers": [
+        {
+          "answer": "A: Do zakupu broni na terenie Unii Europejskiej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Do zakupu broni na terenie całego świata",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Do skorzystania z możliwości swobodnego przemieszczania się i używania broni palnej w innym państwie członkowskim Unii Europejskiej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy występujący z podaniem o wydanie pozwolenia na broń jest zobowiązany zdać egzamin z przepisów dotyczących posiadania i używania danej broni oraz z umiejętności posługiwania się tą bronią?",
+      "answers": [
+        {
+          "answer": "A: Tak, za wyjątkiem osób zwolnionych z egzaminu zgodnie z UoBiA",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Nie, za wyjątkiem osób występujących o broń w celu ochrony osobistej lub ochrony osób i mienia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Obowiązek złożenia broni palnej i amunicji do depozytu zgodnie z treścią ustawy z dnia 21 maja 1999 r. o broni i amunicji nałożony jest na osobę, która",
+      "answers": [
+        {
+          "answer": "A: zamierza przebywać poza granicami kraju dłużej niż 6 miesięcy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiada broń technicznie niesprawną, a jej naprawa nie może być dokonana w okresie krótszym niż 3 miesiące",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: utraciła prawo do posiadania broni palnej - jeżeli broń nie została zbyta w terminie 30 dni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Magazynki do broni sportowej mogą mieścić nie więcej niż",
+      "answers": [
+        {
+          "answer": "A: 10 sztuk amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie ma limitu ",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 30 sztuk amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Regulamin strzelnicy zatwierdza",
+      "answers": [
+        {
+          "answer": "A: organ Policji właściwy ze względu na adres strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wójt, burmistrz, lub prezydent miasta",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: uchwała radnych miasta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za bezpieczeństwo i porządek na strzelnicy odpowiada",
+      "answers": [
+        {
+          "answer": "A: prowadzący strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: właściciel strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: organizator strzelania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto narusza przepisy regulaminu określającego zasady zachowania bezpieczeństwa na strzelnicy, podlega karze",
+      "answers": [
+        {
+          "answer": "A: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: grzywny albo ograniczenia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów szkoleniowych uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: udokumentowana praca w charakterze trenera lub instruktora w klubie sportowym, stowarzyszeniu lub firmie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadanie działalności gospodarczej w zakresie szkoleń strzeleckich",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: posiadanie uprawnień do prowadzenia szkoleń oraz udokumentowane zarejestrowanie działalności gospodarczej w zakresie szkoleń strzeleckich",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "O zmianie miejsca stałego pobytu informuje się",
+      "answers": [
+        {
+          "answer": "A: organ Policji właściwy ze względu na nowe miejsce stałego pobytu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: organ Policji właściwy ze względu na stare miejsce stałego pobytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: organ wydający pozwolenie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Istotną częścią broni palnej jest",
+      "answers": [
+        {
+          "answer": "A: magazynek",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: baskila",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: lufa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dziecko może mieć kontakt z bronią palną",
+      "answers": [
+        {
+          "answer": "A: jeśli broń jest rozładowana lub używane są naboje treningowe",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: jeśli zostało przeszkolone z zasad bezpieczeństwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pod stałą, bezpośrednią kontrolą, za zgodą opiekunów dziecka",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palną na strzelnicy przenosi się",
+      "answers": [
+        {
+          "answer": "A: załadowaną, zabezpieczoną i schowaną w kaburze, pokrowcach lub kasetach przeznaczonych do przenoszenia broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: rozładowaną, z otwartą komorą nabojową, bez pasów i pokrowców",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: rozładowaną, zabezpieczoną w sposób uniemożliwiający oddanie przypadkowego strzału",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń obowiązku uzyskania zgody na wywóz broni i amunicji za granicę, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: może w przyszłości odmówić zgody na wywóz broni lub amunicji za granicę",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może ukarać sprawcę grzywną do 300 stawek dziennych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dopuszczona do strzelań przeprowadzonych wg. wytycznych ISSF jest m.in. amunicja",
+      "answers": [
+        {
+          "answer": "A: bocznego zapłonu .22lr",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: bocznego zapłonu .22lr oraz centralnego zapłonu od .38 do .45",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dowolna od kalibru .22lr do .45, typu magnum",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoba, która złożyła broń do depozytu Policji",
+      "answers": [
+        {
+          "answer": "A: ma prawo dostępu do broni, w celu okazania osobom zainteresowanym jej nabyciem oraz w celu oceny stanu broni, po uzgodnieniu terminu z jednostką deponującą",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: nie ma dostępu do zdeponowanej broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ma swobodny dostęp do zdeponowanej broni o ile jest jej właścicielem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego broń przewozi się w stanie",
+      "answers": [
+        {
+          "answer": "A: rozładowanym, bez amunicji w komorze nabojowej; amunicja może znajdować się w magazynkach niepodłączonych do broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: rozładowanym, bez amunicji w komorze nabojowej i w magazynkach nabojowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: zależy to od posiadacza broni palnej, musi być jednak poza zasięgiem osób postronnych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią, w myśl UoBiA, nie jest",
+      "answers": [
+        {
+          "answer": "A: Iglica",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Miotacz gazu obezwładniającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Kusza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W środkach transportu publicznego, służących do przewozu pasażerów, broń do celów kolekcjonerskich",
+      "answers": [
+        {
+          "answer": "A: przewozi się w stanie rozładowanym, bez amunicji w komorze nabojowej i w magazynkach nabojowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: może być załadowana bez wprowadzonego naboju do komory nabojowej i przewożona w stanie zabezpieczonym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przewożona jest w dowolny sposób",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Aby móc posiadać prywatną broń palną należy mieć",
+      "answers": [
+        {
+          "answer": "A: patent strzelecki PZSS oraz licencję zawodniczą",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dopuszczenie do posiadania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pozwolenie na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dozwolone przyrządy celownicze w pistoletach",
+      "answers": [
+        {
+          "answer": "A: zamknięte mechaniczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: otwarte lub zamknięte mechaniczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: otwarte mechaniczne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane w celu ochrony osobistej, uprawnia m.in. do posiadania następujących rodzajów broni:",
+      "answers": [
+        {
+          "answer": "A: broni palnej: bojowej i gazowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 9 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broni palnej: bojowej i alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 9 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broni palnej: bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "W ramach obrony koniecznej działa ten, kto odpiera zamach",
+      "answers": [
+        {
+          "answer": "A: bezpośredni i bezprawny",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: nagły i gwałtowny",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: używając broni palnej lub środków przymusu bezpośredniego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku nieprzechowywania broni posiadanej na podstawie pozwolenia kolekcjonerskiego w szafie S1 jakie muszą być spełnione dodatkowe warunki?",
+      "answers": [
+        {
+          "answer": "A: nie ma żadnych dodatkowych warunków jeżeli przechowuje się nie więcej niż 50 szt broni w jednym pomieszczeniu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pomieszczenie musi mieć co najmniej dwa zamki atestowane i system alarmowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: gabloty muszą spełniać stabilność, możliwość przytwierdzenia do podłoża, przeszklenie w klasie co najmniej P6B z normy PN-EN 356 i zamknięcia w klasie 5 z normy PN-EN 12209",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Zarejestrowanie broni palnej pozbawionej cech użytkowych może nastąpić na rzecz osoby, która ma ukończone",
+      "answers": [
+        {
+          "answer": "A: 16 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 18 lat",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 17 lat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy w konkurencji pistolet sportowy 25m można strzelać z rewolweru?",
+      "answers": [
+        {
+          "answer": "A: można, jeśli wyrazi na to zgodę prowadzący strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: można, pod warunkiem zachowania regulaminowych ograniczeń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nie można",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią, w myśl UoBiA, nie jest",
+      "answers": [
+        {
+          "answer": "A: wiatrówki o energii kinetycznej pocisku poniżej 17J",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broń pneumatyczna",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Miotacz gazu obezwładniającego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba z zaburzeniami psychicznymi lub znacznie ograniczoną sprawnością psychofizyczną może otrzymać pozwolenie na bron?",
+      "answers": [
+        {
+          "answer": "A: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, jeśli jest niekarana",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tylko jeśli zaburzenia nie przeszkadzają w codziennym życiu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto, mając zezwolenie na posiadanie broni palnej lub amunicji, udostępnia lub przekazuje ją osobie nieuprawnionej podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny albo aresztu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny, ograniczenia wolności albo pozbawienia wolności do lat 2",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Rejestracja lub wyrejestrowanie broni jest możliwe",
+      "answers": [
+        {
+          "answer": "A: wyłącznie osobiście",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osobiście, listem poleconym lub poprzez ePUAP",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: osobiście, telefonicznie lub e-mailem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto na strzelnicy może nie przestrzegać przepisów dotyczących postaw strzeleckich?",
+      "answers": [
+        {
+          "answer": "A: prowadzący strzelanie i osoby przez niego upoważnione",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osoby niepełnosprawne",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: osoby niepełnosprawne, dzieci lub strzelcy posiadający zaświadczenie od lekarza o przeciwwskazaniach medycznych w utrzymywaniu postaw strzeleckich",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wpis do książki rejestru pobytu na strzelnicy każdorazowo musi zawierać",
+      "answers": [
+        {
+          "answer": "A: imię nazwisko, numer pozwolenia i nazwę organu wydającego lub adres zamieszkania, podpis",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: imię nazwisko, oznaczenie prowadzącego strzelanie, adres zameldowania, podpis",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: imię nazwisko, typ i numer broni, adres zamieszkania, godziny wejścia-wyjścia, podpis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za wydawanie komend &quot;ŁADUJ&quot;, &quot;START&quot;, &quot;STOP&quot;, &quot;ROZŁADUJ&quot; jest odpowiedzialny",
+      "answers": [
+        {
+          "answer": "A: kierownik strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzący strzelanie lub zawodnik z najdłuższym stażem, jeśli nie ma prowadzącego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: prowadzący strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Rejestracji nabytej broni dokonuje się na podstawie",
+      "answers": [
+        {
+          "answer": "A: legitymacji posiadacza broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dowodu nabycia broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: świadectwa broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie konkurencje są strzelane na 25m wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: pistolet sportowy, szybkostrzelny, standardowy, centralnego zapłonu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Pistolet sportowy, szybkostrzelny, standardowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolet sportowy, szybkostrzelny, standardowy, centralnego zapłonu, ruchoma tarcza (karabin pneumatyczny)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kupując broń we wtorek należy ją zarejestrować najpóźniej",
+      "answers": [
+        {
+          "answer": "A: w niedzielę",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w piątek",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w poniedziałek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palną można mieć przy sobie",
+      "answers": [
+        {
+          "answer": "A: na zgromadzeniu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w budynkach sądu lub prokuratury",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w budynkach Policji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do pięciu tarcz z pistoletu strzela się na dystansie?",
+      "answers": [
+        {
+          "answer": "A: 10m",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 25m",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 50m",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba nieposiadająca miejsca stałego pobytu na terytorium RP może otrzymać pozwolenie na bron?",
+      "answers": [
+        {
+          "answer": "A: Tylko jeśli ma w RP majątek lub rodzinę",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, jeśli bywa w kraju regularnie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Konkurencja TRAP to strzelanie do rzutków",
+      "answers": [
+        {
+          "answer": "A: wyrzucanych ze schronu znajdującego się 12m od linii stanowisk",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wyrzucanych z dwóch budek (wysokiej i niskiej)",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wyrzucanych ze schronu znajdującego się 15m od linii stanowisk",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Istotną częścią broni palnej NIE jest",
+      "answers": [
+        {
+          "answer": "A: lufa",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: szkielet",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zamek",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Minimalny ciężar oporu języka spustowego w pistoletach 25m",
+      "answers": [
+        {
+          "answer": "A: 1000g",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 500g",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 1500g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów ochrony osobistej, osób i mienia, uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: chęć podjęcia zatrudnienia w branży ochrony osób i mienia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: stałe, realne i ponadprzeciętne zagrożenie życia, zdrowia lub mienia",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: ukończenie kursu pracowników ochrony fizycznej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dopuszczenie do posiadania broni następuje w drodze",
+      "answers": [
+        {
+          "answer": "A: pisemnego wniosku pracodawcy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pisemnego wniosku pracownika ochrony",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: decyzji administracyjnej, wydawanej przez właściwy organ Policji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy wolno posiadać amunicję wykonaną niefabrycznie, w tym także taką, do której wytworzenia wykorzystano fabrycznie nowe elementy amunicji?",
+      "answers": [
+        {
+          "answer": "A: Tak, pod warunkiem, że amunicja ta została wytworzona na własny użytek przez osobę posiadającą pozwolenie na broń myśliwską, sportową lub kolekcjonerską",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, o ile amunicja wykonana niefabrycznie zachowuje parametry metryczne (tj. kaliber i długość łuski)",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Nie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia przez osobę posiadającą pozwolenie na broń obowiązku zawiadomienia właściwego organu Policji o zmianie miejsca stałego pobytu w terminie 14 dni od dnia zmiany, właściwy organ Policji",
+      "answers": [
+        {
+          "answer": "A: może odebrać broń do depozytu policji na okres do 3 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: może cofnąć pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: może zlecić sądowe ustalenie miejsca stałego pobytu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "O zmianie miejsca stałego pobytu, osoba posiadająca pozwolenie na broń jest zobowiązana powiadomić organ Policji",
+      "answers": [
+        {
+          "answer": "A: obecnie robi to organ meldunkowy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w terminie 7 dni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w terminie 14 dni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Iglica służy do",
+      "answers": [
+        {
+          "answer": "A: wyciągania łuski bądź naboju z komory nabojowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: inicjacji wybuchu ładunku miotającego w naboju, powodując wystrzał",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: opróżnienia bębna rewolweru z łusek bądź nabojów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów ochrony osobistej, uprawnia do posiadania",
+      "answers": [
+        {
+          "answer": "A: broni palnej: bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm, przedmiotów przeznaczonych do obezwładniania osób za pomocą energii elektrycznej o średniej wartości w obwodzie przekraczającej 10mA, miotaczy gazu obezwładniającego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broni palnej w postaci pistoletów,  rewolwerów lub karabinów centralnego zapłonu o kalibrach od 6 mm do 12 mm, pistoletów sygnałowych, miotaczy gazu obezwładniającego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broni palnej: bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm lub w postaci strzelb gładkolufowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dozwolone jest użyczanie broni",
+      "answers": [
+        {
+          "answer": "A: odpowiadającej celom szkoleniowym wyłącznie osobom prowadzącym strzelnicę",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odpowiadającej celom łowieckim i sportowym wyłącznie osobom posiadającym pozwolenie na broń wydane w celach łowieckich lub sportowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: odpowiadającej celom ochrony osobistej wyłącznie osobom posiadającym pozwolenie na broń wydane w celach ochrony osobistej oraz ochrony osób i mienia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dozwolone jest użyczanie własnej broni palnej posiadanej w celu kolekcjonerskim innym osobom posiadającym ważne pozwolenie w celu",
+      "answers": [
+        {
+          "answer": "A: w ogóle nie można użyczać tego rodzaju broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: pamiątkowym i kolekcjonerskim",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kolekcjonerskim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku naruszenia obowiązku zawiadomienia o utracie broni",
+      "answers": [
+        {
+          "answer": "A: właściwy organ Policji cofa pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: sprawca popełnia przestępstwo",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: właściwy organ Policji odbiera pozostałą posiadaną broń i umieszcza ją w depozycie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku noszenia broni mimo wykluczenia tej możliwości przez organ Policji poprzez adnotację w legitymacji posiadacza",
+      "answers": [
+        {
+          "answer": "A: sprawca polega karze grzywny, aresztu lub ograniczeniu wolności do roku",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: właściwy organ Policji kieruje na powtórne badania lekarskie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: właściwy organ Policji cofa pozwolenie na broń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Komu może użyczyć broń jej właściciel posiadający ją na pozwolenie kolekcjonerskie?",
+      "answers": [
+        {
+          "answer": "A: Nie ma takiej możliwości",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Osobie posiadającej pozwolenie na ten sam rodzaj i typ broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Osobie posiadającej pozwolenie sportowe lub myśliwskie na ten sam rodzaj i typ broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Poza przypadkami określonymi w ustawie o broni i amunicji nabywanie, posiadanie oraz zbywanie broni i amunicji jest",
+      "answers": [
+        {
+          "answer": "A: zabronione",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: dozwolone w przypadku nabywania broni przy użyciu środków porozumiewania się na odległość",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dozwolone za zgodą wojewody",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Istotnymi częściami broni palnej i amunicji NIE są:",
+      "answers": [
+        {
+          "answer": "A: szkielet broni, lufa z komorą nabojową, zamek",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: język spustowy, kurek, iglica, łuska naboju, pocisk z rdzeniem stalowym oraz pocisk ołowiany",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: spłonki inicjujące spalanie materiału miotającego i materiał miotający w postaci prochu strzelniczego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do jakich rodzajów broni i amunicji uprawnia pozwolenie na broń wydane w celu sportowym?",
+      "answers": [
+        {
+          "answer": "A: Bocznego zapłonu z lufami gwintowanymi, o kalibrze do 6 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Obie odpowiedzi są prawidłowe",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Centralnego zapłonu z lufami gwintowanymi, o kalibrze do 12 mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto nieumyślnie powoduje utratę broni palnej lub amunicji, która zgodnie z prawem pozostaje w jego dyspozycji, podlega",
+      "answers": [
+        {
+          "answer": "A: grzywnie, karze ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: grzywnie, karze ograniczenia wolności albo pozbawienia wolności do 2 lat",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywnie lub karze ograniczenia wolności",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji cofa pozwolenie jeżeli osoba, której pozwolenie wydano",
+      "answers": [
+        {
+          "answer": "A: nie posiada miejsca stałego pobytu na terenie Rzeczypospolitej Polskiej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wyjeżdża do pracy poza miejscem swojego stałego pobytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: nie ma obywatelstwa polskiego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zniszczenie broni i amunicji przez Policję dokonywane jest",
+      "answers": [
+        {
+          "answer": "A: odpłatnie w wysokości 1% opłaty za wydanie pozwolenia na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nieodpłatnie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nieodpłatnie pod warunkiem, że zniszczenie broni i amunicji następuje na wniosek znalazcy tej broni i amunicji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenia na broń nie wymaga się w przypadku",
+      "answers": [
+        {
+          "answer": "A: posiadania broni palnej rozdzielnego ładowania wykonanej przed rokiem 1995",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: używania broni w celach sportowych, szkoleniowych lub rekreacyjnych na strzelnicy działającej na podstawie zezwolenia właściwego organu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: posiadania broni w celu pamiątkowym",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Maksymalny ciężar broni pistoletów na 25m",
+      "answers": [
+        {
+          "answer": "A: 1000g",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 1400g",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 1500g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Lufa gwintowana oznacza lufę",
+      "answers": [
+        {
+          "answer": "A: mocowaną do łoża broni poprzez wkręcanie mimośrodowe",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pozwalającą na montaż urządzeń wylotowych jak tłumik płomienia, kompensator czy zatyczka",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: posiadającą wewnętrzne bruzdy, które w trakcie wystrzału nadają pociskowi ruch obrotowy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "W rozumieniu ustawy z dnia 21 maja 1999 r. o broni i amunicji broń pneumatyczną można posiadać",
+      "answers": [
+        {
+          "answer": "A: na podstawie pozwolenia na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: bez zezwolenia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na podstawie karty rejestracyjnej broni pneumatycznej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kupując broń w poniedziałek należy ją zarejestrować najpóźniej",
+      "answers": [
+        {
+          "answer": "A: w następny poniedziałek",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w piątek",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w sobotę",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Na terenie strzelnicy broń z kabury wyjmuje się",
+      "answers": [
+        {
+          "answer": "A: na polecenie prowadzącego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: po otrzymaniu od amunicyjnego przydzielonej amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: po wejściu na linię ognia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broni posiadanej w celach kolekcjonerskich NIE wolno wykorzystywać do",
+      "answers": [
+        {
+          "answer": "A: tworzenia prywatnego arsenału na wypadek apokalipsy zombie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: startowania w zawodach sportowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: polowań",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Jaki strój jest wymagany przez ISSF do konkurencji pistoletowych",
+      "answers": [
+        {
+          "answer": "A: taki jak określony przez ISSF do konkurencji karabinowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w konkurencjach pistoletowych nie ma ograniczeń dotyczących stroju",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: elementy ubioru nie mogą podpierać lub unieruchamiać ciała, głowy, pleców, mostka, stóp lub kostek, a buty zakrywać kostek",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu pneumatycznego",
+      "answers": [
+        {
+          "answer": "A: kaliber 4.5mm, ciężar max: 1500g, opór spustu min: 600g, otwarte przyrządy celownicze, pudełko: 420x300x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 4.5mm, ciężar max: 1500g, opór spustu min: 600g, zamknięte przyrządy celownicze, pudełko: 420x200x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kaliber 4.5mm, ciężar max: 1500g, opór spustu min: 500g, otwarte przyrządy celownicze, pudełko: 420x200x50mm",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba skazana prawomocnym orzeczeniem sądu za nieumyślne przestępstwo przeciwko życiu i zdrowiu może otrzymać pozwolenie na broń?",
+      "answers": [
+        {
+          "answer": "A: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, jeśli uzyska pozytywną opinię dzielnicowego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Legalność posiadania broni przez osoby dopuszczone do posiadania broni potwierdza się w",
+      "answers": [
+        {
+          "answer": "A: świadectwie broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: legitymacji posiadacza broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: legitymacji osoby dopuszczonej do posiadania broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Europejska karta broni palnej wydawana jest na okres",
+      "answers": [
+        {
+          "answer": "A: do 5 lat",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: bezterminowo",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: niezbędny do dokonania zakupu i przewiezienia broni przez terytorium państwa członkowskiego Unii Europejskiej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią, w myśl UoBiA, nie są",
+      "answers": [
+        {
+          "answer": "A: broń bojowa, myśliwska, sportowa, gazowa, alarmowa i sygnałowa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: rzeczy, które wykrywają, lokalizują lub identyfikują cel",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: przedmioty przeznaczone do obezwładniania osób za pomocą energii elektrycznej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jaką ważność mają badania lekarskie, które należy dołączyć do wniosku o pozwolenie na broń lub dopuszczenie do broni?",
+      "answers": [
+        {
+          "answer": "A: 1 miesiąc",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 3 miesiące, licząc od daty złożenia wniosku o pozwolenie lub dopuszczenie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 3 miesiące, licząc od daty badania",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Postawy strzeleckie w konkurencjach karabinowych ISSF",
+      "answers": [
+        {
+          "answer": "A: klęcząca, leżąca, stojąca",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: klęcząca, leżąca, siedząca",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: stojąca, siedząca",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii amunicji szczególnie niebezpiecznej zalicza się amunicję",
+      "answers": [
+        {
+          "answer": "A: o zwiększonym stopniu grzybkowania po uderzeniu w cel",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: z pociskami pełnopłaszczowymi, zawierającymi rdzeń wykonany z materiału twardszego niż stop ołowiu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wykonaną na własne potrzeby przez myśliwego, o zwiększonej naważce prochu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Minimalny ciężar oporu spustu w pistolecie dowolnym wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: bez ograniczeń",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 1000g",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 500g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba skazana prawomocnym orzeczeniem sądu za umyślne przestępstwo lub przestępstwo skarbowe może otrzymać pozwolenie na broń?",
+      "answers": [
+        {
+          "answer": "A: Tak, jeśli przestępstwo uległo zatarciu",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, o ile minął przynajmniej rok od skazania",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zarejestrowanie broni wymagającej pozwolenia potwierdza się w",
+      "answers": [
+        {
+          "answer": "A: legitymacji posiadacza broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: świadectwie broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są prawdziwe",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu centralnego zapłonu",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 7.62-9.65mm wg ISSF lub do 12mm wg UoBiA, ciężar max: 1400g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 7.62-9.65mm lub do 12mm, ciężar max: 1400g, opór spustu min: 1000g, zamknięte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Komendę &quot;STOP&quot; może wydać",
+      "answers": [
+        {
+          "answer": "A: tylko prowadzący strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: tylko osoba uczestnicząca w strzelaniu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każda osoba, która uzna, iż istnieje zagrożenie na strzelnicy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palną nosi się",
+      "answers": [
+        {
+          "answer": "A: w kieszeni lub zamocowaną za pasek spodni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w kaburach lub futerałach",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: tylko rozładowaną, bez naboju w komorze lub w magazynkach nabojowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jeśli ostatni dzień terminu rejestracji broni przypada na sobotę lub niedzielę, to rejestracji należy dokonać najpóźniej",
+      "answers": [
+        {
+          "answer": "A: w ten dzień, telefonicznie lub pocztą",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w poniedziałek",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: w piątek",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy na terenie strzelnicy wolno spożywać alkohol lub używać środki odurzające oraz czy wolno przebywać na strzelnicy osobom będącym pod ich wpływem?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale tylko za wiedzą prowadzącego strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, za zgodą właściciela obiektu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Bezwzględnie nie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Na strzelnicę zwierzęta",
+      "answers": [
+        {
+          "answer": "A: mogą być wprowadzane tylko w wyjątkowych przypadkach oraz obowiązkowo powinny być trzymane na uwięzi i pod ścisłym nadzorem opiekuna",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: nie mogą być wprowadzane",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: mogą być wprowadzane, tylko przez swojego przewodnika, jeżeli odbyły tresurę z zakresu posłuszeństwa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń palna małokalibrowa bocznego zapłonu to m.in.",
+      "answers": [
+        {
+          "answer": "A: pistolet dowolny, czyli pistolet jednostrzałowy o kalibrze 5.6mm (0.22&quot;) mieszczący się w pudełku o wewnętrznych wymiarach 420mm x 200 mm x 50 mm, o dowolnym ciężarze oraz o dowolnym oporze języka spustowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pistolet dowolny, czyli pistolet jednostrzałowy o kalibrze 5.6mm (0.22&quot;) o dowolnych wymiarach i ciężarze do 1400g oraz o dowolnym oporze języka spustowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolet dowolny, czyli pistolet jednostrzałowy o kalibrze 5.6mm (0.22&quot;) o dowolnych wymiarach, dowolnym ciężarze oraz o dowolnym oporze języka spustowego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Strzelanie rozpoczyna się na komendę",
+      "answers": [
+        {
+          "answer": "A: prowadzącego strzelanie, chyba że chwilowo wyznaczy do tego inną osobę",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzącego strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: prowadzącego strzelanie, lub jeśli jest on nieobecny -- strzelca o największym doświadczeniu z obsługą broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Właściwy organ Policji, wobec osób, które posiadają broń, nie mając przy sobie legitymacji osoby dopuszczonej do posiadania broni i świadectwa broni może",
+      "answers": [
+        {
+          "answer": "A: skierować na powtórne badania lekarskie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: cofnąć sprawcy pozwolenie na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ukarać sprawcę karą grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto nie dopełnia obowiązku zawiadomienia Policji o utracie lub zbyciu innej osobie broni i amunicji do tej broni podlega karze",
+      "answers": [
+        {
+          "answer": "A: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: utraty pozwolenia i całej posiadanej broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pozbawienia wolności do 1 roku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu dowolnego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 5.6mm, dowolny ciężar broni, dowolny opór pustu, dowolne wymiary, mechaniczne przyrządy celownicze",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 7.62-9.65mm lub do 12mm, ciężar max: 1400g, opór spustu min: 1000g, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jeśli broń nie zostanie zbyta w terminie 30 dni od utraty uprawnienia do posiadania broni, należy",
+      "answers": [
+        {
+          "answer": "A: złożyć broń wraz z amunicją do depozytu właściwego organu Policji",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: wyrazić zgodę na jej zniszczenie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: złożyć oświadczenie o przeniesieniu własności broni i amunicji na rzecz Skarbu Państwa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Reset spustu to",
+      "answers": [
+        {
+          "answer": "A: przywrócenie fabrycznej siły oporu spustu, zwłaszcza w broni o dużym przebiegu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: droga powrotna, którą po wystrzale musi się cofnąć ściągnięty język spustowy zanim pozwoli na oddanie kolejnego strzału",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: trzy sekundy wytrzymania po strzale, gdy utrzymujemy ściągnięty spust i ułożenie przyrządów celowniczych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wagomiar to",
+      "answers": [
+        {
+          "answer": "A: długość łuski wraz ze spłonką i kołnierzem",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: najmniejsza średnica przewodu lufy",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: liczba kul o średnicy przewodu lufy, jaką można odlać z funta ołowiu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy prowadzący strzelanie może usunąć z terenu strzelnicy osobę naruszającą jej regulamin?",
+      "answers": [
+        {
+          "answer": "A: Tak, włącznie z osobami towarzyszącymi lub widzami",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tylko za zgodą właściciela obiektu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, ale tylko osoby strzelające na strzelnicy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dokonanie zmiany błędnego wpisu w ewidencji posiadanej broni i amunicji polega na",
+      "answers": [
+        {
+          "answer": "A: wymazaniu błędnego wpisu oraz wprowadzenie w jego miejsce wpisu poprawnego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: skreśleniu błędnego wpisu kolorem czerwonym w sposób czytelny, naniesienie poprawnego wpisu ze wskazaniem daty dokonania zmiany i nazwiska osoby uprawnionej do dokonania zmiany wraz z jej własnoręcznym podpisem",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: usunięciu błędnego wpisu w sposób trwały i zastąpienie go poprawnym wpisem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Opłatę za przechowywanie broni oraz amunicji wpłaca się do",
+      "answers": [
+        {
+          "answer": "A: kasy lub na rachunek bankowy jednostki deponującej, najpóźniej w dniu przekazania broni i amunicji do depozytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kasy lub na rachunek bankowy jednostki deponującej, najpóźniej w dniu odbioru broni i amunicji z depozytu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kasy lub na rachunek bankowy Urzędu Miasta właściwego miejscu deponowania broni, najpóźniej w dniu odbioru broni i amunicji z depozytu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zasady i warunki przechowywania, noszenia oraz ewidencjonowania broni i amunicji przez osoby posiadające broń i amunicję na podstawie pozwolenia określa",
+      "answers": [
+        {
+          "answer": "A: Ustawa z dnia 21 maja 1999 r. o broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Rozporządzenie Ministra Spraw Wewnętrznych w sprawie przechowywania, noszenia oraz ewidencjonowania broni i amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Ustawa z dnia 21 maja 1999 r. o broni i amunicji z późniejszymi zmianami",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Sąd może odstąpić od wymierzenia kary w razie przekroczenia granicy obrony koniecznej, gdy sprawca zastosował sposób obrony niewspółmierny do niebezpieczeństwa zamachu",
+      "answers": [
+        {
+          "answer": "A: prawda",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: tylko, jeśli nie było ofiar",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pod warunkiem niskiej szkodliwości społecznej czynu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią, w myśl UoBiA, nie jest",
+      "answers": [
+        {
+          "answer": "A: nóż",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: ostrze ukryte w przedmiocie nie mającym wyglądu broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kastet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Odległości strzelań w konkurencjach karabinowych ISSF to",
+      "answers": [
+        {
+          "answer": "A: 10, 50, 300m",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 10, 25, 50, 100m",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 25, 50, 100m",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Europejska karta broni palnej to?",
+      "answers": [
+        {
+          "answer": "A: Dokument zezwalający na zakup i transport broni palnej kupionej poza granicami kraju",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Imienny dokument potwierdzający uprawnienie do posiadania broni palnej, wydanym przez właściwy organ państwa członkowskiego UE, umożliwiający posiadanie i używanie broni palnej w innym państwie UE",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Dokument zaświadczający zgodę konsula RP na wywóz poza granicę kraju broni alarmowej, sygnałowej lub pneumatycznej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za organizację działań o charakterze ratunkowym na strzelnicy jest odpowiedzialny",
+      "answers": [
+        {
+          "answer": "A: osoba, która jako pierwsza dostrzeże zagrożenie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzący strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: kierownik strzelnicy",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pociski wypełnione chemicznymi środkami obezwładniającymi zaliczane są do",
+      "answers": [
+        {
+          "answer": "A: ręcznych miotaczy gazu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przedmiotów przeznaczonych do miotania substancji obezwładniających",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: amunicji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Właściwy organ Policji może cofnąć pozwolenie na broń w przypadku naruszenia przez osobę posiadająca pozwolenie",
+      "answers": [
+        {
+          "answer": "A: konieczności posiadania miejsca zameldowania na terytorium Rzeczypospolitej Polskiej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: obowiązku bezzwłocznej odpowiedzi na korespondencję ze strony Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obowiązku rejestracji broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Maksymalne regulaminowe ciężary karabinów to",
+      "answers": [
+        {
+          "answer": "A: 8000g, 6500g, 5500g",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 8000g, 6500g, 5000g",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 8000g, 6000g, 5500g",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do strzelania konkurencji zatwierdzonych przez ISSF zabronione jest używanie amunicji",
+      "answers": [
+        {
+          "answer": "A: o dużej mocy i typu magnum",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: bocznego zapłonu typu &quot;long rifle&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: śrutu kal 4.5mm (0.177&quot;) o dowolnym kształcie, wykonanego z ołowiu lub innego miękkiego materiału",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń może być wydane między innymi w celu",
+      "answers": [
+        {
+          "answer": "A: prewencyjnym",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: obrony własnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ochrony osób i mienia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "W przypadku jakichkolwiek wątpliwości na terenie strzelnicy, należy pytać",
+      "answers": [
+        {
+          "answer": "A: na strzelnicy nie wolno nikogo o nic pytać, aby nie przeszkadzać",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kolegę na sąsiednim stanowisku strzeleckim",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: prowadzącego strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba skazana prawomocnym orzeczeniem sądu za nieumyślne przestępstwo przeciwko bezpieczeństwu w komunikacji popełnione w stanie nietrzeźwości może otrzymać pozwolenie na broń?",
+      "answers": [
+        {
+          "answer": "A: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak, po roku od dnia skazania",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba wskazująca istotne zaburzenia funkcjonowania psychologicznego może otrzymać pozwolenie na bron?",
+      "answers": [
+        {
+          "answer": "A: Tylko jeśli nie jest leczona farmakologicznie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, jeśli jest niekarana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji cofa pozwolenie jeżeli osoba, której pozwolenie wydano",
+      "answers": [
+        {
+          "answer": "A: jest podejrzewana o umyślne przestępstwo lub umyślne przestępstwo skarbowe",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: jest skazana prawomocnym orzeczeniem sądu za umyślne przestępstwo lub umyślne przestępstwo skarbowe",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wielokrotnie została ukarana za wykroczenie w ruchu drogowym",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii broni szczególnie niebezpiecznej zalicza się",
+      "answers": [
+        {
+          "answer": "A: narzędzia i urządzenia, których używanie może zagrażać życiu lub zdrowiu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń palną, której nie można wykryć przy pomocy urządzeń przeznaczonych do kontroli osób i bagażu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broń, której rażenie obezwładniające wynosi powyżej 300 metrów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osobę naruszającą regulamin strzelnicy",
+      "answers": [
+        {
+          "answer": "A: usuwa się ze strzelnicy",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: usuwa się ze strzelnicy, zatrzymując broń i amunicję do czasu przyjazdu Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: poucza się, nakazując ponownie zapoznać się z zapisami regulaminu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń palna zdolna do rażenia celów na odległość może być używana w strzelaniach szkoleniowych",
+      "answers": [
+        {
+          "answer": "A: na strzelnicach",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w miejscach zapewniających pełne bezpieczeństwo otoczenia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: na terenach leśnych pod warunkiem zapewnienia bezpieczeństwa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Złożenie broni i amunicji do depozytu Policji",
+      "answers": [
+        {
+          "answer": "A: nie stanowi przeszkody do ich zbycia",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: uniemożliwia zbycie broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ceduje zbycie broni i amunicji przez organ Policji, w którym broń i amunicję zdeponowano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Dzieci mogą przebywać na terenie strzelnicy",
+      "answers": [
+        {
+          "answer": "A: wyłącznie pod bezpośrednim nadzorem rodziców lub opiekunów",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: tylko powyżej 15 roku życia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: tylko z instruktorem strzelectwa posiadającym aktualną licencję PZSS",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do jakich rodzajów broni i amunicji uprawnia pozwolenie na broń wydane w celu ochrony osobistej?",
+      "answers": [
+        {
+          "answer": "A: Broni palnej: bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Pistoletów maszynowych o kalibrze od 6 mm do 12 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Karabinków samoczynnych o kalibrze od 5,45 mm do 7,62 mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Obowiązkiem prowadzącego strzelanie jest ",
+      "answers": [
+        {
+          "answer": "A: czuwać nad prawidłowym przebiegiem szkolenia, identyfikować wady techniczne i poprawiać strzelców",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: koordynacja komunikacji między sędziami różnych konkurencji w trakcie zawodów strzeleckich",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wyznaczanie osobom towarzyszącym, nie biorącym udziału w strzelaniu, miejsc bezpiecznego pobytu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Minimalna długość lufy w pistolecie dowolnym wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: 220mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 153mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: bez ograniczeń",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Amunicję, która nie mieści się w szafie z bronią należy przechowywać",
+      "answers": [
+        {
+          "answer": "A: poza zasięgiem dzieci",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w innej szafie S1, kupionej zanim zabraknie miejsca na amunicję",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: ukrytą, żeby nie było problemów przy kontroli Policji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Aby zakupić amunicję sportową w kalibrze .22lr należy posiadać",
+      "answers": [
+        {
+          "answer": "A: pozwolenie na broń palną sportową",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zarejestrowaną broń palną w kalibrze .22lr",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: zaświadczenie uprawniające do zakupu broni sportowej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas obsługi broni, jej lufa musi być skierowana",
+      "answers": [
+        {
+          "answer": "A: w powietrze, aby w razie przypadkowego wystrzału nie postrzelić innych korzystających ze strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w kierunku kulochwytu, tarcz bądź przedmiotów będących celem na strzelnicy",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pionowo w ziemię, aby w razie przypadkowego wystrzału pocisk utkwił w gruncie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Maksymalna długość lufy pistoletu dowolnego to",
+      "answers": [
+        {
+          "answer": "A: bez ograniczeń",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 220mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 183mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto bez wymaganego pozwolenia posiada broń palną lub amunicję, podlega karze",
+      "answers": [
+        {
+          "answer": "A: pozbawienia wolności od 6 miesięcy do lat 8",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: pozbawienia wolności od 6 miesięcy do lat 10",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny albo aresztu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów kolekcjonerskich uprawnia do posiadania następujących rodzajów broni:",
+      "answers": [
+        {
+          "answer": "A: samoczynnej broni palnej, zdolnej do rażenia celów na odległość",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broni palnej bojowej, gazowej, alarmowej w postaci pistoletów lub rewolwerów centralnego zapłonu o kalibrach od 6 mm do 12 mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broni alarmowej albo innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą, w tym samoczynnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń samopowtarzalna lub samoczynna przeładowuje się po każdym strzale na podstawie",
+      "answers": [
+        {
+          "answer": "A: elektronicznych lub pneumatycznych mechanizmów wewnątrz broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ręcznego cofnięcia zamka, wprowadzeniu naboju do komory nabojowej oraz domknięcia i przytrzymania magazynka",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wykorzystania części energii wystrzału",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy na terenie strzelnicy wolno osobom towarzyszącym osobom korzystającym ze strzelnicy mieć styczność z bronią?",
+      "answers": [
+        {
+          "answer": "A: Tak, jeśli broń jest rozładowana i ma włożony wskaźnik bezpieczeństwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, pod kontrolą sędziego zawodów",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Cofnięcie dopuszczenia do posiadania broni następuje",
+      "answers": [
+        {
+          "answer": "A: w drodze decyzji podmiotu posiadającego broń (pracodawcy)",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: w drodze decyzji administracyjnej organu właściwego do wydawania pozwoleń",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: postanowienia organu Policji, który wcześniej wydał dopuszczenie do posiadania broni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie konkurencje są strzelane na 10m wg ISSF?",
+      "answers": [
+        {
+          "answer": "A: pistolet pneumatyczny, pistolet szybkostrzelny, karabin pneumatyczny, ruchoma tarcza (karabin pneumatyczny)",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pistolet pneumatyczny, karabin pneumatyczny, ruchoma tarcza (karabin pneumatyczny)",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pistolet pneumatyczny, karabin pneumatyczny, ruchoma tarcza (pistolet pneumatyczny)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku wykrycia ewidentnie zaniedbanej broni u posiadacza w trakcie kontroli, funkcjonariusz Policji może",
+      "answers": [
+        {
+          "answer": "A: ubrudzić się, biorąc ją w ręce",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: przekazać broń do depozytu WPA za pokwitowaniem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: udzielić posiadaczowi nagany z wpisem do akt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenia regulaminowe pistoletu sportowego",
+      "answers": [
+        {
+          "answer": "A: kaliber 5.6mm, ciężar max: 1500g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 183mm, pudełko: 420x200x50mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kaliber 5.6mm, ciężar max: 1400g, opór spustu min: 1000g, otwarte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 153mm, pudełko: 300x150x50mm",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kaliber 5.6mm, ciężar max: 1500g, opór spustu min: 500g, zamknięte przyrządy celownicze, odl mucha-szczerbinka: 220mm, lufa max: 123mm, pudełko: 300x200x50mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Właściwy organ Policji cofa dopuszczenie do posiadania broni jeżeli osoba, której dopuszczenie takie wydano",
+      "answers": [
+        {
+          "answer": "A: nosi broń, znajdując się w stanie po użyciu alkoholu, środka odurzającego lub substancji psychotropowej albo środka zastępczego",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: naruszyła obowiązek pisemnego powiadomienia właściwego organu Policji o zmianie miejsca stałego pobytu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wykorzystuje dopuszczenie poza miejscem pracy, dla którego dopuszczenie wydano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Z regulaminem strzelnicy należy zapoznać się",
+      "answers": [
+        {
+          "answer": "A: tylko, gdy zażąda tego prowadzący strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zaraz po pierwszym wejściu na strzelnicę",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: przed załadowaniem broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Po komendzie &quot;ŁADUJ&quot; należy",
+      "answers": [
+        {
+          "answer": "A: wcześniej załadowany magazynek włożyć do broni i czekać na komendę &quot;DO TARCZ&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: załadować broń, wprowadzając magazynek z nabojami do pistoletu i rozpocząć strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: załadować magazynek nabojami, włożyć go do broni, wprowadzić pierwszy nabój do komory nabojowej i czekać na następne komendy prowadzącego strzelanie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Karabinek samoczynny o kalibrze od 5,45 mm do 7,62 mm można posiadać w ramach pozwolenia na broń wydanego w celach",
+      "answers": [
+        {
+          "answer": "A: szkoleniowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ochrony osób i mienia",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są prawidłowe",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do jakich rodzajów broni i amunicji uprawnia pozwolenie na broń wydane w celu rekonstrukcji historycznych?",
+      "answers": [
+        {
+          "answer": "A: Broni alarmowej albo innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą, w tym samoczynnej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Strzelb powtarzalnych o kalibrze wagomiarowym 12",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Przystosowanej do strzelania wyłącznie przy pomocy prochu czarnego (dymnego)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Osoby posiadające broń i amunicję do broni palnej w celach kolekcjonerskich oraz pamiątkowych, w przypadku przechowywania tej broni i amunicji poza urządzeniami klasy S1, mogą je przechowywać w gablotach przeznaczonych do przechowywania broni po spełnieniu następujących warunków",
+      "answers": [
+        {
+          "answer": "A: drzwi wejściowe do pomieszczenia są wzmocnione blachą stalową o grubości co najmniej 2mm oraz wyposażone w blokadę przeciwwyważeniową oraz zamknięcie przynajmniej na jeden zamek co najmniej 7 z normy PN-EN 12209 i zasuwę drzwiową zamykaną na kłódkę co najmniej w klasie 5 z normy PN-EN 12320",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: obie odpowiedzi są poprawne",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: gabloty do przechowywania broni i amunicji posiadają przeszklenie ze szkła o zwiększonej odporności na przebicie co najmniej P6B z normy PN-EN 356 oraz zamknięcia co najmniej 5 z normy PN-EN 12209",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów łowieckich, uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: posiadanie uprawnień do wykonywania polowania, ustalonych na podstawie odrębnych przepisów",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: udokumentowana tradycja rodzinna związana z myślistwem, leśnictwem lub wędkarstwem",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: członkostwo w stowarzyszeniu, którego statutowym celem jest działalność związana z myślistwem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią o największej średnicy przewodu lufy wyrażonym w kalibrze wagomiarowym jest broń o kalibrze",
+      "answers": [
+        {
+          "answer": "A: 20",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 12",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: 16",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Cofnięcie pozwolenia na broń, dopuszczenia do posiadania broni oraz unieważnienie karty rejestracyjnej broni pneumatycznej następuje",
+      "answers": [
+        {
+          "answer": "A: w drodze decyzji administracyjnej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: słownie lub pisemnie jako wezwanie organu uprawnionego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pisemnie - pismem dostarczonym za pokwitowaniem odbioru",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pod wpływem alkoholu można",
+      "answers": [
+        {
+          "answer": "A: trenować w domu bez użycia nabojów",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pokazać broń rodzinie lub znajomym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są błędne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy dozwolone jest dokonywanie przeróbek broni?",
+      "answers": [
+        {
+          "answer": "A: Tak",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, w przypadku gdy przeróbka dotyczy przystosowania broni do amunicji ślepej na broń do strzelania pociskami wypełnionymi chemicznymi środkami obezwładniającymi",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Nie",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń palną bojową wydane w celu ochrony osobistej lub ochrony osób i mienia, stanowi jednocześnie pozwolenie na",
+      "answers": [
+        {
+          "answer": "A: broń sygnałową",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń gazową",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń gazową i alarmową",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palna oraz inna broń zdolna do rażenia celów na odległość może być używana w celach szkoleniowych i sportowych",
+      "answers": [
+        {
+          "answer": "A: tylko na strzelnicach",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: o ile osoba strzelająca zachowuje warunki bezpieczeństwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Nie może być używana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za nieprzestrzeganie regulaminów podczas zawodów strzeleckich stosowane są kary",
+      "answers": [
+        {
+          "answer": "A: ostrzeżenie, odjęcie punktów, dyskwalifikacja",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: upomnienie, ostrzeżenie, dyskwalifikacja",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ostrzeżenie, dyskwalifikacja",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy osoba skazana prawomocnym orzeczeniem sądu za umyślne przestępstwo lub przestępstwo skarbowe może otrzymać pozwolenie na broń?",
+      "answers": [
+        {
+          "answer": "A: Nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Tak",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: Tak, jeśli zgodę wyrazi Komendant Wojewódzki Policji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy ustawodawca zabrania noszenia broni posiadanej na podstawie pozwolenia (bez zgody właściwego organu policji)?",
+      "answers": [
+        {
+          "answer": "A: Tak, ale dotyczy to wyłącznie broni szczególnie niebezpiecznej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: Tak, ale dotyczy to wyłącznie broni posiadanej do celów kolekcjonerskich lub pamiątkowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Tak, ale dotyczy to wyłącznie broni posiadanej w celach rekonstrukcji historycznych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pazur wyciągu służy do",
+      "answers": [
+        {
+          "answer": "A: automatycznego ściągania nabojów z magazynka broni samopowtarzalnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: szybkiego usuwania zacięć typu fajka lub squib",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ekstrakcji naboju lub łuski z komory nabojowej ",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do strzelania konkurencji zatwierdzonych przez ISSF zabronione jest używanie amunicji",
+      "answers": [
+        {
+          "answer": "A: smugowej i przeciwpancernej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: bocznego zapłonu typu &quot;short&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: centralnego zapłonu o zasięgu powyżej 2000m",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Od egzaminu przed komisją powołaną przez właściwy organ Policji ze znajomości przepisów dotyczących posiadania i używania broni oraz umiejętności posługiwania się nią zwolnieni są:",
+      "answers": [
+        {
+          "answer": "A: osoby posiadające minimum 3 klasę sportową na wniosek odpowiedniego Wojewódzkiego Związku Strzelectwa Sportowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: m. in. członkowie PZSS posiadający licencję zezwalającą na uprawianie strzelectwa sportowego, w zakresie broni sportowej, jeśli zdali taki egzamin na podstawie odrębnych przepisów",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: Wyłącznie funkcjonariusze państwowych formacji uzbrojonych i żołnierze Sił Zbrojnych RP",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas zawodów rozgrywanych według przepisów ISSF na 25m rozgrywa się konkurencję",
+      "answers": [
+        {
+          "answer": "A: pistolet sportowy",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: Pistolet pneumatyczny",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolet dowolny",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Organizator polowania, imprezy sportowej lub rekonstrukcji historycznej z udziałem cudzoziemców przekazuje co najmniej na ile dni przed planowanym terminem wydarzenia - KWP właściwej ze względu na miejsce wydarzenia, pisemną informację o planowanej dacie i miejscu imprezy oraz przybliżonej liczbie uczestników?",
+      "answers": [
+        {
+          "answer": "A: 7 dni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: 5 dni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 14 dni",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Załadowaną broń można odłożyć",
+      "answers": [
+        {
+          "answer": "A: nigdy nie można odkładać załadowanej broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: jeśli padnie komenda &quot;STOP&quot;",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: w trakcie przerw w strzelaniu, za każdym razem kładąc załadowaną broń lufą skierowaną w bezpieczne miejsce, w sposób uniemożliwiający oddanie przypadkowego strzału",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenia na broń nie wymaga się między innymi w przypadku",
+      "answers": [
+        {
+          "answer": "A: wzięcia w użyczenie broni odpowiadającej celom sportowym lub łowieckim",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: posiadania broni palnej alarmowej o kalibrze do 9mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: posiadania broni palnej pozbawionej cech użytkowych",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii broni szczególnie niebezpiecznej zalicza się",
+      "answers": [
+        {
+          "answer": "A: broń palną wytworzona lub przerobiona w sposób pozwalający na zatajenie jej przeznaczenia, a także broni imitującej inne przedmioty",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: broń samopowtarzalną, wytworzoną z broni samoczynnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: pistolety z magazynkami o pojemności powyżej 20 nabojów, niezależnie od celu posiadania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Karty ewidencji posiadanej broni i amunicji podmiotu posiadającego broń i amunicję powinny być",
+      "answers": [
+        {
+          "answer": "A: ponumerowane i opatrzone na każdej stronie pieczęcią podmiotu posiadającego broń i amunicję",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: oznaczone numerycznie, opieczętowane lub oznaczone logotypem podmiotu posiadającego broń i amunicję",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: ponumerowane, przeszyte i opatrzone na ostatniej stronie pieczęcią podmiotu posiadającego broń i amunicję",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Udostępnienie lub przekazanie broni palnej lub amunicji osobie nieupoważnionej stanowi",
+      "answers": [
+        {
+          "answer": "A: przestępstwo",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: eksces ekstensywny",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: eksces intensywny",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Aby zakupić amunicję należy okazać",
+      "answers": [
+        {
+          "answer": "A: pozwolenie na posiadanie broni palnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zaświadczenie uprawniające do zakupu danego typu broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: legitymację posiadacza broni palnej z danym kalibrem broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto przewozi broń i amunicję w kabinie pasażerskiego statku powietrznego, nie będąc do tego upoważnionym, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny lub ograniczenia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: aresztu albo grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: grzywny, ograniczenia wolności albo pozbawienia wolności do roku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Jeżeli podczas strzelania zauważy się jakiekolwiek niebezpieczeństwo na terenie strzelnicy, należy",
+      "answers": [
+        {
+          "answer": "A: przerwać ogień i czekać, aż prowadzący zauważy niebezpieczeństwo",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: przestać strzelać i wydać głośna komendę &quot;STOP&quot; lub &quot;PRZERWIJ OGIEŃ&quot;",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: podejść do prowadzącego i zwrócić mu uwagę",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów ochrony osobistej uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: wystąpienie aktów przemocy w stosunku do osoby ubiegającej się o pozwolenie na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zamieszkiwanie poza obszarem zabudowanym",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: stałe, realne i ponadprzeciętne zagrożenie życia lub zdrowia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dozwolone przyrządy celownicze w karabinach, poza ruchomą tarczą",
+      "answers": [
+        {
+          "answer": "A: otwarte lub zamknięte mechaniczne",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: otwarte mechaniczne",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zamknięte mechaniczne",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku osób dopuszczonych do posiadania broni, niedopełnienie obowiązku zawiadomienia właściwego organu Policji o zmianie miejsca stałego pobytu w terminie 14 dni od dnia zmiany skutkować może",
+      "answers": [
+        {
+          "answer": "A: wszczęciem postępowania karnego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odebraniem posiadanej broni oraz amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: cofnięciem dopuszczenia do posiadania broni",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Dokumenty niezbędne do zarejestrowania zakupionej broni to:",
+      "answers": [
+        {
+          "answer": "A: dowód zakupu broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: dowód zakupu broni oraz kopia pozwolenia na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: dowód zakupu broni oraz promesa od sprzedawcy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Odległości strzelań w konkurencjach ISSF to",
+      "answers": [
+        {
+          "answer": "A: 10, 25, 50 i 100m",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: 10, 25, 50, 100 i 300m",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: 10, 25, 50 i 300m",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Na strzelnicy pies może przebywać wyłącznie",
+      "answers": [
+        {
+          "answer": "A: na uwięzi i pod ścisłym nadzorem opiekuna",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w ściśle wydzielonym miejscu obiektu, przeznaczonym do pobytu zwierząt",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: za zgodą wszystkich obecnych uczestników strzelania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wywóz broni i amunicji do niej za granicę przez obywateli polskich wymaga",
+      "answers": [
+        {
+          "answer": "A: zgłoszenia wywozu w placówce Ambasady Polskiej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: zgody przewozowej właściwego terytorialnie komendanta Wojewódzkiego Policji",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wydania Europejskiej Karty Broni palnej lub zgody właściwego organu Policji",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Czy gotowe lub obrobione istotne części amunicji uważa się za amunicję?",
+      "answers": [
+        {
+          "answer": "A: tak",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: tak, jeśli posiada je osoba nie mająca pozwolenia na broń",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: tak, jeśli można za ich pomocą skonstruować zdolny do eksplozji nabój",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Korona lufy to",
+      "answers": [
+        {
+          "answer": "A: ukształtowanie wylotu lufy dla równomiernego rozprowadzenia gazów wylotowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: śrubunek pozwalający na montaż optycznych lub mechanicznych (zamkniętych) przyrządów celowniczych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wycięcie lufy odprowadzające gazy wylotowe zmniejszając odrzut",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Mając dopuszczenie do posiadania broni można",
+      "answers": [
+        {
+          "answer": "A: wziąć w użyczenie broń do celów sportowych lub łowieckich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: prowadzić magazyn broni lub pracować z bronią innego podmiotu",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: kupić broń palną",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto nosi broń, znajdując się w stanie po użyciu alkoholu, środka odurzającego lub substancji psychotropowych albo środka zastępczego podlega karze",
+      "answers": [
+        {
+          "answer": "A: aresztu, grzywny lub pozbawienia wolności, w zależności od stopnia upojenia",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: grzywny, ograniczenia wolności lub pozbawienia wolności",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: aresztu albo grzywny",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Broń palną można chwilowo zostawić ",
+      "answers": [
+        {
+          "answer": "A: we własnym sejfie klasy S1",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: innemu posiadaczowi pozwolenia na broń palną",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: żonie w samochodzie, jeśli nie chcemy brać broni do rejestracji w WPA",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kod lub szyfr do szafy z bronią można",
+      "answers": [
+        {
+          "answer": "A: przekazać rodzinie, na wypadek śmierci",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: podać innemu strzelcowi, jeśli chce pożyczyć amunicję",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: obie odpowiedzi są błędne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Amunicja bocznego zapłonu to amunicja",
+      "answers": [
+        {
+          "answer": "A: w której masa zapłonowa wprasowana jest bezpośrednio w kryzę łuski",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: w której masa zapłonowa znajduje się w środku dna łuski",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: każda o kalibrze mniejszym niż 7.62mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Przyjęcie broni i amunicji do zniszczenia przez Policję dokonuje się na podstawie",
+      "answers": [
+        {
+          "answer": "A: pisemnego oświadczenia woli o przeniesieniu własności broni oraz amunicji na rzecz Skarbu Państwa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pisemnego wniosku o zniszczenie broni i amunicji",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: pisemnego oświadczenia woli o przeniesieniu własności broni na rzecz Policji",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Na strzelnicy zabrania się",
+      "answers": [
+        {
+          "answer": "A: poruszania na wózkach inwalidzkich",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: ładowania, rozładowywania i celowania w miejscach wyznaczonych przez prowadzącego strzelanie",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: używania broni innych osób korzystających ze strzelnicy, bez zgody jej użytkownika",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Zbywanie broni i amunicji do tej broni jest dopuszczalne",
+      "answers": [
+        {
+          "answer": "A: po uzyskaniu zgody właściwego organu Policji ze wskazaniem nabywcy broni i amunicji",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: pomiędzy osobami posiadającymi pozwolenie na ten sam rodzaj broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: tylko i wyłącznie za pośrednictwem podmiotów zajmujących się obrotem (handlem) bronią i amunicją",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pocisk typu FMJ (Full Metal Jacket) to pocisk",
+      "answers": [
+        {
+          "answer": "A: ze stopu mosiężno-stalowego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: z rdzeniem twardszym niż stop ołowiu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: z miękkim wypełnieniem otoczonym płaszczem z twardszego stopu",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Po komendzie &quot;STOP&quot; należy",
+      "answers": [
+        {
+          "answer": "A: natychmiast przerwać strzelanie",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: natychmiast odłożyć broń i cofnąć się ze stanowiska strzeleckiego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: natychmiast rozładować broń i wyjąć naboje z magazynka",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Do kategorii amunicji szczególnie niebezpiecznej zalicza się amunicję",
+      "answers": [
+        {
+          "answer": "A: wytworzoną niefabrycznie, z wyłączeniem amunicji wytwarzanej na własny użytek przez osoby posiadające pozwolenie na broń myśliwską, pamiątkową lub kolekcjonerską",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: wytworzoną niefabrycznie, z wyłączeniem amunicji wytwarzanej na własny użytek przez osoby posiadające pozwolenie na broń pamiątkową, sportową lub kolekcjonerską",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: wytworzoną niefabrycznie, z wyłączeniem amunicji wytwarzanej na własny użytek przez osoby posiadające pozwolenie na broń myśliwską, sportową lub kolekcjonerską",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Bezpiecznik w broni służy do",
+      "answers": [
+        {
+          "answer": "A: zablokowania możliwości oddania strzału",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: weryfikacji stanu załadowania lub rozładowania broni",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: zabezpieczenia broni przed korozją w trakcie dłuższego przechowywania",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Przemieszczaniem broni jest",
+      "answers": [
+        {
+          "answer": "A: poruszanie się z załadowaną bronią",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: obie odpowiedzi są poprawne",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: poruszanie się z rozładowaną bronią",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Czy na strzelnicy wolno osobom towarzyszącym osobom korzystającym ze strzelnicy, wchodzić na stanowiska strzeleckie?",
+      "answers": [
+        {
+          "answer": "A: wolno, ale tylko za zgodą osoby korzystającej ze strzelnicy",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: tak",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "W ramach obrony koniecznej działa ten, kto odpiera bezpośredni, bezprawny zamach na",
+      "answers": [
+        {
+          "answer": "A: dobro przedstawiające wyższą wartość od dobra ratowanego",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: jakiekolwiek dobro chronione prawem",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wyłącznie zdrowie lub życie ludzkie",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Wg wytycznych PZSS, stosowanie wskaźnika bezpieczeństwa, potwierdzającego że broń jest rozładowana, a zamek otwarty jest",
+      "answers": [
+        {
+          "answer": "A: obowiązkowe dla wszystkich pistoletów, karabinów i strzelb gładkolufowych",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: nieobowiązkowe, ale polecane",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: polecane przy grupach ponad 5 strzelców",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Prowadzący strzelanie to ",
+      "answers": [
+        {
+          "answer": "A: osoba posiadająca uprawnienia do szkolenia w zakresie strzelectwa, posiadająca pozwolenie na broń do celów szkoleniowych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osoba, która odbyła przeszkolenie w zakresie prowadzenia strzelania oraz udzielania pomocy medycznej organizowane przez uprawnione podmioty",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wyznaczona przez właściciela strzelnicy osoba, odpowiadająca za sprawne przeprowadzenie strzelań",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Właściwy organ policji w stosunku do osoby posiadającej pozwolenie na broń, która przemieszcza się z rozładowaną bronią albo nosi broń, znajdując się w stanie po użyciu alkoholu, środka odurzającego lub substancji psychotropowych albo środka zastępczego",
+      "answers": [
+        {
+          "answer": "A: cofa pozwolenie na broń",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: cofa pozwolenie na broń, o ile osoba taka stanowi zagrożenie dla bezpieczeństwa i porządku publicznego",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: przejmuje do depozytu broń i może cofnąć jej pozwolenie na broń, gdy stanowi ona zagrożenie dla siebie, bezpieczeństwa i porządku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Bronią palną, w myśl UoBiA, jest wyłącznie",
+      "answers": [
+        {
+          "answer": "A: broń myśliwska, sportowa, gazowa, pneumatyczna, sygnałowa",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broń bojowa, myśliwska, sportowa, gazowa, alarmowa i sygnałowa",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: broń bojowa, myśliwska, sportowa, pneumatyczna, przedmiot do obezwładniania osób za pomocą ładunków elektrycznych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Zepsutą broń do naprawy można przekazać",
+      "answers": [
+        {
+          "answer": "A: kurierem lub paczką rejestrowaną",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: osobiście",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: za pośrednictwem innego posiadacza broni palnej",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń służącą do celów szkoleniowych nie może być wydane na",
+      "answers": [
+        {
+          "answer": "A: broń palną wytworzoną lub przerobioną w sposób pozwalający na zatajenie jej przeznaczenia, a także broń imitującą inne przedmioty",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: samoczynną broń palną w postaci pistoletów maszynowych o kalibrze od 6 mm do 12 mm",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broń palną centralnego zapłonu z lufami gwintowanymi, o kalibrze do 12 mm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Broń przechowuje się w",
+      "answers": [
+        {
+          "answer": "A: w pomieszczeniu zamkniętym drzwiami spełniającymi wymagania, o których mowa w normie PN-EN 1627, plombowanych lub zaopatrzonych w inny wskaźnik sygnalizujący wejście osób nieuprawnionych",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: odpowiednio przystosowanym do tego pomieszczeniu, zwanym &quot;magazynem broni&quot; lub w urządzeniach spełniających wymagania co najmniej klasy S1 z normy PN-EN 14450",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: szafach stalowych lub sejfach posiadających zamki atestowane, trwale przymocowanych do elementów konstrukcyjnych budynku",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kto posiada broń, nie mając przy sobie legitymacji posiadacza broni albo legitymacji osoby dopuszczonej do posiadania broni i świadectwa broni, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: aresztu",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny albo aresztu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Pozwolenie na broń wydane do celów rekonstrukcji historycznych, uprawnia do posiadania broni",
+      "answers": [
+        {
+          "answer": "A: broni alarmowej lub innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą, z wyłączeniem broni samoczynnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: broni alarmowej lub innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą lub broni palnej bocznego zapłonu, z wyłączeniem broni samoczynnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: broni alarmowej lub innej broni palnej, konstrukcyjnie przeznaczonej do strzelania wyłącznie amunicją ślepą, w tym samoczynnej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Kto porzuca broń palną lub amunicję, która pozostaje w jego dyspozycji, podlega karze",
+      "answers": [
+        {
+          "answer": "A: grzywny, ograniczenia wolności albo pozbawienia wolności do lat 3",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: dyscyplinarnej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: grzywny, ograniczenia wolności albo pozbawienia wolności do lat 2",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Za ważną przyczynę posiadania broni do celów rekonstrukcji historycznej uważa się w szczególności",
+      "answers": [
+        {
+          "answer": "A: udokumentowane członkostwo w stowarzyszeniu, którego statutowym celem jest organizowanie rekonstrukcji historycznych oraz zaświadczenie potwierdzające czynny udział w działalności statutowej",
+          "isCorrect": true
+        },
+        {
+          "answer": "B: zaświadczenie potwierdzające czynny udział w rekonstrukcjach historycznych",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: udokumentowane członkostwo w stowarzyszeniu, którego statutowym celem jest organizowanie rekonstrukcji historycznych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Mając pozwolenie na posiadanie broni można",
+      "answers": [
+        {
+          "answer": "A: prowadzić magazyn broni lub pracować z bronią innego podmiotu",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: kupić broń palną na podstawie promesy",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: wziąć w użyczenie broń do celów szkoleniowych",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Amunicją szczególnie niebezpieczną jest amunicja",
+      "answers": [
+        {
+          "answer": "A: z pociskami szkolnymi, z płaszczem lub elementem wiodącym wykonanym z tworzyw sztucznych, z wyłączeniem amunicji przeznaczonej do strzelania z broni gładkolufowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: z pociskami nadkalibrowymi, z płaszczem lub elementem wiodącym wykonanym z tworzyw sztucznych, z wyłączeniem amunicji przeznaczonej do strzelania z broni gładkolufowej",
+          "isCorrect": false
+        },
+        {
+          "answer": "C: z pociskami podkalibrowymi, z płaszczem lub elementem wiodącym wykonanym z tworzyw sztucznych, z wyłączeniem amunicji przeznaczonej do strzelania z broni gładkolufowej",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Organ Policji obligatoryjnie cofa pozwolenie jeżeli osoba, której pozwolenie wydano",
+      "answers": [
+        {
+          "answer": "A: używa broni niezgodnie z administracyjnym celem jej posiadania",
+          "isCorrect": false
+        },
+        {
+          "answer": "B: nie przestrzega warunków określonych w pozwoleniu na posiadanie broni",
+          "isCorrect": true
+        },
+        {
+          "answer": "C: nie przestrzega obowiązku rejestracji broni w ciągu 5 dni od dnia zakupu",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+};
+
+export const tests = [kpp, inspekcjaAll, patent];
 
 const routes: Routes = [
   {
@@ -25189,6 +32989,11 @@ const routes: Routes = [
     path: inspekcjaAll.route,
     component: TestComponent,
     data: { test: inspekcjaAll },
+  },
+  {
+    path: patent.route,
+    component: TestComponent,
+    data: { test: patent },
   },
   {
     path: '**',
